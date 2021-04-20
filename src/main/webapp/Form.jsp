@@ -25,7 +25,7 @@
         <input type="text" name="first" id="first" value="${first}">
         <input type="submit" name="sign" value="Вычислить">
         </fieldset>
-    </form>
+    
     <p align="right" style="color:#ffff00"><i>Made by Team7:</i></p>
 
     <p align="right" style="color:#FF4500"><b>1)Mikhaylov Vladislav</b></p>
