@@ -11,6 +11,7 @@
  <legend>Авторизация</legend>
  <label>Логин<input type="text" required></label>
  <label>Пароль<input type="email" required></label>
+ <input type="submit" name="sign" value="Авторизоваться">
 </fieldset>
 </body>
 </html>
