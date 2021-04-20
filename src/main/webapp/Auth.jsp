@@ -4,13 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Authorization</title>
 </head>
 <body>
 <fieldset>
- <legend>Контактная информация</legend>
- <label>Имя<input type="text" required></label>
- <label>E-mail<input type="email" required></label>
+ <legend>Авторизация</legend>
+ <label>Логин<input type="text" required></label>
+ <label>Пароль<input type="email" required></label>
 </fieldset>
 </body>
 </html>
