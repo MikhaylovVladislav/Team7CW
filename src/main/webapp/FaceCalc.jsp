@@ -9,31 +9,38 @@
 <body>
 <fieldset>
  <legend> Состояние строения </legend>
- <label>Имя<input type="text" required></label>
- <label>E-mail<input type="email" required></label>
- <div class="dropdown">
-  <button class="dropbtn">Dropdown</button>
-  <div class="dropdown-content">
-    <a href="#">Исправное состояние</a>
-    <a href="#">Работоспособное состояние</a>
-    <a href="#">Ограниченное состояние </a>
-    <a href="#">Недопустимое состояние </a>
-    <a href="#">Аварийное состояние </a>
- 
-  </div>
-</div>
+<select>
+  <option>Исправное состояние</option>
+  <option>Работоспособное состояние</option>
+    <option>Ограниченное состояние</option>
+  <option>Недопустимое состояние</option>
+   <option>Аварийное состояние</option>
+</select>
 </fieldset>
 
 <fieldset>
  <legend> Класс ремонта </legend>
- <label>Имя<input type="text" required></label>
- <label>E-mail<input type="email" required></label>
+<select>
+  <option>Эконом класс</option>
+  <option>Комфорт класс</option>
+  <option>Бизнес класс</option>
+</select>
 </fieldset>
 
 <fieldset>
  <legend> Срок ремонта </legend>
- <label>Имя<input type="text" required></label>
- <label>E-mail<input type="email" required></label>
+<div>
+    <input type="radio" id="contactChoice1"
+     name="contact" value="email">
+    <label for="contactChoice1">Приоритетный</label>
+
+    <input type="radio" id="contactChoice2"
+     name="contact" value="phone">
+    <label for="contactChoice2">Не приоритетный</label>
+
+  
+  </div>
+  
 </fieldset>
 
 </body>
