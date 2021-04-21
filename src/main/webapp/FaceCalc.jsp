@@ -5,6 +5,30 @@
 <head>
 <meta charset="UTF-8">
 <title>Калькулятор ремонта</title>
+<style>
+
+    body {
+    margin: 100; 
+   }
+  
+fieldset {
+
+  background-color: #eeeeee;
+width: 500px; margin:  5px auto;
+
+}
+
+legend {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+
+}
+
+input {
+  margin: 10px;
+}
+</style>
 </head>
 <body>
 <fieldset>
