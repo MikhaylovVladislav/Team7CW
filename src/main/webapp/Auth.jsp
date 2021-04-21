@@ -10,11 +10,11 @@
  
 <fieldset>
  <legend>Авторизация</legend>
- <label>Логин<input type="text" required></label>
- <label>Пароль<input type="password" required></label>
   <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
-   <label for="first" style="color:#FFFF00" >Введите сторону равностороннего треугольника а:</label>
+   <label for="first" style="color:#FFFF00" >Логин:</label>
         <input type="text" name="first" id="first" value="${first}">
+        <label for="second" style="color:#FFFF00" >Пароль:</label>
+        <input type="text" name="second" id="second" value="${second}">
  <input type="submit" name="sign" value="Авторизоваться">
  </form>
 </fieldset>
