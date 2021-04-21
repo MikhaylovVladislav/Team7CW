@@ -11,9 +11,9 @@
 <fieldset>
  <legend>Авторизация</legend>
   <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
-   <label for="first" style="color:#FFFF00" >Логин:</label>
+   <label for="first" style="color:##000000" >Логин:</label>
         <input type="text" name="first" id="first" value="${first}">
-        <label for="second" style="color:#FFFF00" >Пароль:</label>
+        <label for="second" style="color:##000000" >Пароль:</label>
         <input type="text" name="second" id="second" value="${second}">
  <input type="submit" name="sign" value="Авторизоваться">
  </form>

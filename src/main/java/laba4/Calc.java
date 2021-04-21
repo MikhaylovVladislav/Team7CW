@@ -15,7 +15,7 @@ public class Calc extends HttpServlet {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributesAndCalculate(request);
 		 
-		request.getRequestDispatcher("/Results.jsp").forward(request, response);
+		request.getRequestDispatcher("/FaceCalc.jsp").forward(request, response);
 		
 	}
 	
