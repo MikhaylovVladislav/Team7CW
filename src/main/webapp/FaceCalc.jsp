@@ -8,7 +8,7 @@
 <style>
 
     body {
-    margin: 100; 
+    margin: 100px; 
    }
   
 fieldset {
@@ -66,6 +66,20 @@ input {
   </div>
   
 </fieldset>
+<fieldset>
+ <legend> Услуги </legend>
+<label>Улсуга1<input type="number" required></label>
+<hr>
+<label>Улсуга2<input type="number" required></label>
+<hr>
+<label>Улсуга3<input type="number" required></label>
+<hr>
+<label>Улсуга4<input type="number" required></label>
+<hr>
+<label>Улсуга5<input type="number" required></label>
+<hr>
+<label>Улсуга6<input type="number" required></label>
 
+</fieldset>
 </body>
 </html>
