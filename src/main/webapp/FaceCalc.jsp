@@ -18,6 +18,13 @@ width: 500px; margin:  5px auto;
 
 }
 
+fieldset.com {
+
+  background-color: #D3D3D3;
+width: 500px; margin:  5px auto;
+
+}
+
 legend {
   background-color: gray;
   color: white;
@@ -31,6 +38,8 @@ input {
 </style>
 </head>
 <body>
+<fieldset class = "com">
+
 <fieldset>
  <legend> Состояние строения </legend>
 <select>
@@ -61,11 +70,10 @@ input {
     <input type="radio" id="contactChoice2"
      name="contact" value="phone">
     <label for="contactChoice2">Не приоритетный</label>
-
-  
   </div>
   
 </fieldset>
+
 <fieldset>
  <legend> Услуги </legend>
 <label>Улсуга1<input type="number" required></label>
@@ -79,7 +87,18 @@ input {
 <label>Улсуга5<input type="number" required></label>
 <hr>
 <label>Улсуга6<input type="number" required></label>
+</fieldset>
+
+<fieldset>
+ <legend> Промокод </legend>
+<label>Введите промокод<input type="text" required></label>
+</fieldset>
+
+
+<input type="submit" name="gocom" value="Вычислить" style="margin-left: 50%">
+
 
 </fieldset>
+
 </body>
 </html>
