@@ -37,7 +37,7 @@ input {
 }
 </style>
 </head>
-<body>
+<body bgcolor = "red">
 <fieldset class = "com">
 
 <fieldset>
