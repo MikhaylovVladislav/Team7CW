@@ -81,9 +81,7 @@ float: right;
 <fieldset>
  <legend> Услуги </legend>
  <div class="algblock">
-<label>Подготовка стен, потолков под финиш<input type="number" "></label>
-        <label for="first" style="color:#FFFF00" >Введите сторону равностороннего треугольника а:</label>
-        <input type="text" name="first" id="first" value="${first}">
+<label>Подготовка стен, потолков под финиш<input type="number"></label>
 </div>
 <div class="algblock">
 <label>Оклейка обоями<input type="number" ></label>
@@ -116,20 +114,24 @@ float: right;
 <label>Укладка ламината<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Оклейка панелями потолок<input type="number" required></label>
+<label>Оклейка панелями потолок<input type="number" required ></label>
 </div>
 </fieldset>
 
 <fieldset>
  <legend> Промокод </legend>
-<label>Введите промокод<input type="text" ></label>
+<label>Введите промокод<input type="text" required></label>
 </fieldset>
 
+<label for="first" style="color:#FFFF00" >Введите сторону равностороннего треугольника а:</label>
+        <input type="text" name="first" id="first" value="${first}">
+        <input type="submit" name="sign" value="Вычислить">
 
-
+<!--  
 <form action="${pageContext.request.contextPath}/Results.jsp">
     <input type="submit" name="comp" value="Вычислить">
 </form>
+-->
 </fieldset>
 
 </body>
