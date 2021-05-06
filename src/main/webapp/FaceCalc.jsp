@@ -121,6 +121,8 @@ float: right;
 <fieldset>
  <legend> Промокод </legend>
 <label>Введите промокод<input type="text" required></label>
+<p style="color:#black"><strong>Для теста:</strong> ${first_result}</p>
+<p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
 <form action="${pageContext.request.contextPath}/Results.jsp" method="post">
 <label for="first" style="color:black" >Введите сторону равностороннего треугольника а:</label>
