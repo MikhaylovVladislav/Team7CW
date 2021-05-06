@@ -37,7 +37,6 @@ input {
 }
 </style>
 </head>
-<body bgcolor = "red">
 <fieldset class = "com">
 
 <fieldset>
@@ -76,17 +75,29 @@ input {
 
 <fieldset>
  <legend> Услуги </legend>
-<label>Улсуга1<input type="number" required></label>
+<label>Подготовка стен, потолков под финиш<input type="number" required></label>
 <hr>
-<label>Улсуга2<input type="number" required></label>
+<label>Оклейка обоями<input type="number" required></label>
 <hr>
-<label>Улсуга3<input type="number" required></label>
+<label>Покраска стен, потолков3<input type="number" required></label>
 <hr>
-<label>Улсуга4<input type="number" required></label>
+<label>Шумоизоляция стен<input type="number" required></label>
 <hr>
-<label>Улсуга5<input type="number" required></label>
+<label>Эскизный проект перепланировки<input type="number" required></label>
 <hr>
-<label>Улсуга6<input type="number" required></label>
+<label>Штукатурка стен, потолков<input type="number" required></label>
+<hr>
+<label>Очистка поверхностей от старых покрытий<input type="number" required></label>
+<hr>
+<label>Шпатлевка стен, потолков<input type="number" required></label>
+<hr>
+<label>Нанесение декоративных покрытий<input type="number" required></label>
+<hr>
+<label>Облицовка плиткой стен<input type="number" required></label>
+<hr>
+<label>Укладка ламината<input type="number" required></label>
+<hr>
+<label>Оклейка панелями потолок<input type="number" required></label>
 </fieldset>
 
 <fieldset>
