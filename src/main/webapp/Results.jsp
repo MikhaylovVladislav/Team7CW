@@ -49,29 +49,23 @@ input {
 <fieldset class = "com">
 
 <fieldset>
- <legend> Состояние строения </legend>
-<p style="color:#FFA500"><strong>Сторона равна:</strong> ${first_result}</p>
-<p style="color:#FFA500"><strong>Результат:</strong> ${result}</p>
+ <legend> Итоговый рассчет </legend>
+<p style="color:#FFA500"><strong>Для теста:</strong> ${first_result}</p>
+<p style="color:#FFA500"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
 <fieldset>
- <legend> Срок ремонта </legend>
-<div>
-    <input type="radio" id="contactChoice1"
-     name="contact" value="email">
-    <label for="contactChoice1">Приоритетный</label>
-
-    <input type="radio" id="contactChoice2"
-     name="contact" value="phone">
-    <label for="contactChoice2">Не приоритетный</label>
-  </div>
-  
-</fieldset>
-</fieldset>
-
-
 <form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="sign" value="Назад">
     </form>
+  
+</fieldset>
+
+
+
+</fieldset>
+
+
+
 
 </body>
 </html>
