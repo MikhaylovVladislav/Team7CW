@@ -14,7 +14,7 @@ public abstract class LvlState {
 		if(name !=null && name.length()>1){
 			this.name=name;   
 		}else{
-			System.out.println("Erroïr");	
+			System.out.println("Erroïîr");	
     }
 }
 
