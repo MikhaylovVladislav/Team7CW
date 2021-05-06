@@ -57,7 +57,7 @@ public class Calc extends HttpServlet {
 			request.setAttribute("result", result);;
 			request.setAttribute("result", result);
 				}
-		
+		LvlState2 a = new LvlState2("Аварийное",1.5);
 		}
 	}
 	

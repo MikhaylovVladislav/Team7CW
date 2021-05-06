@@ -47,7 +47,7 @@ input {
   <option>Работоспособное состояние</option>
     <option>Ограниченное состояние</option>
   <option>Недопустимое состояние</option>
-   <option>Аварийное состояние</option>
+   <option>a.get()</option>
 </select>
 </fieldset>
 
