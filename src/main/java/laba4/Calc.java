@@ -57,10 +57,17 @@ public class Calc extends HttpServlet {
 			request.setAttribute("result", result);;
 			request.setAttribute("result", result);
 				}
+		//Создание экземпляров абстракт.класса для строки состояния
 		LvlState2 a = new LvlState2("Исправное",1.5);
 		LvlState2 b = new LvlState2("Работоспособное",1.6);
 		LvlState2 c = new LvlState2("Ограниченное",1.6);
 		LvlState2 d = new LvlState2("Недопустимое",1.7);
+		
+		
+		//Создание экзепляров абстрак. класса для строки уровня ремонта
+		LvlState2 c = new LvlState2("Эконом-класс",1.6);
+		LvlState2 d = new LvlState2("Комфорт-класс",1.7);
+		LvlState2 z = new LvlState2("Эjkjl;jjl;j",1.9);
 		}
 	}
 	
