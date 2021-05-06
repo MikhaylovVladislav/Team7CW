@@ -125,8 +125,8 @@ float: right;
 <p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
 <form action="${pageContext.request.contextPath}/Results" method="post">
-<label for="first" style="color:black" >Введите сторону равностороннего треугольника а:</label>
-        <input type="text" name="first" id="first" value="${first}">
+<label for="first1" style="color:black" >Введите сторону равностороннего треугольника а:</label>
+        <input type="text" name="first1" id="first1" value="${first1}">
         <input type="submit" name="sign" value="Вычислить">
 </form>
  

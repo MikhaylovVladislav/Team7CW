@@ -50,8 +50,8 @@ input {
 
 <fieldset>
  <legend> Итоговый рассчет </legend>
-<p style="color:#black"><strong>Для теста:</strong> ${first_result}</p>
-<p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
+<p style="color:#black"><strong>Для теста:</strong> ${first_result1}</p>
+<p style="color:#black"><strong>Стоимость ремонта:</strong> ${result1}</p>
 </fieldset>
 <fieldset>
 <form action="${pageContext.request.contextPath}/FaceCalc">
