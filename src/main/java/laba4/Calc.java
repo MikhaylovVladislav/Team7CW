@@ -65,8 +65,8 @@ public class Calc extends HttpServlet {
 		
 		
 		//Создание экзепляров абстрак. класса для строки уровня ремонта
-		LvlState2 c = new LvlState2("Эконом-класс",1.6);
-		LvlState2 d = new LvlState2("Комфорт-класс",1.7);
+		LvlState2 o = new LvlState2("Эконом-класс",1.6);
+		LvlState2 s = new LvlState2("Комфорт-класс",1.7);
 		LvlState2 z = new LvlState2("Эjkjl;jjl;j",1.9);
 		}
 	}

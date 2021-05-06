@@ -1,11 +1,9 @@
 package laba4;
 public abstract class LvlState {
-	//Создание имени и кэфа для переопределения в классах-наследниках
-	private String name = "name";
-	double kf = 1.0;
+	private double kf = 1.0;
 
 
-
+/*// Безполезны для веееба
 //методы гет и сет для переменной name, чтобы использовать экземлпярах
 	public String getName() {
 		return name;
@@ -17,8 +15,37 @@ public abstract class LvlState {
 			System.out.println("Error");	
     }
 }
-
-/*
+*/
+	public double getKf() {
+		return kf;
+	}
+	
+	public void setKf(double kf) {
+		this.kf = kf;
+	}
+	
+	//Абстрактный метод, которому нужна реализация в другом классе. Данный метод определяет цену за кв.м. работы
+	public abstract void check();
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+/*// хз, что с этим методом пока делать
 Метод kf, нужно будет переопределять в классах - наследниках, для получения определенного
 кэфа, в зависимости от состояния здания или уровня ремонта
 */
