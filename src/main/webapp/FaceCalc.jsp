@@ -42,6 +42,7 @@ float: right;
 }
 </style>
 </head>
+<body>
 <fieldset class = "com">
 
 <fieldset>
