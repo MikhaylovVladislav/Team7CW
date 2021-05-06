@@ -54,7 +54,7 @@ input {
 <p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
 <fieldset>
-<form action="${pageContext.request.contextPath}/FaceCalc.jsp">
+<form action="${pageContext.request.contextPath}/FaceCalc">
     <input type="submit" name="sign" value="Назад">
     </form>
   

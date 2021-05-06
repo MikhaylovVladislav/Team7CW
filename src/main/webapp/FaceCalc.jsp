@@ -124,7 +124,7 @@ float: right;
 <p style="color:#black"><strong>Для теста:</strong> ${first_result}</p>
 <p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
-<form action="${pageContext.request.contextPath}/Results.jsp" method="post">
+<form action="${pageContext.request.contextPath}/Results" method="post">
 <label for="first" style="color:black" >Введите сторону равностороннего треугольника а:</label>
         <input type="text" name="first" id="first" value="${first}">
         <input type="submit" name="sign" value="Вычислить">
