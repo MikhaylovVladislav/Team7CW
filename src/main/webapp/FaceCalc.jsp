@@ -122,13 +122,14 @@ float: right;
  <legend> Промокод </legend>
 <label>Введите промокод<input type="text" required></label>
 </fieldset>
-
-<label for="first" style="color:#FFFF00" >Введите сторону равностороннего треугольника а:</label>
+<form action="${pageContext.request.contextPath}/Results.jsp" method="post">
+<label for="first" style="color:black" >Введите сторону равностороннего треугольника а:</label>
         <input type="text" name="first" id="first" value="${first}">
         <input type="submit" name="sign" value="Вычислить">
+</form>
+ 
 
-<!--  
-<form action="${pageContext.request.contextPath}/Results.jsp">
+<!-- 
     <input type="submit" name="comp" value="Вычислить">
 </form>
 -->
