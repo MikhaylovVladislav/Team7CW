@@ -14,7 +14,7 @@
 fieldset {
 
   background-color: #eeeeee;
-width: 500px; margin:  5px auto;
+width: 520px; margin:  5px auto;
 
 }
 
@@ -35,9 +35,13 @@ legend {
 input {
   margin: 10px;
 }
+
+.algblock {
+float: right;
+ padding-right: 20px; 
+}
 </style>
 </head>
-<body bgcolor = "red">
 <fieldset class = "com">
 
 <fieldset>
@@ -76,17 +80,42 @@ input {
 
 <fieldset>
  <legend> Услуги </legend>
-<label>Улсуга1<input type="number" required></label>
-<hr>
-<label>Улсуга2<input type="number" required></label>
-<hr>
-<label>Улсуга3<input type="number" required></label>
-<hr>
-<label>Улсуга4<input type="number" required></label>
-<hr>
-<label>Улсуга5<input type="number" required></label>
-<hr>
-<label>Улсуга6<input type="number" required></label>
+ <div class="algblock">
+<label>Подготовка стен, потолков под финиш<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Оклейка обоями<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Покраска стен, потолков<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Шумоизоляция стен<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Эскизный проект перепланировки<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Штукатурка стен, потолков<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Очистка поверхностей от старых покрытий<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Шпатлевка стен, потолков<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Нанесение декоративных покрытий<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Облицовка плиткой стен<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Укладка ламината<input type="number" required></label>
+</div>
+<div class="algblock">
+<label>Оклейка панелями потолок<input type="number" required></label>
+</div>
 </fieldset>
 
 <fieldset>
