@@ -81,37 +81,37 @@ float: right;
 <fieldset>
  <legend> Услуги </legend>
  <div class="algblock">
-<label>Подготовка стен, потолков под финиш<input type="number" required></label>
+<label>Подготовка стен, потолков под финиш<input type="number" id="first" value="${first}"></label>
 </div>
 <div class="algblock">
-<label>Оклейка обоями<input type="number" required></label>
+<label>Оклейка обоями<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Покраска стен, потолков<input type="number" required></label>
+<label>Покраска стен, потолков<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Шумоизоляция стен<input type="number" required></label>
+<label>Шумоизоляция стен<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Эскизный проект перепланировки<input type="number" required></label>
+<label>Эскизный проект перепланировки<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Штукатурка стен, потолков<input type="number" required></label>
+<label>Штукатурка стен, потолков<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Очистка поверхностей от старых покрытий<input type="number" required></label>
+<label>Очистка поверхностей от старых покрытий<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Шпатлевка стен, потолков<input type="number" required></label>
+<label>Шпатлевка стен, потолков<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Нанесение декоративных покрытий<input type="number" required></label>
+<label>Нанесение декоративных покрытий<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Облицовка плиткой стен<input type="number" required></label>
+<label>Облицовка плиткой стен<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Укладка ламината<input type="number" required></label>
+<label>Укладка ламината<input type="number" ></label>
 </div>
 <div class="algblock">
 <label>Оклейка панелями потолок<input type="number" required></label>
@@ -120,7 +120,7 @@ float: right;
 
 <fieldset>
  <legend> Промокод </legend>
-<label>Введите промокод<input type="text" required></label>
+<label>Введите промокод<input type="text" ></label>
 </fieldset>
 
 
