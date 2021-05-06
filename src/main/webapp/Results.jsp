@@ -55,7 +55,7 @@ input {
 </fieldset>
 <fieldset>
 <form action="${pageContext.request.contextPath}/FaceCalc.jsp">
-    <input type="submit" name="sign" value="Назад">
+    <input type="submit" name="back" value="Назад">
     </form>
   
 </fieldset>
