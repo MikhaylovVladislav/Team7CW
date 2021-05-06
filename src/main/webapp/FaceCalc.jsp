@@ -51,11 +51,11 @@ float: right;
 <fieldset>
  <legend> Состояние строения </legend>
 <select>
-  <option>a.get();</option>
-  <option>b.get();</option>
-    <option>c.get();</option>
-  <option>d.get();</option>
-   <option>q.get();</option>
+  <option>Исправное состояние</option>
+  <option>Работоспособное состояние</option>
+    <option>Ограниченно работоспособное состояние</option>
+  <option>Недопустимое состояние состояние</option>
+   <option>Аварийное состояние</option>
 </select>
 </fieldset>
 
@@ -73,11 +73,11 @@ float: right;
 <div>
     <input type="radio" id="contactChoice1"
      name="contact" value="email">
-    <label for="contactChoice1">Приоритетный</label>
+    <label for="contactChoice1">Приоритетный </label>
 
     <input type="radio" id="contactChoice2"
      name="contact" value="phone">
-    <label for="contactChoice2">Не приоритетный</label>
+    <label for="contactChoice2">Не приоритетный </label>
   </div>
   
 </fieldset>
@@ -118,13 +118,13 @@ float: right;
 <label>Укладка ламината<input type="number" ></label>
 </div>
 <div class="algblock">
-<label>Оклейка панелями потолок<input type="number" required ></label>
+<label>Оклейка панелями потолок<input type="number"  ></label>
 </div>
 </fieldset>
 
 <fieldset>
  <legend> Промокод </legend>
-<label>Введите промокод<input type="text" required></label>
+<label>Введите промокод<input type="text" ></label>
 
 </fieldset>
 
