@@ -43,11 +43,11 @@ input {
 <fieldset>
  <legend> Состояние строения </legend>
 <select>
-  <option>Исправное состояние</option>
-  <option>Работоспособное состояние</option>
-    <option>Ограниченное состояние</option>
-  <option>Недопустимое состояние</option>
-   <option>a.get()</option>
+  <option>a.get();</option>
+  <option>b.get();</option>
+    <option>c.get();</option>
+  <option>d.get();</option>
+   <option>q.get();</option>
 </select>
 </fieldset>
 
