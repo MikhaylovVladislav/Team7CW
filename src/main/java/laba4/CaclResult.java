@@ -1,7 +1,6 @@
 package laba4;
 
 import java.io.IOException;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -10,9 +9,12 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
+/**
+ * Servlet implementation class CaclResult
+ */
 @WebServlet(name="CalcRes", urlPatterns="/JavaCalcResult") //���������� �������� � URL
 
-public class CaclRes extends HttpServlet {
+public class CaclResult extends HttpServlet {
 	/**
 	 * 
 	 */
