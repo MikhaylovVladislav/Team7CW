@@ -43,6 +43,8 @@ float: right;
 </style>
 </head>
 <body>
+<form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
+
 <fieldset class = "com">
 
 <fieldset>
@@ -85,7 +87,7 @@ float: right;
 <label>Подготовка стен, потолков под финиш<input type="number"></label>
 </div>
 <div class="algblock">
-<label>Оклейка обоями<input type="number" ></label>
+<label>Оклейка обоями<input type="number" name="first1" id="firs1t" value="${first1}" ></label>
 </div>
 <div class="algblock">
 <label>Покраска стен, потолков<input type="number" ></label>
@@ -125,21 +127,24 @@ float: right;
 <p style="color:#black"><strong>Для теста:</strong> ${first_result}</p>
 <p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
-<form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
+
+    <input type="submit" name="comp" value="Вычислить">
+
+<!-- 
 <label for="first1" style="color:##000000" >Логин:</label>
         <input type="text" name="first1" id="firs1t" value="${first1}">
         <hr>
         <label for="second1" style="color:##000000" >Пароль:</label>
         <input type="text" name="second1" id="second1" value="${second1}">
  <input type="submit" name="sign" value="Авторизоваться">
-</form>
+
  
 
-<!-- 
-    <input type="submit" name="comp" value="Вычислить">
+
+
 </form>
 -->
 </fieldset>
-
+</form>
 </body>
 </html>
