@@ -124,9 +124,10 @@ float: right;
 </fieldset>
 
 
-<input type="submit" name="gocom" value="Вычислить" style="margin-left: 50%">
 
-
+<form action="${pageContext.request.contextPath}/Results.jsp">
+    <input type="submit" name="comp" value="Вычислить">
+</form>
 </fieldset>
 
 </body>
