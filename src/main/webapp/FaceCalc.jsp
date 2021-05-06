@@ -81,7 +81,9 @@ float: right;
 <fieldset>
  <legend> Услуги </legend>
  <div class="algblock">
-<label>Подготовка стен, потолков под финиш<input type="number" id="first" value="${first}"></label>
+<label>Подготовка стен, потолков под финиш<input type="number" "></label>
+        <label for="first" style="color:#FFFF00" >Введите сторону равностороннего треугольника а:</label>
+        <input type="text" name="first" id="first" value="${first}">
 </div>
 <div class="algblock">
 <label>Оклейка обоями<input type="number" ></label>
