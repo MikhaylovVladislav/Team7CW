@@ -125,7 +125,7 @@ float: right;
 <p style="color:#black"><strong>Для теста:</strong> ${first_result}</p>
 <p style="color:#black"><strong>Стоимость ремонта:</strong> ${result}</p>
 </fieldset>
-<form action="${pageContext.request.contextPath}/Results" method="post">
+<form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
 <label for="first1" style="color:##000000" >Логин:</label>
         <input type="text" name="first1" id="firs1t" value="${first1}">
         <hr>

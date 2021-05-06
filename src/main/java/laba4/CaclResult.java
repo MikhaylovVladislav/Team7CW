@@ -33,15 +33,15 @@ public class CaclResult extends HttpServlet {
 
 		private double result1;
 						
-		private RequestCalc (String first1, String second) {
+		private RequestCalc (String first1, String second1) {
 			this.first_calc1 = first1;
 
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("first"),
-			request.getParameter("second"));
+			request.getParameter("first1"),
+			request.getParameter("second1"));
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
@@ -59,12 +59,12 @@ public class CaclResult extends HttpServlet {
 			}
 			if (first_try1<=0) {
 				String s="ERROR";
-				request.setAttribute("result", s);;
-				request.setAttribute("result", s);
+				request.setAttribute("result1", s);;
+				request.setAttribute("result1", s);
 				} else {
 			result1=Math.pow(first_try1,2)*(Math.sqrt(3))/4;
-			request.setAttribute("result", result1);;
-			request.setAttribute("result", result1);
+			request.setAttribute("result1", result1);;
+			request.setAttribute("result1", result1);
 				}
 
 }
