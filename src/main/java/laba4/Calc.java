@@ -46,9 +46,9 @@ public class Calc extends HttpServlet {
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
 			request.setAttribute("second_result", second_calc);
-			int a,b;
-			a=Integer.parseInt(first_calc);
-			b=Integer.parseInt(second_calc);
+			String a,b;
+			a=first_calc.toString();
+			b=second_calc.toString();
 			if (first_calc=="") {
 				
 				request.setAttribute("result", "Гость");;
@@ -58,7 +58,7 @@ public class Calc extends HttpServlet {
 			request.setAttribute("result", first_calc);;
 			request.setAttribute("result", first_calc);
 				}
-			if (a==6 && b==6) {
+			if (a=="admin" && b=="admin") {
 				
 				
 				} else {
