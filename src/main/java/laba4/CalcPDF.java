@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name="Calc", urlPatterns="/JavaPDF") //ñâÿçûâàíèå ñåðâëåòà ñ URL
+@WebServlet(name="CalcPDF", urlPatterns="/JavaPDF") //ñâÿçûâàíèå ñåðâëåòà ñ URL
 public class CalcPDF extends HttpServlet {
 
 	public static String NumberGet;
