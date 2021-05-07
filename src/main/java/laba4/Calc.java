@@ -8,59 +8,64 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name="Calc", urlPatterns="/JavaCalc") //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ URL
-
+@WebServlet(name="Calc", urlPatterns="/JavaPDF") //связывание сервлета с URL
 public class Calc extends HttpServlet {
 
+	public static String NumberGet;
+	public static String GroupGet;
+	public static String FIOGet;
+	public static String PointsGet;
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
-		Calc.setAsRequestAttributesAndCalculate(request);
-		 
-		request.getRequestDispatcher("/FaceCalc.jsp").forward(request, response);
+		Calc.setAsRequestAttributes(request);
+		
+		
+		request.getRequestDispatcher("/Results.jsp").forward(request, response);
+				 
+		CreatePDF PDF = new CreatePDF();
+		String goals = "Hello";
+		PDF.Create(goals);
 		
 	}
 	
 	private static class RequestCalc {
-		private final String first_calc;
+		private final String TextNumber;
+		private final String TextGroup;
+		private final String TextFIO;
+		private final String TextPoints;
 
-		private double result;
 						
-		private RequestCalc (String first, String second) {
-			this.first_calc = first;
-
+		private RequestCalc (String Number, String Group, String FIO, String Points) {
+			this.TextNumber = Number;
+			this.TextGroup = Group;
+			this.TextFIO = FIO;
+			this.TextPoints = Points;
+			
+			NumberGet=TextNumber;
+			GroupGet=TextGroup;
+			FIOGet=TextFIO;
+			PointsGet=TextPoints;
+			
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("first"),
-			request.getParameter("second"));
+			request.getParameter("Number"),
+			request.getParameter("Group"),
+			request.getParameter("FIO"),
+			request.getParameter("Points"));
+			}
 			
-			}
-				
-		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-			request.setAttribute("first_result", first_calc);
-
-			String first_try;
-
-			try { 
-			first_try=first_calc;
-
-			}
-			catch (NumberFormatException e) {
-				first_try="";
-	
-			}
-			if (first_try=="") {
-				String s="ERROR";
-				request.setAttribute("result", s);;
-				request.setAttribute("result", s);
-				} else {
+		public void setAsRequestAttributes(HttpServletRequest request) {
 			
-			request.setAttribute("result", first_try);;
-			request.setAttribute("result", first_try);
-				}
-		
+			request.setAttribute("Number", TextNumber);
+			request.setAttribute("Group", TextGroup);
+			request.setAttribute("FIO", TextFIO);
+			request.setAttribute("Points", TextPoints);
+
 		}
+		
 	}
 	
 	
