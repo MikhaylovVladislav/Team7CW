@@ -81,10 +81,10 @@ float: right;
   </div>
  
 </fieldset>
-
+ <form action="${pageContext.request.contextPath}/JavaPDF" method="post"> 
 <fieldset>
  <legend> Услуги </legend>
- <form action="${pageContext.request.contextPath}/JavaPDF" method="post"> 
+
  <div class="algblock">
  
  
@@ -104,8 +104,7 @@ float: right;
 </div>
 
 
- <input type="submit" name="sign" value="Create PDF">
-</form>
+
 
 
 <div class="algblock">
@@ -139,8 +138,9 @@ float: right;
 <label>Введите промокод<input type="text" ></label>
 
 </fieldset>
-<form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
-    <input type="submit" name="comp" value="Вычислить">
+
+    <input type="submit" name="sign" value="Create PDF">
+
 </form>
 <form action="${pageContext.request.contextPath}/Auth.jsp">
     <input type="submit" name="exit" value="Выйти">
