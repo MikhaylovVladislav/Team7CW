@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-@WebServlet(name="Calc", urlPatterns="/JavaCalc") //���������� �������� � URL
+@WebServlet(name="Calc", urlPatterns="/JavaCalc") //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ URL
 
 public class Calc extends HttpServlet {
 
@@ -54,13 +54,12 @@ public class Calc extends HttpServlet {
 		    	a=0;
 		    	b=0;
 		    }
-		        
-		    
+		        	
 			
 			if (first_calc=="") {
 				
-				request.setAttribute("result", "�����");;
-				request.setAttribute("result", "�����");
+				request.setAttribute("result", "Гость");;
+				request.setAttribute("result", "Гость");
 				} else {
 			
 			request.setAttribute("result", first_calc);;

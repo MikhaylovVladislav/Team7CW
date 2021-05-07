@@ -46,7 +46,7 @@ float: right;
 
 
 <fieldset class = "com">
-<p style="color:#black"><strong>Пользователь:</strong> ${result}</p>
+<p style="color:#black"><strong>Пользователь:</strong>${result}</p>
 <form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
 <fieldset>
  <legend> Состояние строения </legend>
@@ -85,17 +85,28 @@ float: right;
 <fieldset>
  <legend> Услуги </legend>
  <div class="algblock">
-<label>Подготовка стен, потолков под финиш<input type="number" name="first1" id="firs1t" value="${first1}"></label>
+ 
+ 
+ 
+ <form action="${pageContext.request.contextPath}/JavaPDF" method="post">    
+
+<label>Подготовка стен, потолков под финиш<input type="number" name="Number" id="Number" value="${Number}"></label>
 </div>
 <div class="algblock">
-<label>Оклейка обоями<input type="number"  ></label>
+<label>Оклейка обоями<input type="number" name="Group" id="Group" value="${Group}" ></label>
 </div>
 <div class="algblock">
-<label>Покраска стен, потолков<input type="number" ></label>
+<label>Покраска стен, потолков<input type="number" name="FIO" id="FIO" value="${FIO}" ></label>
 </div>
 <div class="algblock">
-<label>Шумоизоляция стен<input type="number" ></label>
+<label>Шумоизоляция стен<input type="number" name="Points" id="Points" value="${Points}"></label>
 </div>
+
+
+ <input type="submit" name="sign" value="Create PDF">
+</form>
+
+
 <div class="algblock">
 <label>Эскизный проект перепланировки<input type="number" ></label>
 </div>

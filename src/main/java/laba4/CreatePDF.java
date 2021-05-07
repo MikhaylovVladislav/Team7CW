@@ -1,108 +1,168 @@
 package laba4;
 
-import java.io.DataInputStream;
-import java.io.File;
-import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.stream.Stream;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.ServletOutputStream;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.itextpdf.text.BadElementException;
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.Paragraph;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.PdfPCell;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
 
-/**
- * Servlet implementation class CreatePDF
- */
-@WebServlet("/CreatePDF")
-public class CreatePDF extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-	private static final int BUFSIZE = 0;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+public class CreatePDF {
+	
+
+	
     public CreatePDF() {
-        super();
-        // TODO Auto-generated constructor stub
+    	
     }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+    public void Create(String numberpdf) {
+      	
+    	Document document = new Document(); //ñîçäàíèå êëàññà Document
+		try {
+			//  /var/apache-tomcat-9.0.39/webapps/CreatePDF/
+			
+			PdfWriter.getInstance(document, new FileOutputStream("/var/apache-tomcat-9.0.39/webapps/CreatePDF/Check.pdf"));
+		} catch (FileNotFoundException | DocumentException e) {
+			e.printStackTrace();
+		}
+			
+		document.open(); 
+		
+		BaseFont times = null;
+		try {
+			times = BaseFont.createFont("/fonts/times.ttf", "cp1251", BaseFont.EMBEDDED);
+		} catch (DocumentException | IOException e) {
+			e.printStackTrace();
+		}
+		
+		String string_pdf = "Hello! You are cool.";
+		Paragraph paragraph = new Paragraph();
+	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
+	    
+	    String string_pdf2 = "This test from Kazantsev with respect!";
+	    paragraph.add(new Paragraph(string_pdf2, new Font(times,14)));
+	
+	    try {
+			document.add(paragraph);
+		} catch (DocumentException e1) {
+			e1.printStackTrace();
+		}
+	    
+	  //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
+		 paragraph.clear();
+		 String string_pdf3 = " ";
+		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
+		 
+		 try {
+				document.add(paragraph);
+			} catch (DocumentException e1) {
+				e1.printStackTrace();
+			}
+    	
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+	    /*
+	  //äîáàâëåíèå èçîáðàæåíèÿ â pdf
+	    URL url = getClass().getResource("/picture/ugatu.png");
+	    Image img = null;
+		try {
+			img = Image.getInstance(url.toString());
+			
+			
+		} catch (BadElementException e2) {
+			
+			e2.printStackTrace();
+		} catch (MalformedURLException e2) {
+			
+			e2.printStackTrace();
+		} catch (IOException e2) {
+			
+			e2.printStackTrace();
+		}
+		
+		img.setAbsolutePosition(90, 500); //ïîçèöèîíèðîâàíèå èçîáðàæåíèÿ â PDF
+		
+		try {
+				document.add(img);
+			} catch (DocumentException e) {
+				e.printStackTrace();
+			}
+	    
+	    
+		 //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
+		 paragraph.clear();
+		 String string_pdf3 = " ";
+		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
+		 
+		 try {
+				document.add(paragraph);
+			} catch (DocumentException e1) {
+				e1.printStackTrace();
+			}
+	    */
+		 
+		 
+		 
+		 
+		 
+		 
+		
+		//äîáàâëåíèå òàáëèöû
+		 PdfPTable table = new PdfPTable(4); //ñîçäàíèå òàáëèöû ñ 4 ñòîëáöàìè
+		 addHeader(table);
+		 addRows(table);
+		 
+		 try {
+			document.add(table);
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		}
+	    
+	    document.close(); //çàêðûòèå è ñîõðàíåíèå äîêóìåíòà PDF
+    }
+    
+private void addRows(PdfPTable table) {
+		
+		//çàïîëíåíèå òàáëèöû ââîäèìûìè çíà÷åíèÿ â òåêñòîâûå ïîëÿ íà ãëàâíîé ôîðìå
+		String cell1 = CalcPDF.NumberGet;
+		String cell2 = CalcPDF.GroupGet;
+		String cell3 = CalcPDF.FIOGet;
+		String cell4 = CalcPDF.PointsGet;
+				
+		table.addCell(cell1);
+	    table.addCell(cell2);
+	    table.addCell(cell3);
+	    table.addCell(cell4);
+		
+	    //âûøå äîëæåí áûòü òåêñò íà ðóññêîì ÿçûêå, êàê åãî âûâåñòè ìîæíî ïîñìîòðåòü â ñïðàâêå.в
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-	}
-	
-	//��� ������
-	
-	// description of your code here
-
-	/**
-	* Sends a file to the ServletResponse output stream. Typically
-	* you want the browser to receive a different name than the
-	* name the file has been saved in your local database, since
-	* your local names need to be unique.
-	*
-	* @param req The request
-	* @param resp The response
-	* @param filename The name of the file you want to download.
-	* @param original_filename The name the browser should receive.
-	*/
-	private void doDownload( HttpServletRequest req, HttpServletResponse resp,
-	String filename, String original_filename )
-	throws IOException
-	{
-	File f = new File(filename);
-	int length = 0;
-	ServletOutputStream op = resp.getOutputStream();
-	ServletContext context = getServletConfig().getServletContext();
-	String mimetype = context.getMimeType( filename );
-
-	//
-	// Set the response and go!
-	//
-	//
-	resp.setContentType( (mimetype != null) ? mimetype : "application/octet-stream" );
-	resp.setContentLength( (int)f.length() );
-	resp.setHeader( "Content-Disposition", "attachment; filename=\"" + original_filename + "\"" );
-
-	//
-	// Stream to the requester.
-	//
-	byte[] bbuf = new byte[BUFSIZE];
-	DataInputStream in = new DataInputStream(new FileInputStream(f));
-
-	while ((in != null) && ((length = in.read(bbuf)) != -1))
-	{
-	op.write(bbuf,0,length);
-	}
-
-	in.close();
-	op.flush();
-	op.close();
-	}
-	
-	
-	
-	
-	
-	//��� ������?
-	
-	
-	
-	
-	
-
+private void addHeader(PdfPTable table) {
+	Stream.of("Number", "Group", "FIO", "Points")
+      .forEach(columnTitle -> {
+        PdfPCell header = new PdfPCell();
+        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
+        header.setBorderWidth(2);
+        header.setPhrase(new Phrase(columnTitle));
+        table.addCell(header);
+    });
+}
 }

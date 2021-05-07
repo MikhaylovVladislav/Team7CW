@@ -57,10 +57,15 @@ input {
 
 <legend> Загрузка данных в PDF </legend>
 
-  <!-- Возможность скачать и просмотреть пдф файл -->
-	<h1 class="headline">Файлик пдф для удобствааа</h1>
-	<a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
-	<a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
+<h1 class="headline">Файл PDF создан. Нажмите на кнопку, чтобы скачать.</h1>
+<p><strong>Number:</strong> ${Number}</p>
+<p><strong>Group:</strong> ${Group}</p>
+<p><strong>FIO:</strong> ${FIO}</p>
+<p><strong>Points:</strong> ${Points}</p>
+
+<a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
+<a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
+
 
 
 </fieldset>
