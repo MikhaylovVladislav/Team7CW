@@ -49,9 +49,9 @@ public class Calc extends HttpServlet {
 			
 			
 			if (first_calc=="") {
-				String s="ERROR";
-				request.setAttribute("result", s);;
-				request.setAttribute("result", s);
+				//String s="ERROR";
+				request.setAttribute("dis", "");;
+				request.setAttribute("dis", "");
 				} else {
 			
 			request.setAttribute("result", first_calc);;
