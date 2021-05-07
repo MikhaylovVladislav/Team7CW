@@ -32,7 +32,7 @@ public class Calc extends HttpServlet {
 		private final String first_calc;
 
 		private double result;
-						
+		private String dis;				
 		private RequestCalc (String first, String second) {
 			this.first_calc = first;
 
@@ -47,24 +47,24 @@ public class Calc extends HttpServlet {
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
 
-			double first_try;
-
-			try { 
-			first_try=Double.parseDouble(first_calc);
-
-			}
-			catch (NumberFormatException e) {
-				first_try=0;
-	
-			}
-			if (first_try<=0) {
+			
+			
+			if (first_calc=="") {
 				String s="ERROR";
 				request.setAttribute("result", s);;
 				request.setAttribute("result", s);
 				} else {
-			result=Math.pow(first_try,2)*(Math.sqrt(3))/4;
-			request.setAttribute("result", result);;
-			request.setAttribute("result", result);
+			
+			request.setAttribute("result", first_calc);;
+			request.setAttribute("result", first_calc);
+				}
+			if (first_calc=="") {
+				
+				request.setAttribute("dis", "disabled");;
+				request.setAttribute("dis", "disabled");
+				} else {
+			
+		
 				}
 
 }

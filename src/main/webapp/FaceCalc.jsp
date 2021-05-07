@@ -135,7 +135,7 @@ float: right;
     </form>
     
      <form>
-    <input type="file" name="load" value="Загрузить файл-настройки" disabled>
+    <input type="file" name="load" value="Загрузить файл-настройки" ${dis}>
     </form>
     
 </fieldset>
