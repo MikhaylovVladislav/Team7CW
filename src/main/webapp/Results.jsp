@@ -54,13 +54,10 @@ input {
 <p style="color:#black"><strong>Стоимость ремонта:</strong> ${result1}</p>
 </fieldset>
 <fieldset>
-<form action="${pageContext.request.contextPath}/FaceCalc.jsp">
-    <input type="submit" name="back" value="Назад">
-    </form>
 
+<legend> Загрузка данных в PDF </legend>
 
   <!-- Возможность скачать и просмотреть пдф файл -->
-  <h1 class="headline">Для удобства вы можете скачать и просмотреть PDF-файл</h1>
 	
 	<a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
 	<a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
@@ -68,7 +65,9 @@ input {
 
 </fieldset>
 
-
+<form action="${pageContext.request.contextPath}/FaceCalc.jsp">
+    <input type="submit" name="back" value="Назад">
+    </form>
 
 </fieldset>
 
