@@ -57,21 +57,15 @@ input {
 <form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="back" value="Назад">
     </form>
- <form>
-    <input type="submit" name="upload" value="Выгрузить форму данных">
-    </form>
-  <h1 class="headline">Файл PDF создан. Нажмите на кнопку, чтобы скачать.</h1>
-<p><strong>Number:</strong> ${Number}</p>
-<p><strong>Group:</strong> ${Group}</p>
-<p><strong>FIO:</strong> ${FIO}</p>
-<p><strong>Points:</strong> ${Points}</p>
 
-<a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
-<a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
 
-<form action="${pageContext.request.contextPath}/Form.jsp">
-    <input type="submit" name="sign" value="Назад к генерации PDF-файла">
-    </form>
+  <!-- Возможность скачать и просмотреть пдф файл -->
+  <h1 class="headline">Для удобства вы можете скачать и просмотреть PDF-файл</h1>
+	
+	<a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
+	<a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
+
+
 </fieldset>
 
 
