@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-
 @WebServlet(name="Calc", urlPatterns="/JavaCalc") //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ URL
 
 public class Calc extends HttpServlet {
@@ -30,52 +29,47 @@ public class Calc extends HttpServlet {
 	}
 	
 	private static class RequestCalc {
-		private final String first_calc1;
-
-		private double result1;
-		private String dis;				
-		private RequestCalc (String first1, String second1) {
-			this.first_calc1 = first1;
-
+		private final String first_calc;
+		private final String second_calc;
+		private String dis;			
+		private RequestCalc (String first, String second) {
+			this.first_calc = first;
+			this.second_calc = second;
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("first1"),
-			request.getParameter("second1"));
+			request.getParameter("first"),
+			request.getParameter("second"));
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-			request.setAttribute("first_result1", first_calc1);
-
-			double first_try1;
-
-			try { 
-			first_try1=Double.parseDouble(first_calc1);
-
-			}
-			catch (NumberFormatException e) {
-				first_try1=0;
-	
-			}
-			if (first_try1<=0) {
-				String s="ERROR";
-				request.setAttribute("result1", s);;
-				request.setAttribute("result1", s);
-				} else {
-			result1=first_try1;
-			request.setAttribute("result1", result1);;
-			request.setAttribute("result1", result1);
-				}
-			if (first_try1==6) {
+			request.setAttribute("first_result", first_calc);
+			request.setAttribute("second_result", second_calc);
+			int a,b;
+			a=Integer.parseInt(first_calc);
+			b=Integer.parseInt(second_calc);
+			if (first_calc=="") {
 				
-				
+				request.setAttribute("result", "Гость");;
+				request.setAttribute("result", "Гость");
 				} else {
 			
-			request.setAttribute("dis", "disabled");;
-			request.setAttribute("dis", "disabled");
+			request.setAttribute("result", first_calc);;
+			request.setAttribute("result", first_calc);
 				}
+			if (a==6 && b==66) {
+				
+				
+				} else {
+					
+					request.setAttribute("dis", "disabled");;
+					request.setAttribute("dis", "disabled");
+				}
+			
+
 }
 	}
 }
+
 
