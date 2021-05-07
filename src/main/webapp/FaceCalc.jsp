@@ -85,10 +85,10 @@ float: right;
 <fieldset>
  <legend> Услуги </legend>
  <div class="algblock">
-<label>Подготовка стен, потолков под финиш<input type="number"></label>
+<label>Подготовка стен, потолков под финиш<input type="number" name="first1" id="firs1t" value="${first1}"></label>
 </div>
 <div class="algblock">
-<label>Оклейка обоями<input type="number" name="first1" id="firs1t" value="${first1}" ></label>
+<label>Оклейка обоями<input type="number"  ></label>
 </div>
 <div class="algblock">
 <label>Покраска стен, потолков<input type="number" ></label>
@@ -133,6 +133,11 @@ float: right;
 <form action="${pageContext.request.contextPath}/Auth.jsp">
     <input type="submit" name="exit" value="Выйти">
     </form>
+    
+     <form>
+    <input type="file" name="load" value="Загрузить файл-настройки">
+    </form>
+    
 </fieldset>
 
 </body>
