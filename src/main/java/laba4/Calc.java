@@ -57,7 +57,7 @@ public class Calc extends HttpServlet {
 				first_try="";
 	
 			}
-			if (first_try=="") {
+			if (first_try=="1") {
 				String s="ERROR";
 				request.setAttribute("result", s);;
 				request.setAttribute("result", s);
@@ -66,7 +66,7 @@ public class Calc extends HttpServlet {
 			request.setAttribute("result", first_try);;
 			request.setAttribute("result", first_try);
 				}
-			if (first_calc=="admin") {
+			if (first_try=="admin") {
 				
 				
 			} else {
