@@ -47,7 +47,7 @@ float: right;
 
 <fieldset class = "com">
 <p style="color:#black"><strong>Пользователь:</strong>${result}</p>
-<form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
+
 <fieldset>
  <legend> Состояние строения </legend>
 <select>
@@ -79,16 +79,17 @@ float: right;
      name="contact" value="phone">
     <label for="contactChoice2">Не приоритетный </label>
   </div>
-  
+ 
 </fieldset>
 
 <fieldset>
  <legend> Услуги </legend>
+ <form action="${pageContext.request.contextPath}/JavaPDF" method="post"> 
  <div class="algblock">
  
  
  
- <form action="${pageContext.request.contextPath}/JavaPDF" method="post">    
+   
 
 <label>Подготовка стен, потолков под финиш<input type="number" name="Number" id="Number" value="${Number}"></label>
 </div>
@@ -138,7 +139,7 @@ float: right;
 <label>Введите промокод<input type="text" ></label>
 
 </fieldset>
-
+<form action="${pageContext.request.contextPath}/JavaCalcResult" method="post">
     <input type="submit" name="comp" value="Вычислить">
 </form>
 <form action="${pageContext.request.contextPath}/Auth.jsp">
