@@ -30,11 +30,12 @@ public class Calc extends HttpServlet {
 	
 	private static class RequestCalc {
 		private final String first_calc;
-		private final String second_calc;
-					
+
+		private double result;
+						
 		private RequestCalc (String first, String second) {
 			this.first_calc = first;
-			this.second_calc = second;
+
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
@@ -45,27 +46,34 @@ public class Calc extends HttpServlet {
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
-			request.setAttribute("second_result", second_calc);
-			
-			
-			if (first_calc=="") {
-				
-				request.setAttribute("result", "Гость");;
-				request.setAttribute("result", "Гость");
+
+			String first_try;
+
+			try { 
+			first_try=(first_calc);
+
+			}
+			catch (NumberFormatException e) {
+				first_try="";
+	
+			}
+			if (first_try=="") {
+				String s="ERROR";
+				request.setAttribute("result", s);;
+				request.setAttribute("result", s);
 				} else {
 			
-			request.setAttribute("result", first_calc);;
-			request.setAttribute("result", first_calc);
+			request.setAttribute("result", first_try);;
+			request.setAttribute("result", first_try);
 				}
-			if (first_calc=="1" || second_calc=="1") {
+			if (first_calc=="admin") {
 				
 				
-				} else {
-					
-					request.setAttribute("dis", "disabled");;
-					request.setAttribute("dis", "disabled");
-				}
-			
+			} else {
+				
+				request.setAttribute("dis", "disabled");;
+				request.setAttribute("dis", "disabled");
+			}
 
 }
 	}
