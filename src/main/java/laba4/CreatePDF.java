@@ -1,5 +1,6 @@
 package laba4;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -33,7 +34,20 @@ public class CreatePDF {
 		try {
 			//  /var/apache-tomcat-9.0.39/webapps/CreatePDF/
 			
-			PdfWriter.getInstance(document, new FileOutputStream("\\src\\main\\webapp\\Check.pdf"));
+			//String INPUTFILE = "/Check.pdf";
+			//PdfReader reader = new PdfReader(getServletContex().getRealPath(INPUTFILE));
+			//PdfWriter.getInstance(document, new FileOutputStream("\\src\\main\\webapp\\Check.pdf"));
+			
+			
+			URL res = getClass().getClassLoader().getResource("Check.pdf");
+			File f = new File(res.getFile());
+
+			PdfWriter writer = PdfWriter.getInstance(document, new FileOutputStream(f));
+			
+			
+			
+			
+			
 		} catch (FileNotFoundException | DocumentException e) {
 			e.printStackTrace();
 		}
