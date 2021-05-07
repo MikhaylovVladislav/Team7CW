@@ -18,6 +18,13 @@ width: 500px; margin:  5px auto;
 
 }
 
+fieldset.com {
+
+  background-color: #D3D3D3;
+width: 500px; margin:  5px auto;
+
+}
+
 legend {
   background-color: gray;
   color: white;
@@ -31,18 +38,21 @@ input {
 </style>
 </head>
 <body>
- 
+ <fieldset class="com">
+   <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>
  <legend>Авторизация</legend>
-  <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
+
    <label for="first" style="color:##000000" >Логин:</label>
         <input type="text" name="first" id="first" value="${first}">
         <hr>
         <label for="second" style="color:##000000" >Пароль:</label>
         <input type="text" name="second" id="second" value="${second}">
- <input type="submit" name="sign" value="Авторизоваться">
- </form>
-</fieldset>
 
+ 
+</fieldset>
+ <input type="submit" name="sign" value="Авторизоваться">
+</form>
+</fieldset>
 </body>
 </html>
