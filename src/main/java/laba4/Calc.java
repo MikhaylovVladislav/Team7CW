@@ -67,7 +67,7 @@ public class Calc extends HttpServlet {
 			request.setAttribute("result1", result1);;
 			request.setAttribute("result1", result1);
 				}
-			if (first_try1==62) {
+			if (first_try1==6) {
 				
 				
 				} else {
