@@ -59,11 +59,11 @@ public class CreatePDF {
 			e.printStackTrace();
 		}
 		
-		String string_pdf = "Hello! You are cool.";
+		String string_pdf = "Hello";
 		Paragraph paragraph = new Paragraph();
 	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
 	    
-	    String string_pdf2 = "This test from Kazantsev with respect!";
+	    String string_pdf2 = "From Team 7";
 	    paragraph.add(new Paragraph(string_pdf2, new Font(times,14)));
 	
 	    try {
@@ -154,21 +154,42 @@ public class CreatePDF {
 private void addRows(PdfPTable table) {
 		
 		//çàïîëíåíèå òàáëèöû ââîäèìûìè çíà÷åíèÿ â òåêñòîâûå ïîëÿ íà ãëàâíîé ôîðìå
-		String cell1 = CalcPDF.NumberGet;
-		String cell2 = CalcPDF.GroupGet;
-		String cell3 = CalcPDF.FIOGet;
-		String cell4 = CalcPDF.PointsGet;
+		String cell1 = CalcPDF.SrokGet;
+		String cell2 = CalcPDF.Usl1Get;
+		String cell3 = CalcPDF.Usl2Get;
+		String cell4 = CalcPDF.Usl3Get;
+		String cell5 = CalcPDF.Usl4Get;
+		String cell6 = CalcPDF.Usl5Get;
+		String cell7 = CalcPDF.Usl6Get;
+		String cell8 = CalcPDF.Usl7Get;
+		String cell9 = CalcPDF.Usl8Get;
+		String cell10 = CalcPDF.Usl9Get;
+		String cell11 = CalcPDF.Usl10Get;
+		String cell12 = CalcPDF.Usl11Get;
+		String cell13 = CalcPDF.Usl12Get;
+		String cell14 = CalcPDF.PromoGet;
+
 				
 		table.addCell(cell1);
 	    table.addCell(cell2);
 	    table.addCell(cell3);
 	    table.addCell(cell4);
+		table.addCell(cell5);
+	    table.addCell(cell6);
+	    table.addCell(cell7);
+	    table.addCell(cell8);
+		table.addCell(cell9);
+	    table.addCell(cell10);
+	    table.addCell(cell11);
+	    table.addCell(cell12);
+	    table.addCell(cell13);
+	    table.addCell(cell14);
 		
 	    //âûøå äîëæåí áûòü òåêñò íà ðóññêîì ÿçûêå, êàê åãî âûâåñòè ìîæíî ïîñìîòðåòü â ñïðàâêå.в
 	}
 
 private void addHeader(PdfPTable table) {
-	Stream.of("Number", "Group", "FIO", "Points")
+	Stream.of("Srok", "Usl1", "Usl2", "Usl3", "Usl4", "Usl5", "Usl6", "Usl7", "Usl8", "Usl9", "Usl10", "Usl11", "Usl12", "Calc")
       .forEach(columnTitle -> {
         PdfPCell header = new PdfPCell();
         header.setBackgroundColor(BaseColor.LIGHT_GRAY);
