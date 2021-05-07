@@ -8,65 +8,61 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name="Calc", urlPatterns="/JavaPDF") //связывание сервлета с URL
+
+
+@WebServlet(name="Calc", urlPatterns="/JavaCalc") //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ URL
+
 public class Calc extends HttpServlet {
 
-	public static String NumberGet;
-	public static String GroupGet;
-	public static String FIOGet;
-	public static String PointsGet;
-	
+
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
-		Calc.setAsRequestAttributes(request);
-		
-		
-		request.getRequestDispatcher("/Results.jsp").forward(request, response);
-				 
-		CreatePDF PDF = new CreatePDF();
-		String goals = "Hello";
-		PDF.Create(goals);
+		Calc.setAsRequestAttributesAndCalculate(request);
+		 
+		request.getRequestDispatcher("/FaceCacl.jsp").forward(request, response);
 		
 	}
 	
 	private static class RequestCalc {
-		private final String TextNumber;
-		private final String TextGroup;
-		private final String TextFIO;
-		private final String TextPoints;
+		private final String first_calc;
 
+		private double result;
 						
-		private RequestCalc (String Number, String Group, String FIO, String Points) {
-			this.TextNumber = Number;
-			this.TextGroup = Group;
-			this.TextFIO = FIO;
-			this.TextPoints = Points;
-			
-			NumberGet=TextNumber;
-			GroupGet=TextGroup;
-			FIOGet=TextFIO;
-			PointsGet=TextPoints;
-			
+		private RequestCalc (String first, String second) {
+			this.first_calc = first;
+
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("Number"),
-			request.getParameter("Group"),
-			request.getParameter("FIO"),
-			request.getParameter("Points"));
+			request.getParameter("first"),
+			request.getParameter("second"));
 			}
-			
-		public void setAsRequestAttributes(HttpServletRequest request) {
-			
-			request.setAttribute("Number", TextNumber);
-			request.setAttribute("Group", TextGroup);
-			request.setAttribute("FIO", TextFIO);
-			request.setAttribute("Points", TextPoints);
+				
+		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
+			request.setAttribute("first_result", first_calc);
 
-		}
-		
-	}
+			double first_try;
+
+			try { 
+			first_try=Double.parseDouble(first_calc);
+
+			}
+			catch (NumberFormatException e) {
+				first_try=0;
 	
-	
+			}
+			if (first_try<=0) {
+				String s="ERROR";
+				request.setAttribute("result", s);;
+				request.setAttribute("result", s);
+				} else {
+			result=Math.pow(first_try,2)*(Math.sqrt(3))/4;
+			request.setAttribute("result", result);;
+			request.setAttribute("result", result);
+				}
+
 }
+	}
+}
+
