@@ -58,10 +58,20 @@ input {
 <legend> Загрузка данных в PDF </legend>
 
 <h1 class="headline">Файл PDF создан. Нажмите на кнопку, чтобы скачать.</h1>
-<p><strong>Number:</strong> ${Number}</p>
-<p><strong>Group:</strong> ${Group}</p>
-<p><strong>FIO:</strong> ${FIO}</p>
-<p><strong>Points:</strong> ${Points}</p>
+<p><strong>Srok:</strong> ${Srok}</p>
+<p><strong>Usl1:</strong> ${Usl1}</p>
+<p><strong>Usl2:</strong> ${Usl2}</p>
+<p><strong>Usl3:</strong> ${Usl3}</p>
+<p><strong>Usl4:</strong> ${Usl4}</p>
+<p><strong>Usl5:</strong> ${Usl5}</p>
+<p><strong>Usl6:</strong> ${Usl6}</p>
+<p><strong>Usl7:</strong> ${Usl7}</p>
+<p><strong>Usl8:</strong> ${Usl8}</p>
+<p><strong>Usl9:</strong> ${Usl9}</p>
+<p><strong>Usl10:</strong> ${Usl10}</p>
+<p><strong>Usl11:</strong> ${Usl11}</p>
+<p><strong>Usl12:</strong> ${Usl12}</p>
+<p><strong>Promo:</strong> ${Promo}</p>
 
 <a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
 <a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
