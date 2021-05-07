@@ -54,16 +54,15 @@ public class Calc extends HttpServlet {
 				request.setAttribute("result", s);
 				} else {
 			
-			request.setAttribute("result", second_calc);;
-			request.setAttribute("result", second_calc);
+			request.setAttribute("result", first_calc);;
+			request.setAttribute("result", first_calc);
 				}
 			if (first_calc=="admin") {
-				request.setAttribute("dis", "");;
-				request.setAttribute("dis", "");
+				request.setAttribute("dis", "disabled");;
+				request.setAttribute("dis", "disabled");
 				
 				} else {
-					request.setAttribute("dis", "disabled");;
-					request.setAttribute("dis", "disabled");
+					
 		
 				}
 			
