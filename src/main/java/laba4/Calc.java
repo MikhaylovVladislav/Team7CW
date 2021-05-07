@@ -57,13 +57,13 @@ public class Calc extends HttpServlet {
 		
 			request.setAttribute("result", first_calc);
 				}
-			if (first_calc=="") {
-				
+			if (first_calc=="admin") {
+				request.setAttribute("dis", "dis");
 				
 				} else {
 					
 					
-					request.setAttribute("dis", "disabled");
+				
 				}
 			
 
