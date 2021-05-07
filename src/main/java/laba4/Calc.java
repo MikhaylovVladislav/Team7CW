@@ -54,8 +54,8 @@ public class Calc extends HttpServlet {
 				request.setAttribute("result", s);
 				} else {
 			
-			request.setAttribute("result", first_calc);;
-			request.setAttribute("result", first_calc);
+			request.setAttribute("result", second_calc);;
+			request.setAttribute("result", second_calc);
 				}
 			if (first_calc=="admin" & second_calc=="admin") {
 				request.setAttribute("dis", "");;
