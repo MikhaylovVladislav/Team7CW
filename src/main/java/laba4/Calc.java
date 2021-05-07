@@ -30,12 +30,11 @@ public class Calc extends HttpServlet {
 	
 	private static class RequestCalc {
 		private final String first_calc;
-
-		private double result;
-		private String dis;				
+		private final String second_calc;
+					
 		private RequestCalc (String first, String second) {
 			this.first_calc = first;
-
+			this.second_calc = second;
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
@@ -46,7 +45,7 @@ public class Calc extends HttpServlet {
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
-
+			request.setAttribute("second_result", second_calc);
 			
 			
 			if (first_calc=="") {
@@ -58,14 +57,15 @@ public class Calc extends HttpServlet {
 			request.setAttribute("result", first_calc);;
 			request.setAttribute("result", first_calc);
 				}
-			if (first_calc=="") {
+			if (first_calc=="admin" && second_calc=="admin") {
 				
-				request.setAttribute("dis", "disabled");;
-				request.setAttribute("dis", "disabled");
+				
 				} else {
-			
+					request.setAttribute("dis", "disabled");;
+					request.setAttribute("dis", "disabled");
 		
 				}
+			
 
 }
 	}
