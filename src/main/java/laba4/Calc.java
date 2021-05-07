@@ -34,29 +34,30 @@ public class Calc extends HttpServlet {
 			return new RequestCalc(
 			request.getParameter("first"),
 			request.getParameter("second"));
+			
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
 
-			double first_try;
+			String first_try;
 
 			try { 
-			first_try=Double.parseDouble(first_calc);
+			first_try=first_calc;
 
 			}
 			catch (NumberFormatException e) {
-				first_try=0;
+				first_try="";
 	
 			}
-			if (first_try<=0) {
+			if (first_try=="") {
 				String s="ERROR";
 				request.setAttribute("result", s);;
 				request.setAttribute("result", s);
 				} else {
-			result=Math.pow(first_try,2)*(Math.sqrt(3))/4;
-			request.setAttribute("result", result);;
-			request.setAttribute("result", result);
+			
+			request.setAttribute("result", first_try);;
+			request.setAttribute("result", first_try);
 				}
 		
 		}
