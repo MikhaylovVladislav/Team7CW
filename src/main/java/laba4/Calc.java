@@ -48,9 +48,9 @@ public class Calc extends HttpServlet {
 			request.setAttribute("first_result", first_calc);
 
 			String first_try;
-
+			
 			try { 
-			first_try=(first_calc);
+			first_try="admin";
 
 			}
 			catch (NumberFormatException e) {
