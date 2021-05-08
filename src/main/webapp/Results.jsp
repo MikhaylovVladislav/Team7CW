@@ -50,8 +50,8 @@ input {
 
 <fieldset>
  <legend> Итоговый рассчет </legend>
-<p style="color:#black"><strong>Подготовка стен, потолков под финиш:</strong> ${first_result1}</p>
-<p style="color:#black"><strong>Стоимость ремонта:</strong> ${result1}</p>
+
+<p style="color:#black"><strong>Стоимость ремонта:</strong> ${result5}</p>
 </fieldset>
 <fieldset>
 

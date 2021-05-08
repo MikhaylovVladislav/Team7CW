@@ -197,27 +197,29 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			 // }
 			 
 			 
-			//  Inter1 i1 = new CalcPDF();
-			 // Inter2 i2 = new CalcPDF();
-			// Арифметика
-			// sum4=i2.xsum1(pr1,pr2,pr3,pr4);
-		    // sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
+			Inter1 i1 = new CalcPDF();
+			Inter2 i2 = new CalcPDF();
+		//	Арифметика
+			sum4=i2.xsum1(pr1,pr2,pr3,pr4);
+		    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
 
-		   //хз че это
-			// int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
-			// int s2=(int)(s1*p*g-s1*r);
+		  
+			int s1=(int)((((sum5)+(sum4)-(sum4)))); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
+		
+			
+			int s2=(int)(s1); //	int s2=(int)(s1*p*g-s1*r);
 			 
 			// if (g==0){
 			//	 gen = "Работы не проводятся";
 			// }else{
-			//	 gen=Integer.toString(s2);
+			//	
 			// } 
-	
+			  gen=Integer.toString(s2);
 			
 			
 		
 			 
-	
+			request.setAttribute("result5", gen);;
 			request.setAttribute("Srok", TextSrok);
 			request.setAttribute("Usl1", TextUsl1);
 			request.setAttribute("Usl2", TextUsl2);

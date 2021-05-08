@@ -38,18 +38,6 @@ public class CreatePDF {
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
 			//String INPUTFILE = "/Check.pdf";
 			//PdfReader reader = new PdfReader(getServletContex().getRealPath(INPUTFILE));
 			//PdfWriter.getInstance(document, new FileOutputStream("\\src\\main\\webapp\\Check.pdf"));
