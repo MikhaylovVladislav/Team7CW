@@ -209,7 +209,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				
 					
 					int s2=(int)(s1); //	int s2=(int)(s1*p*g-s1*r);
-					
+					  gen=Integer.toString(s2);
+					  request.setAttribute("result5", gen);
 			    } catch (NumberFormatException e) {
 			    	pr1=0;
 					 pr2=0;
@@ -231,12 +232,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			// }else{
 			//	
 			// } 
-			  gen=Integer.toString(s2);
+			
 			
 			
 		
 			 
-			request.setAttribute("result5", gen);
+			
 			request.setAttribute("Srok", TextSrok);
 			request.setAttribute("Usl1", TextUsl1);
 			request.setAttribute("Usl2", TextUsl2);
