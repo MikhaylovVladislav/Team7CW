@@ -34,7 +34,22 @@ public class CreatePDF {
     	Document document = new Document(); //ñîçäàíèå êëàññà Document
 		try {
 			//  /var/apache-tomcat-9.0.39/webapps/CreatePDF/
-			PdfWriter.getInstance(document, new FileOutputStream("/var/apache-tomcat-9.0.39/webapps/CreatePDF/Check.pdf"));
+			PdfWriter.getInstance(document, new FileOutputStream("Check.pdf"));
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
 			//String INPUTFILE = "/Check.pdf";
 			//PdfReader reader = new PdfReader(getServletContex().getRealPath(INPUTFILE));
 			//PdfWriter.getInstance(document, new FileOutputStream("\\src\\main\\webapp\\Check.pdf"));
