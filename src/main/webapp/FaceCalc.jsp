@@ -87,9 +87,6 @@ float: right;
 
  <div class="algblock">
  
- 
- 
-   
 
 <label>Подготовка стен, потолков под финиш<input type="number" name="Usl1" id="Usl1" value="${Usl1}"></label>
 </div>
@@ -102,10 +99,6 @@ float: right;
 <div class="algblock">
 <label>Шумоизоляция стен<input type="number" name="Usl4" id="Usl4" value="${Usl4}"></label>
 </div>
-
-
-
-
 
 <div class="algblock">
 <label>Эскизный проект перепланировки<input type="number" name="Usl5" id="Usl5" value="${Usl5}" ></label>

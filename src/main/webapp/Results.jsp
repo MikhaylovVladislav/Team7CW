@@ -59,19 +59,19 @@ input {
 
 <h1 class="headline">Файл PDF создан. Нажмите на кнопку, чтобы скачать.</h1>
 <p><strong>Srok:</strong> ${Srok}</p>
-<p><strong>Usl1:</strong> ${Usl1}</p>
-<p><strong>Usl2:</strong> ${Usl2}</p>
-<p><strong>Usl3:</strong> ${Usl3}</p>
-<p><strong>Usl4:</strong> ${Usl4}</p>
-<p><strong>Usl5:</strong> ${Usl5}</p>
-<p><strong>Usl6:</strong> ${Usl6}</p>
-<p><strong>Usl7:</strong> ${Usl7}</p>
-<p><strong>Usl8:</strong> ${Usl8}</p>
-<p><strong>Usl9:</strong> ${Usl9}</p>
-<p><strong>Usl10:</strong> ${Usl10}</p>
-<p><strong>Usl11:</strong> ${Usl11}</p>
-<p><strong>Usl12:</strong> ${Usl12}</p>
-<p><strong>Promo:</strong> ${Promo}</p>
+<p><strong>Подготовка стен, потолков под финиш:</strong> ${Usl1}</p>
+<p><strong>Оклейка обоями:</strong> ${Usl2}</p>
+<p><strong>Покраска стен, потолков:</strong> ${Usl3}</p>
+<p><strong>Шумоизоляция стен:</strong> ${Usl4}</p>
+<p><strong>Эскизный проект перепланировки:</strong> ${Usl5}</p>
+<p><strong>Штукатурка стен, потолков:</strong> ${Usl6}</p>
+<p><strong>Очистка поверхностей от старых покрытий:</strong> ${Usl7}</p>
+<p><strong>Шпатлевка стен, потолков:</strong> ${Usl8}</p>
+<p><strong>Нанесение декоративных покрытий:</strong> ${Usl9}</p>
+<p><strong>Облицовка плиткой стен:</strong> ${Usl10}</p>
+<p><strong>Укладка ламината:</strong> ${Usl11}</p>
+<p><strong>Оклейка панелями потолок:</strong> ${Usl12}</p>
+<p><strong>Promocode:</strong> ${Promo}</p>
 
 <a href="/CreatePDF/Check.pdf"> Открыть PDF-файл</a>
 <a href="/CreatePDF/Check.pdf" download> Скачать PDF-файл</a>
