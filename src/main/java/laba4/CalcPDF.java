@@ -8,13 +8,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name="CalcPDF", urlPatterns="/JavaPDF") //Г±ГўГїГ§Г»ГўГ Г­ГЁГҐ Г±ГҐГ°ГўГ«ГҐГІГ  Г± URL
-public class CalcPDF extends HttpServlet {
 
-//	public static String NumberGet;
-//	public static String GroupGet;
-//	public static String FIOGet;
-//	public static String PointsGet;
+
+@WebServlet(name="CalcPDF", urlPatterns="/JavaPDF") 
+public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
+
+
 	public static String SrokGet;
 	public static String Usl1Get;
 	public static String Usl2Get;
@@ -131,13 +130,94 @@ public class CalcPDF extends HttpServlet {
 			request.getParameter("Promo"));
 			
 			}
-			
+	
 		public void setAsRequestAttributes(HttpServletRequest request) {
 			
-//			request.setAttribute("Number", TextNumber);
-//			request.setAttribute("Group", TextGroup);
-//			request.setAttribute("FIO", TextFIO);
-//			request.setAttribute("Points", TextPoints);
+			double h; // кф класса ремонта
+			double p=1;
+			double g;
+			double r;
+			double z;
+			boolean haveKap;
+			double sum1;
+			double sum2;
+			String gen;
+			double sum4;
+			double sum5;
+			double pr1=Double.parseDouble(Usl1Get);
+			double pr2=Double.parseDouble(Usl2Get);
+			double pr3=Double.parseDouble(Usl3Get);
+			double pr4=Double.parseDouble(Usl4Get);
+			double pr5=Double.parseDouble(Usl5Get);
+			double pr6=Double.parseDouble(Usl6Get);
+			double pr7=Double.parseDouble(Usl7Get);
+			double pr8=Double.parseDouble(Usl8Get);
+			double pr9=Double.parseDouble(Usl9Get);
+			double pr10=Double.parseDouble(Usl10Get);
+			double pr11=Double.parseDouble(Usl11Get);
+			double pr12=Double.parseDouble(Usl12Get);
+			
+			
+			
+			
+		//	clh=FrameCalc.this.cl.getSelectedIndex();
+		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
+		//	int intradp=Integer.parseInt(SrokGet);
+		//	sostg=FrameCalc.this.sostBuild.getSelectedIndex();
+			//promocode = FrameCalc.this.promo.getText();
+			
+			// класс ремонта
+		//	  switch (clh){ 
+		//	  	case  (0):h=1;break;   			         
+		//	  	case  (1): h=1.21; break;
+		//	  	case  (2):h=1.42;break;
+		//	  default:break;
+		//	  }
+			  
+			// состояние строения
+		//	  switch (sostg){ 
+			//  	case  (0):g=1; break;
+			//  	case  (1):g=1.1; break;
+			//  	case  (2): g=1.15;break;
+		//	  default:g=0;break;
+		//	  }
+			  
+			// срок ремонта
+			 // switch (intradp) { 
+			 // 	case  (0):p=1.21;break;
+			 // 	case  (1):p=1;break;
+			//  default:p=1;break;
+			//  }
+			 
+			  
+			//  if(haveKap==true) { // наличие услуг как ремонта
+			//	 z=0.02; 
+			//  }else {
+			//	  z=0;
+			 // }
+			 
+			 
+			//  Inter1 i1 = new CalcPDF();
+			 // Inter2 i2 = new CalcPDF();
+			// Арифметика
+			// sum4=i2.xsum1(pr1,pr2,pr3,pr4);
+		    // sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
+
+		   //хз че это
+			// int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
+			// int s2=(int)(s1*p*g-s1*r);
+			 
+			// if (g==0){
+			//	 gen = "Работы не проводятся";
+			// }else{
+			//	 gen=Integer.toString(s2);
+			// } 
+	
+			
+			
+		
+			 
+	
 			request.setAttribute("Srok", TextSrok);
 			request.setAttribute("Usl1", TextUsl1);
 			request.setAttribute("Usl2", TextUsl2);
@@ -155,6 +235,6 @@ public class CalcPDF extends HttpServlet {
 		}
 		
 	}
-	
-	
+
 }
+
