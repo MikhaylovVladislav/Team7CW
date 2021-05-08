@@ -139,7 +139,7 @@ float: right;
 
 </fieldset>
 
-    <input type="submit" name="sign" value="Create PDF">
+    <input type="submit" name="sign" value="Вычислить">
 
 </form>
 <form action="${pageContext.request.contextPath}/Auth.jsp">
