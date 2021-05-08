@@ -144,19 +144,19 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			String gen;
 			double sum4;
 			double sum5;
-			double pr1=Double.parseDouble(Usl1Get);
-			double pr2=Double.parseDouble(Usl2Get);
-			double pr3=Double.parseDouble(Usl3Get);
-			double pr4=Double.parseDouble(Usl4Get);
-			double pr5=Double.parseDouble(Usl5Get);
-			double pr6=Double.parseDouble(Usl6Get);
-			double pr7=Double.parseDouble(Usl7Get);
-			double pr8=Double.parseDouble(Usl8Get);
-			double pr9=Double.parseDouble(Usl9Get);
-			double pr10=Double.parseDouble(Usl10Get);
-			double pr11=Double.parseDouble(Usl11Get);
-			double pr12=Double.parseDouble(Usl12Get);
-			
+
+			double pr1;
+			double pr2;
+			double pr3;
+			double pr4;
+			double pr5;
+			double pr6;
+			double pr7;
+			double pr8;
+			double pr9;
+			double pr10;
+			double pr11;
+			double pr12;
 			
 			
 			
@@ -201,16 +201,19 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Inter2 i2 = new CalcPDF();
 		//	Арифметика
 			  try {
-				  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
-				    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
-
-				  
-					int s1=(int)((((sum5)+(sum4)-(sum4)))); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
-				
-					
-					int s2=(int)(s1); //	int s2=(int)(s1*p*g-s1*r);
-					  gen=Integer.toString(s2);
-					  request.setAttribute("result5", gen);
+				  pr1=Double.parseDouble(Usl1Get);
+					 pr2=Double.parseDouble(Usl2Get);
+					 pr3=Double.parseDouble(Usl3Get);
+					 pr4=Double.parseDouble(Usl4Get);
+					 pr5=Double.parseDouble(Usl5Get);
+					 pr6=Double.parseDouble(Usl6Get);
+					 pr7=Double.parseDouble(Usl7Get);
+					 pr8=Double.parseDouble(Usl8Get);
+					 pr9=Double.parseDouble(Usl9Get);
+					 pr10=Double.parseDouble(Usl10Get);
+					 pr11=Double.parseDouble(Usl11Get);
+					 pr12=Double.parseDouble(Usl12Get);
+				 
 			    } catch (NumberFormatException e) {
 			    	pr1=0;
 					 pr2=0;
@@ -234,7 +237,16 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			// } 
 			
 			
+			  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
+			    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
+
+			  
+				int s1=(int)((((sum5)+(sum4)-(sum4)))); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
+				
+				int s2=(int)(s1); //	int s2=(int)(s1*p*g-s1*r);
+				  gen=Integer.toString(s2);
+				  request.setAttribute("result5", gen);
 		
 			 
 			
