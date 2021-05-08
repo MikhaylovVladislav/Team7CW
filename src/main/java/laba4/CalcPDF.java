@@ -202,32 +202,31 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	Арифметика
 			  try {
 				  pr1=Double.parseDouble(Usl1Get);
-					 pr2=Double.parseDouble(Usl2Get);
-					 pr3=Double.parseDouble(Usl3Get);
-					 pr4=Double.parseDouble(Usl4Get);
-					 pr5=Double.parseDouble(Usl5Get);
-					 pr6=Double.parseDouble(Usl6Get);
-					 pr7=Double.parseDouble(Usl7Get);
-					 pr8=Double.parseDouble(Usl8Get);
-					 pr9=Double.parseDouble(Usl9Get);
-					 pr10=Double.parseDouble(Usl10Get);
-					 pr11=Double.parseDouble(Usl11Get);
-					 pr12=Double.parseDouble(Usl12Get);
+					
 				 
 			    } catch (NumberFormatException e) {
 			    	pr1=0;
-					 pr2=0;
-					 pr3=0;
-					 pr4=0;
-					 pr5=0;
-					 pr6=0;
-					 pr7=0;
-					 pr8=0;
-					 pr9=0;
-					 pr10=0;
-					 pr11=0;
-					 pr12=0;
+		
 					
+			    }
+			  try {
+				  
+					 pr2=Double.parseDouble(Usl2Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr2=0;
+	
+			    }
+			  try {
+				  
+				  
+					 pr3=Double.parseDouble(Usl3Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr3=0;
+	
 			    }
 			 
 			// if (g==0){
@@ -235,7 +234,88 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			// }else{
 			//	
 			// } 
-			
+			  try {
+				  
+					 pr4=Double.parseDouble(Usl4Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr4=0;
+	
+			    }
+			  try {
+				  
+					 pr5=Double.parseDouble(Usl5Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr5=0;
+	
+			    }
+			  try {
+				  
+					 pr6=Double.parseDouble(Usl6Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr6=0;
+	
+			    }
+			  try {
+				  
+					 pr7=Double.parseDouble(Usl7Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr7=0;
+	
+			    }
+			  try {
+				  
+					 pr8=Double.parseDouble(Usl8Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr8=0;
+	
+			    }
+			  try {
+				  
+					 pr9=Double.parseDouble(Usl9Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr9=0;
+	
+			    }
+			  try {
+				  
+					 pr10=Double.parseDouble(Usl10Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr10=0;
+	
+			    }
+			  try {
+				  
+					 pr11=Double.parseDouble(Usl11Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr11=0;
+	
+			    }
+			  try {
+				  
+					 pr12=Double.parseDouble(Usl12Get);
+
+			    } catch (NumberFormatException e) {
+			    	
+					 pr12=0;
+	
+			    }
+		
 			
 			  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
 			    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
