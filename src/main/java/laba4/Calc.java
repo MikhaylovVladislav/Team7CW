@@ -56,14 +56,29 @@ public class Calc extends HttpServlet {
 		    }
 		        	
 			
-			if (first_calc=="") {
+			if ((a==1234 && b==4321)||(a==1 && b==1)||(a==2 && b==2)||(a==3 && b==3)) {
+				if(a==1) {
+					request.setAttribute("result", "Arsenii");;
+					request.setAttribute("result", "Arsenii");
+				}
+				if(a==2) {
+					request.setAttribute("result", "Maksim");;
+					request.setAttribute("result", "Maksim");
+				}
+				if(a==3) {
+					request.setAttribute("result", "Artem");;
+					request.setAttribute("result", "Artem");
+				}
+				if(a==1234) {
+					request.setAttribute("result", "Vladislav");;
+					request.setAttribute("result", "Vladislav");
+				}
 				
-				request.setAttribute("result", "Гость");;
-				request.setAttribute("result", "Гость");
 				} else {
 			
-			request.setAttribute("result", first_calc);;
-			request.setAttribute("result", first_calc);
+			
+			request.setAttribute("result", "Quest");;
+			request.setAttribute("result", "Quest");
 				}
 			if (a==1234 && b==4321) {
 				

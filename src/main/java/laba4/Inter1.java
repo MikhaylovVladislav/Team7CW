@@ -8,5 +8,9 @@ default double xsum2(double pr5,double pr6,double pr7,double pr8,double pr9,doub
 		return sum5;
 		
 	}
-	
+default double xsum3(double sum5,double sum4) {
+
+int s1=(int)((((sum5)+(sum4)-(sum4))));
+return s1;
+}
 }

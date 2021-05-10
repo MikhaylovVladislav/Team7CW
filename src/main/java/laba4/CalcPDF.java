@@ -43,10 +43,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	}
 	
 	private static class RequestCalc {
-//		private final String TextNumber;
-//		private final String TextGroup;
-//		private final String TextFIO;
-//		private final String TextPoints;
+
 		private final String TextSrok;
 		private final String TextUsl1;
 		private final String TextUsl2;
@@ -64,10 +61,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 
 						
 		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo) {
-//			this.TextNumber = Number;
-//			this.TextGroup = Group;
-//			this.TextFIO = FIO;
-//			this.TextPoints = Points;
+
 			this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
 			this.TextUsl2 = Usl2;
@@ -83,12 +77,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextUsl12 = Usl12;
 			this.TextPromo = Promo;
 
-			
-			
-//			NumberGet=TextNumber;
-//			GroupGet=TextGroup;
-//			FIOGet=TextFIO;
-//			PointsGet=TextPoints;
+
 			SrokGet=TextSrok;
 			Usl1Get=TextUsl1;
 			Usl2Get=TextUsl2;
@@ -110,10 +99,6 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-	//		request.getParameter("Number"),
-	//		request.getParameter("Group"),
-	//		request.getParameter("FIO"),
-	//		request.getParameter("Points"));
 			request.getParameter("Srok"),
 			request.getParameter("Usl1"),
 			request.getParameter("Usl2"),
@@ -321,7 +306,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
 
 			  
-				int s1=(int)((((sum5)+(sum4)-(sum4)))); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
+				double s1=i1.xsum3(sum5, sum4); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
 				
 				int s2=(int)(s1); //	int s2=(int)(s1*p*g-s1*r);

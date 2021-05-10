@@ -80,9 +80,9 @@ input {
 
 </fieldset>
 
-<form action="${pageContext.request.contextPath}/FaceCalc.jsp">
+<!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="back" value="Назад">
-    </form>
+    </form-->
 
 </fieldset>
 
