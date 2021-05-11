@@ -73,13 +73,13 @@ public class Calc extends HttpServlet {
 					request.setAttribute("result", "Vladislav");;
 					request.setAttribute("result", "Vladislav");
 				}
-				request.setAttribute("qwerta", "{pageContext.request.contextPath}/JavaCalc");;
-				request.setAttribute("qwerta", "{pageContext.request.contextPath}/JavaCalc");
+				request.setAttribute("qwerta", "JavaCalc");;
+				request.setAttribute("qwerta", "JavaCalc");
 				} else {
 			
 			
-			request.setAttribute("qwerta", " <form action=\\\"${pageContext.request.contextPath}/JavaCalc\\\" method=\\\"post\\\">");;
-			request.setAttribute("qwerta", " <form action=\\\"${pageContext.request.contextPath}/JavaCalc\\\" method=\\\"post\\\">");
+			request.setAttribute("qwerta", "Auth.jsp");;
+			request.setAttribute("qwerta", "Auth.jsp");
 				}
 			if (a==1234 && b==4321) {
 				
