@@ -83,7 +83,7 @@ input {
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="back" value="Назад">
     </form-->
-
+<button type="button" name="Назад" onclick="history.back()">back</button>
 </fieldset>
 
 
