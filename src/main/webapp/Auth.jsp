@@ -39,7 +39,7 @@ input {
 </head>
 <body>
  <fieldset class="com">
-   <form action="${qwerta}" method="post">
+   <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>
  <legend>Авторизация</legend>
 
