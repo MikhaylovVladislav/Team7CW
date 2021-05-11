@@ -19,15 +19,6 @@ public class Calc extends HttpServlet {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
-		Calc.setAsRequestAttributesAndCalculate(request);
-		 
-		request.getRequestDispatcher("/FaceCalc.jsp").forward(request, response);
-		
-	}
-	
 	private static class RequestCalc {
 		private final String first_calc;
 		private final String second_calc;
@@ -73,11 +64,11 @@ public class Calc extends HttpServlet {
 					request.setAttribute("result", "Vladislav");;
 					request.setAttribute("result", "Vladislav");
 				}
-
+				dis="/FaceCalc.jsp";
 				} else {
 			
-			
-					System.exit(1);
+					dis="/Auth.jsp";
+					
 				}
 			if (a==1234 && b==4321) {
 				
@@ -91,6 +82,15 @@ public class Calc extends HttpServlet {
 
 }
 	}
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
+		Calc.setAsRequestAttributesAndCalculate(request);
+		 
+		request.getRequestDispatcher(Calc.dis).forward(request, response);
+		
+	}
+	
+	
 }
 
 
