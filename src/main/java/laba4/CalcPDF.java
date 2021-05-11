@@ -150,8 +150,27 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 		//	clh=FrameCalc.this.cl.getSelectedIndex();
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
-			int intradp=Integer.parseInt(SrokGet);
-	        int	sostg=Integer.parseInt(sostGet);;
+			int intradp;
+	        int	sostg;
+	        try {
+	        	intradp=Integer.parseInt(SrokGet);
+					
+				 
+			    } catch (NumberFormatException e) {
+			    	intradp=0;
+		
+					
+			    }
+			  try {
+				  
+				  sostg=Integer.parseInt(sostGet);
+
+			    } catch (NumberFormatException e) {
+			    	
+			    	sostg=0;
+	
+			    }
+			 
 			//promocode = FrameCalc.this.promo.getText();
 			
 			// класс ремонта
