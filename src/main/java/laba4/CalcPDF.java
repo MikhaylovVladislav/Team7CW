@@ -28,6 +28,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String Usl11Get;
 	public static String Usl12Get;
 	public static String PromoGet;
+	public static String sostGet;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
@@ -58,9 +59,10 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextUsl11;
 		private final String TextUsl12;
 		private final String TextPromo;
+		private final String Textsost;
 
 						
-		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo) {
+		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String sost) {
 
 			this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -76,6 +78,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextUsl11= Usl11;
 			this.TextUsl12 = Usl12;
 			this.TextPromo = Promo;
+			this.Textsost = sost;
 
 
 			SrokGet=TextSrok;
@@ -92,7 +95,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Usl11Get=TextUsl11;
 			Usl12Get=TextUsl12;
 			PromoGet=TextPromo;
-			
+			sostGet=Textsost;
 			
 			
 			}
@@ -112,8 +115,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Usl10"),
 			request.getParameter("Usl11"),
 			request.getParameter("Usl12"),
-			request.getParameter("Promo"));
-			
+			request.getParameter("Promo"),
+			request.getParameter("sost"));
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
@@ -147,8 +150,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 		//	clh=FrameCalc.this.cl.getSelectedIndex();
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
-		//	int intradp=Integer.parseInt(SrokGet);
-		//	sostg=FrameCalc.this.sostBuild.getSelectedIndex();
+			int intradp=Integer.parseInt(SrokGet);
+	        int	sostg=Integer.parseInt(sostGet);;
 			//promocode = FrameCalc.this.promo.getText();
 			
 			// класс ремонта
@@ -160,19 +163,19 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	  }
 			  
 			// состояние строения
-		//	  switch (sostg){ 
-			//  	case  (0):g=1; break;
-			//  	case  (1):g=1.1; break;
-			//  	case  (2): g=1.15;break;
-		//	  default:g=0;break;
-		//	  }
+			  switch (sostg){ 
+			  	case  (0):g=1; break;
+			  	case  (1):g=1.1; break;
+			  	case  (2): g=1.15;break;
+			  default:g=0;break;
+			  }
 			  
 			// срок ремонта
-			 // switch (intradp) { 
-			 // 	case  (0):p=1.21;break;
-			 // 	case  (1):p=1;break;
-			//  default:p=1;break;
-			//  }
+			  switch (intradp) { 
+			 	case  (0):p=1.21;break;
+			  	case  (1):p=1;break;
+			  default:p=1;break;
+			  }
 			 
 			  
 			//  if(haveKap==true) { // наличие услуг как ремонта
@@ -309,7 +312,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				double s1=i1.xsum3(sum5, sum4); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
 				
-				int s2=(int)(s1); //	int s2=(int)(s1*p*g-s1*r);
+				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
 				  gen=Integer.toString(s2);
 				  request.setAttribute("result5", gen);
 		
