@@ -73,8 +73,8 @@ public class Calc extends HttpServlet {
 					request.setAttribute("result", "Vladislav");;
 					request.setAttribute("result", "Vladislav");
 				}
-				request.setAttribute("qwerta", " <form action=\"${pageContext.request.contextPath}/JavaCalc\" method=\"post\">");;
-				request.setAttribute("qwerta", " <form action=\\\"${pageContext.request.contextPath}/JavaCalc\\\" method=\\\"post\\\">");
+				request.setAttribute("qwerta", "{pageContext.request.contextPath}/JavaCalc");;
+				request.setAttribute("qwerta", "{pageContext.request.contextPath}/JavaCalc");
 				} else {
 			
 			
