@@ -124,7 +124,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
-			String sosg = request.getParameter("Sost");
+			
 			double h; // кф класса ремонта
 			double p=1;
 			double g=1;
@@ -157,7 +157,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			int intradp;
 	        int sostg;
 	        try {intradp=Integer.parseInt(SrokGet);} catch (NumberFormatException e) {intradp=0;}
-	        try {sostg=Integer.parseInt(sosg); } catch (NumberFormatException e) {sostg=0;}
+	        try {sostg=Integer.parseInt(SostGet); } catch (NumberFormatException e) {sostg=0;}
 	        switch (sostg){ 
 		  	case  (1):g=1; break;
 		  	case  (2):g=1.1; break;
