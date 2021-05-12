@@ -41,9 +41,9 @@ public CreatePDF() {
 		for(int i=0;i<(lengthpath-1);i++) {
 			abspath=abspath+parsfilepath[i]+"/";
 		}
-		filepath=abspath+"webapps/Check.pdf";
-		String imagepath=abspath+"webapps/picture/ugatu.png";
-		String fontpath =abspath+"/webapps/fonts/times.ttf";
+		filepath=abspath+"webapp/Check.pdf";
+		String imagepath=abspath+"webapp/picture/ugatu.png";
+		String fontpath =abspath+"/webapp/fonts/times.ttf";
     	
 		try {	
 			PdfWriter.getInstance(document, new FileOutputStream(filepath));
@@ -74,7 +74,7 @@ public CreatePDF() {
 		}
 	    
 	  //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó 
-		 
+		 paragraph.clear();
 		 String string_pdf3 = " ";
 		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
 		 
@@ -112,7 +112,7 @@ public CreatePDF() {
 	    
 	    
 		 //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
-		 
+		 paragraph.clear();
 		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
 		 
 		 try {
