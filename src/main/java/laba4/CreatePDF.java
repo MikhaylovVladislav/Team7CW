@@ -74,7 +74,7 @@ public CreatePDF() {
 		}
 	    
 	  //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó 
-		 paragraph.clear();
+		 
 		 String string_pdf3 = " ";
 		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
 		 
@@ -112,7 +112,7 @@ public CreatePDF() {
 	    
 	    
 		 //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
-		 paragraph.clear();
+		 
 		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
 		 
 		 try {
