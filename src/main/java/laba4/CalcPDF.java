@@ -171,7 +171,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		 	case  (3): g=1.15;break;
 		  	case  (4): g=1.2;break;
 		  	case  (5): g=1.25;break;
-		  default:g=0;break;
+		  default:g=1;break;
 		  }
 			 
 			//promocode = FrameCalc.this.promo.getText();
@@ -330,8 +330,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 				
 				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
+				String s3=Integer.toString(sostg);
 				  gen=Integer.toString(s2);
-				  request.setAttribute("result5", gen);
+				  request.setAttribute("result5", s3);
 		
 			 
 			
