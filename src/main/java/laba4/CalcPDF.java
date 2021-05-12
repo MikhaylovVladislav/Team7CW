@@ -123,7 +123,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 			double h; // кф класса ремонта
 			double p=1;
-			double g;
+			double g=1;
 			double r;
 			double z;
 			boolean haveKap;
@@ -161,14 +161,14 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 					
 			    }
-	        switch (sostGet){ 
-		  	case  ("Исправное состояние"):g=1; break;
-		  	case  ("Работоспособное состояние"):g=1.1; break;
-		  	case  ("Ограниченно работоспособное состояние"): g=1.15;break;
-		  	case  ("Недопустимое состояние состояние"): g=1.2;break;
-		  	case  ("Аварийное состояние"): g=1.25;break;
-		  default:g=1;break;
-		  }
+	       // switch (sostGet){ 
+		  //	case  ("Исправное состояние"):g=1; break;
+		  //	case  ("Работоспособное состояние"):g=1.1; break;
+		  //	case  ("Ограниченно работоспособное состояние"): g=1.15;break;
+		  //	case  ("Недопустимое состояние состояние"): g=1.2;break;
+		  //	case  ("Аварийное состояние"): g=1.25;break;
+		  //default:g=1;break;
+		  //}
 			 
 			//promocode = FrameCalc.this.promo.getText();
 			
