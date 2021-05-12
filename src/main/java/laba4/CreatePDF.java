@@ -60,11 +60,11 @@ public CreatePDF() {
 			e.printStackTrace();
 		}
 		
-		String string_pdf = "здравствуйте! Этот создание пдф файла";
+		String string_pdf = "здравствуйте! Это пдф-файлик";
 		Paragraph paragraph = new Paragraph();
 	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
 	    
-	    String string_pdf2 = "ДАААААААаа";
+	    String string_pdf2 = "Он для вас";
 	    paragraph.add(new Paragraph(string_pdf2, new Font(times,14)));
 	
 	    try {
@@ -84,7 +84,7 @@ public CreatePDF() {
 				e1.printStackTrace();
 			}
     	
-	    
+	 
 	  //äîáàâëåíèå èçîáðàæåíèÿ â pdf
 	    Image img = null;
 		try {

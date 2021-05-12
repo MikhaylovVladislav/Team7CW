@@ -44,7 +44,7 @@ input {
 
 
 
-<body>
+<body bgcolor="#008B8B">
 
 <fieldset class = "com">
 

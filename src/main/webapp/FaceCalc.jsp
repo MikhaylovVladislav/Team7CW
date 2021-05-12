@@ -42,7 +42,7 @@ float: right;
 }
 </style>
 </head>
-<body>
+<body bgcolor="#008B8B">
 
 
 <fieldset class = "com">
