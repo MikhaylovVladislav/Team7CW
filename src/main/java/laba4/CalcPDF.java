@@ -222,7 +222,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
 				String s3=Integer.toString(sostg);
 				  gen=Integer.toString(s2);
-				  request.setAttribute("result5", TextSost);
+				  request.setAttribute("result5", s3);
 		
 			 
 			
