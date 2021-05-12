@@ -156,9 +156,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
 			int intradp;
 	        int sostg;
-	        sostg=Integer.parseInt(SrokGet);
 	        try {intradp=Integer.parseInt(SrokGet);} catch (NumberFormatException e) {intradp=0;}
-	        //try {sostg=Integer.parseInt(SostGet); } catch (NumberFormatException e) {sostg=0;}
+	        try {sostg=Integer.parseInt(SostGet); } catch (NumberFormatException e) {sostg=0;}
 	        switch (sostg){ 
 		  	case  (1):g=1; break;
 		  	case  (2):g=1.1; break;
@@ -199,7 +198,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
 		//	Арифметика
-			  try {pr1=Double.parseDouble(Usl1Get); } catch (NumberFormatException e) {pr1=0;}
+			  try {pr1=Double.parseDouble(Usl1Get);} catch (NumberFormatException e) {pr1=0;}
 			  try {pr2=Double.parseDouble(Usl2Get);} catch (NumberFormatException e) {pr2=0;}
 			  try {pr3=Double.parseDouble(Usl3Get);} catch (NumberFormatException e) {pr3=0;}
 			  try {pr4=Double.parseDouble(Usl4Get);} catch (NumberFormatException e) {pr4=0;}
