@@ -60,11 +60,11 @@ public CreatePDF() {
 			e.printStackTrace();
 		}
 		
-		String string_pdf = "Äîáðûé äåíü çàìå÷àòåëüíûå ãðóïïû ÏÈ âòîðîãî êóðñà êàôåäðû ÀÑÓ ÓÃÀÒÓ! Òåñòîâîå ïðèëîæåíèÿ äëÿ ñîçäàíèÿ PDF ôàéëà.";
+		String string_pdf = "вЛАДИСЛАВ";
 		Paragraph paragraph = new Paragraph();
 	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
 	    
-	    String string_pdf2 = "Äîïîëíèòåëüíûé òåêñò, êîòîðûé âûâîäèòñÿ â PDF. Ïðè ýòîì íóæíî ïîíèìàòü, ÷òî ìîæíî óêàçûâàòü çíà÷åíèÿ ïåðåìåííûõ, êîòîðûå áóäóò âûâîäèòñÿ â ôàéë PDF.";
+	    String string_pdf2 = "ДААААААА";
 	    paragraph.add(new Paragraph(string_pdf2, new Font(times,14)));
 	
 	    try {
