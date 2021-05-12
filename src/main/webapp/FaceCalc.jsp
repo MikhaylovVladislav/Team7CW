@@ -50,7 +50,7 @@ float: right;
 
 <fieldset>
  <legend> Состояние строения </legend>
- <form action="resources" method="post" >
+ <form action="CalcPDF" method="post" >
 <select id="Sost" name="Sost">
   <option value="1">Исправное состояние</option>
   <option value="2">Работоспособное состояние</option>
