@@ -34,7 +34,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
 		
-		
+		response.setContentType("text/html");
 		request.getRequestDispatcher("/Results.jsp").forward(request, response);
 				 
 		CreatePDF PDF = new CreatePDF();
@@ -150,26 +150,26 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 		//	clh=FrameCalc.this.cl.getSelectedIndex();
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
-			int intradp;
-	        int	sostg;
-	        try {
-	        	intradp=Integer.parseInt(SrokGet);
+			int intradp=0;
+	      //  int	sostg;
+	     //   try {
+	       // 	intradp=Integer.parseInt(SrokGet);
 					
 				 
-			    } catch (NumberFormatException e) {
-			    	intradp=0;
+			//    } catch (NumberFormatException e) {
+			//    	intradp=0;
 		
 					
-			    }
-			  try {
+			//    }
+			//  try {
 				  
-				  sostg=Integer.parseInt(sostGet);
+			//	  sostg=Integer.parseInt(sostGet);
 
-			    } catch (NumberFormatException e) {
+			//    } catch (NumberFormatException e) {
 			    	
-			    	sostg=0;
+			 //   	sostg=0;
 	
-			    }
+			//    }
 			 
 			//promocode = FrameCalc.this.promo.getText();
 			
@@ -182,11 +182,13 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	  }
 			  
 			// состояние строения
-			  switch (sostg){ 
-			  	case  (0):g=1; break;
-			  	case  (1):g=1.1; break;
-			  	case  (2): g=1.15;break;
-			  default:g=0;break;
+			  switch (sostGet){ 
+			  	case  ("Исправное состояние"):g=1; break;
+			  	case  ("Работоспособное состояние"):g=1.1; break;
+			  	case  ("Ограниченно работоспособное состояние"): g=1.15;break;
+			  	case  ("Недопустимое состояние состояние"): g=1.2;break;
+			  	case  ("Аварийное состояние"): g=1.25;break;
+			  default:g=1;break;
 			  }
 			  
 			// срок ремонта
