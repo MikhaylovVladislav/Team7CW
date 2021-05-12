@@ -50,13 +50,15 @@ float: right;
 
 <fieldset>
  <legend> Состояние строения </legend>
+ <form action="resources" method="post" >
 <select id="Sost" name="Sost">
-  <option value=1>Исправное состояние</option>
-  <option value=2>Работоспособное состояние</option>
-    <option value=3>Ограниченно работоспособное состояние</option>
-  <option value=4>Недопустимое состояние состояние</option>
-   <option value=5>Аварийное состояние</option>
+  <option value="1">Исправное состояние</option>
+  <option value="2">Работоспособное состояние</option>
+    <option value="3">Ограниченно работоспособное состояние</option>
+  <option value="4">Недопустимое состояние состояние</option>
+   <option value="5">Аварийное состояние</option>
 </select>
+</form>
 </fieldset>
 
 <fieldset>
