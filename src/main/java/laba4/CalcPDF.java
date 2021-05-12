@@ -151,7 +151,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	clh=FrameCalc.this.cl.getSelectedIndex();
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
 			int intradp;
-	        int	sostg;
+	      
 	        try {
 	        	intradp=Integer.parseInt(SrokGet);
 					
@@ -161,15 +161,14 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 					
 			    }
-			  try {
-				  
-				  sostg=Integer.parseInt(sostGet);
-
-			    } catch (NumberFormatException e) {
-			    	
-			    	sostg=0;
-	
-			    }
+	        switch (sostGet){ 
+		  	case  ("Исправное состояние"):g=1; break;
+		  	case  ("Работоспособное состояние"):g=1.1; break;
+		  	case  ("Ограниченно работоспособное состояние"): g=1.15;break;
+		  	case  ("Недопустимое состояние состояние"): g=1.2;break;
+		  	case  ("Аварийное состояние"): g=1.25;break;
+		  default:g=1;break;
+		  }
 			 
 			//promocode = FrameCalc.this.promo.getText();
 			
@@ -182,12 +181,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	  }
 			  
 			// состояние строения
-			  switch (sostg){ 
-			  	case  (0):g=1; break;
-			  	case  (1):g=1.1; break;
-			  	case  (2): g=1.15;break;
-			  default:g=0;break;
-			  }
+			  
 			  
 			// срок ремонта
 			  switch (intradp) { 
@@ -333,7 +327,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				
 				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
 				  gen=Integer.toString(s2);
-				  request.setAttribute("result5", gen);
+				  request.setAttribute("result5", sostGet);
 		
 			 
 			
