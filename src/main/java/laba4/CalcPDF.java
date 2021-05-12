@@ -1,7 +1,6 @@
 package laba4;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -36,18 +35,6 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
 		response.setContentType("text/html");
-        PrintWriter writer = response.getWriter();
- 
-        String name = request.getParameter("Sost");
-       
-         
-        try {
-            writer.println("<p>Name: " + name + "</p>");
-           
-            
-        } finally {
-            writer.close();  
-        }
 		
 		request.getRequestDispatcher("/Results.jsp").forward(request, response);
 				 
@@ -168,24 +155,24 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	clh=FrameCalc.this.cl.getSelectedIndex();
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
 			int intradp;
-	      
+	        int sostg;
 	        try {
 	        	intradp=Integer.parseInt(SrokGet);
-					
+	        	sostg=Integer.parseInt(SostGet);	
 				 
 			    } catch (NumberFormatException e) {
 			    	intradp=0;
-		
+		            sostg=0;
 					
 			    }
-	       // switch (sostGet){ 
-		  //	case  ("Исправное состояние"):g=1; break;
-		  //	case  ("Работоспособное состояние"):g=1.1; break;
-		  //	case  ("Ограниченно работоспособное состояние"): g=1.15;break;
-		  //	case  ("Недопустимое состояние состояние"): g=1.2;break;
-		  //	case  ("Аварийное состояние"): g=1.25;break;
-		  //default:g=1;break;
-		  //}
+	        switch (sostg){ 
+		  	case  (1):g=1; break;
+		  	case  (2):g=1.1; break;
+		 	case  (3): g=1.15;break;
+		  	case  (4): g=1.2;break;
+		  	case  (5): g=1.25;break;
+		  default:g=0;break;
+		  }
 			 
 			//promocode = FrameCalc.this.promo.getText();
 			
