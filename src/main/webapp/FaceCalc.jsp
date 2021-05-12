@@ -50,7 +50,7 @@ float: right;
 
 <fieldset>
  <legend> Состояние строения </legend>
-<select name="Sost">
+<select id="Sost" name="Sost">
   <option value=1>Исправное состояние</option>
   <option value=2>Работоспособное состояние</option>
     <option value=3>Ограниченно работоспособное состояние</option>
