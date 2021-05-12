@@ -37,7 +37,7 @@ input {
 }
 </style>
 </head>
-<body>
+<body bgcolor="#008B8B">
  <fieldset class="com">
    <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>
