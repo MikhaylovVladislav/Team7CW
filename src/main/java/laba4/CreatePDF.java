@@ -26,47 +26,45 @@ public class CreatePDF {
 	
 
 	
-    public CreatePDF() {
+public CreatePDF() {
     	
     }
-    public void Create(String numberpdf) {
+    public void Create(String numberpdf) throws IOException {
       	
-    	Document document = new Document(); //ñîçäàíèå êëàññà Document
-		try {
-			//  /var/apache-tomcat-9.0.39/webapps/CreatePDF/
-			PdfWriter.getInstance(document, new FileOutputStream("Check.pdf"));
-			
-			
-			
-			//String INPUTFILE = "/Check.pdf";
-			//PdfReader reader = new PdfReader(getServletContex().getRealPath(INPUTFILE));
-			//PdfWriter.getInstance(document, new FileOutputStream("\\src\\main\\webapp\\Check.pdf"));
-			
-			//InputStream inputStream = this.getClass().getResourceAsStream("/Check.pdf"); 
-			//PdfWriter.getInstance(document, new FileOutputStream(inputStream));
-			
-			
+    	Document document = new Document(); //ñîçäàíèå êëàññà Documentыфы
+    	
+    	String filepath = new File("").getCanonicalPath();
+		String[] parsfilepath = filepath.split("/");
 		
-			
-			
+		int lengthpath = parsfilepath.length;
+		String abspath=""; 
+		for(int i=0;i<(lengthpath-1);i++) {
+			abspath=abspath+parsfilepath[i]+"/";
+		}
+		filepath=abspath+"webapps/Check.pdf";
+		String imagepath=abspath+"webapps/picture/ugatu.png";
+		String fontpath =abspath+"/webapps/fonts/times.ttf";
+    	
+		try {	
+			PdfWriter.getInstance(document, new FileOutputStream(filepath));
 		} catch (FileNotFoundException | DocumentException e) {
 			e.printStackTrace();
 		}
-			
+				
 		document.open(); 
 		
 		BaseFont times = null;
 		try {
-			times = BaseFont.createFont("/fonts/times.ttf", "cp1251", BaseFont.EMBEDDED);
+			times = BaseFont.createFont(fontpath, "cp1251", BaseFont.EMBEDDED);
 		} catch (DocumentException | IOException e) {
 			e.printStackTrace();
 		}
 		
-		String string_pdf = "Hello";
+		String string_pdf = "Äîáðûé äåíü çàìå÷àòåëüíûå ãðóïïû ÏÈ âòîðîãî êóðñà êàôåäðû ÀÑÓ ÓÃÀÒÓ! Òåñòîâîå ïðèëîæåíèÿ äëÿ ñîçäàíèÿ PDF ôàéëà.";
 		Paragraph paragraph = new Paragraph();
 	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
 	    
-	    String string_pdf2 = "From Team 7";
+	    String string_pdf2 = "Äîïîëíèòåëüíûé òåêñò, êîòîðûé âûâîäèòñÿ â PDF. Ïðè ýòîì íóæíî ïîíèìàòü, ÷òî ìîæíî óêàçûâàòü çíà÷åíèÿ ïåðåìåííûõ, êîòîðûå áóäóò âûâîäèòñÿ â ôàéë PDF.";
 	    paragraph.add(new Paragraph(string_pdf2, new Font(times,14)));
 	
 	    try {
@@ -86,20 +84,11 @@ public class CreatePDF {
 				e1.printStackTrace();
 			}
     	
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-		 
-	    /*
+	    
 	  //äîáàâëåíèå èçîáðàæåíèÿ â pdf
-	    URL url = getClass().getResource("/picture/ugatu.png");
 	    Image img = null;
 		try {
-			img = Image.getInstance(url.toString());
+			img = Image.getInstance(imagepath);
 			
 			
 		} catch (BadElementException e2) {
@@ -124,7 +113,6 @@ public class CreatePDF {
 	    
 		 //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
 		 paragraph.clear();
-		 String string_pdf3 = " ";
 		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
 		 
 		 try {
@@ -132,14 +120,8 @@ public class CreatePDF {
 			} catch (DocumentException e1) {
 				e1.printStackTrace();
 			}
-	    */
+	    
 		 
-		 
-		 
-		 
-		 
-		 
-		
 		//äîáàâëåíèå òàáëèöû
 		 PdfPTable table = new PdfPTable(4); //ñîçäàíèå òàáëèöû ñ 4 ñòîëáöàìè
 		 addHeader(table);
@@ -152,7 +134,9 @@ public class CreatePDF {
 		}
 	    
 	    document.close(); //çàêðûòèå è ñîõðàíåíèå äîêóìåíòà PDF
-    }
+    } 
+    
+    
     
 private void addRows(PdfPTable table) {
 		
@@ -184,7 +168,7 @@ private void addRows(PdfPTable table) {
 		table.addCell(cell9);
 	    table.addCell(cell10);
 	    table.addCell(cell11);
-	    table.addCell(cell12);
+	    table.addCell(cell12); 
 	    table.addCell(cell13);
 	    table.addCell(cell14);
 		
