@@ -33,7 +33,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
-		
+		response.setContentType("text/html");
 		
 		request.getRequestDispatcher("/Results.jsp").forward(request, response);
 				 
