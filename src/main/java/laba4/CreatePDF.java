@@ -60,7 +60,7 @@ public CreatePDF() {
 			e.printStackTrace();
 		}
 		
-		String string_pdf = "вЛАДИСЛАВ";
+		String string_pdf = "здравствуйте! Этот создание пдф файла";
 		Paragraph paragraph = new Paragraph();
 	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
 	    
