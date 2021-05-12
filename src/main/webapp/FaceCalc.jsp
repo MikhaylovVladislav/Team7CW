@@ -143,11 +143,10 @@ float: right;
     <input type="file" name="load" value="Загрузить файл-настройки" ${dis}>
     </form>
     
-          <form action = "UploadServlet" method = "post" enctype = "multipart/form-data">
-         <input type = "file" name = "file" size = "50" />
-         <br />
-         <input type = "submit" value = "Upload File" />
-      </form>
+<form action="${pageContext.request.contextPath}/upload" method="post" enctype="multipart/form-data">
+<input type="file" name="file" />
+<input type="submit" />
+   </form>
     
 </fieldset>
 
