@@ -35,9 +35,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
 		response.setContentType("text/html");
-		
+		String sost=request.getParameter("Sost");
 		request.getRequestDispatcher("/Results.jsp").forward(request, response);
-				 
+		request.setAttribute("result5", sost);		 
 		CreatePDF PDF = new CreatePDF();
 		String goals = "Hello";
 		PDF.Create(goals);
@@ -331,7 +331,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				
 				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
 				  gen=Integer.toString(s2);
-				  request.setAttribute("result5", TextSost);
+				//  request.setAttribute("result5", TextSost);
 		
 			 
 			
