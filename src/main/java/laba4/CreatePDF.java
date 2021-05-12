@@ -64,7 +64,7 @@ public CreatePDF() {
 		Paragraph paragraph = new Paragraph();
 	    paragraph.add(new Paragraph(string_pdf, new Font(times,14)));
 	    
-	    String string_pdf2 = "ДААААААА";
+	    String string_pdf2 = "ДАААААААа";
 	    paragraph.add(new Paragraph(string_pdf2, new Font(times,14)));
 	
 	    try {
