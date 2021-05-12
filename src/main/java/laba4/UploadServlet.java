@@ -95,6 +95,30 @@ public class UploadServlet extends HttpServlet {
                out.println("Uploaded Filename: " + fileName + "<br>");
             }
          }
+         
+      // построчное считывание файла
+
+         try {
+         //создаем объект FileReader для объекта File
+         FileReader fr = new FileReader(file);
+         //создаем BufferedReader с существующего FileReader для построчного считывания
+         BufferedReader reader = new BufferedReader(fr);
+         // считаем сначала первую строку
+         String line = reader.readLine();
+
+         while (line != null) {
+         String number = line.substring(line.lastIndexOf("=") + 1);
+         System.out.println(number);
+         // считываем остальные строки в цикле
+         line = reader.readLine();
+         }
+         } catch (FileNotFoundException e) {
+         e.printStackTrace();
+         } catch (IOException e) {
+         e.printStackTrace();
+         }
+         
+         
          out.println("</body>");
          out.println("</html>");
          } catch(Exception ex) {
