@@ -139,12 +139,10 @@ float: right;
     <input type="submit" name="exit" value="Выйти">
     </form>
     
-     <form>
-    <input type="file" name="load" value="Загрузить файл-настройки" ${dis}>
-    </form>
+     
     
 <form action="${pageContext.request.contextPath}/upload" method="post" enctype="multipart/form-data">
-<input type="file" name="file" />
+<input type="file" name="file" ${dis}/>
 <input type="submit" />
    </form>
     
