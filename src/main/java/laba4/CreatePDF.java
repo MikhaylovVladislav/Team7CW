@@ -24,7 +24,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 public class CreatePDF {
 	
-
+	 public String filepath;
 	
 public CreatePDF() {
     	
@@ -33,19 +33,21 @@ public CreatePDF() {
       	
     	Document document = new Document(); //ñîçäàíèå êëàññà Documentыфы
     	
-    	String filepath = new File("").getCanonicalPath();
-		String[] parsfilepath = filepath.split("/");
-		
-		int lengthpath = parsfilepath.length;
-		String abspath=""; 
-		for(int i=0;i<(lengthpath-1);i++) {
-			abspath=abspath+parsfilepath[i]+"/";
-		}
-		filepath=abspath+"webapp/Check.pdf";
-		String imagepath=abspath+"webapp/picture/ugatu.png";
-		String fontpath =abspath+"/webapp/fonts/times.ttf";
-    	
-		try {	
+try {
+			
+			filepath = new File("").getCanonicalPath();
+			/*String[] parsfilepath = filepath.split("/");
+			
+			int lengthpath = parsfilepath.length;
+			String abspath=""; 
+			for(int i=0;i<(lengthpath-1);i++) {
+				abspath=abspath+parsfilepath[i]+"/";
+			}
+			filepath=abspath+"Check.pdf";
+			filepath="/tmp/Check.pdf"; */
+			filepath="/Check1.pdf";
+			
+						
 			PdfWriter.getInstance(document, new FileOutputStream(filepath));
 		} catch (FileNotFoundException | DocumentException e) {
 			e.printStackTrace();
@@ -54,8 +56,9 @@ public CreatePDF() {
 		document.open(); 
 		
 		BaseFont times = null;
+		
 		try {
-			times = BaseFont.createFont(fontpath, "cp1251", BaseFont.EMBEDDED);
+			times = BaseFont.createFont("/fonts/times.ttf", "cp1251", BaseFont.EMBEDDED);
 		} catch (DocumentException | IOException e) {
 			e.printStackTrace();
 		}
@@ -87,7 +90,7 @@ public CreatePDF() {
 	 
 	  //äîáàâëåíèå èçîáðàæåíèÿ â pdf
 	    Image img = null;
-		try {
+	/*	try {
 			img = Image.getInstance(imagepath);
 			
 			
@@ -109,7 +112,7 @@ public CreatePDF() {
 			} catch (DocumentException e) {
 				e.printStackTrace();
 			}
-	    
+	     */
 	    
 		 //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
 		 paragraph.clear();
@@ -121,7 +124,7 @@ public CreatePDF() {
 				e1.printStackTrace();
 			}
 	    
-		 
+		
 		//äîáàâëåíèå òàáëèöû
 		 PdfPTable table = new PdfPTable(4); //ñîçäàíèå òàáëèöû ñ 4 ñòîëáöàìè
 		 addHeader(table);
