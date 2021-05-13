@@ -23,7 +23,8 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
 public class CreatePDF {
-	
+	/*
+	/*
 	 public String filepath;
 	
 public CreatePDF() {
@@ -45,9 +46,9 @@ try {
 			}
 			filepath=abspath+"Check.pdf";
 			filepath="/tmp/Check.pdf"; */
-			filepath="/Check1.pdf";
+			//filepath="/Check1.pdf";
 			
-						
+	/*					
 			PdfWriter.getInstance(document, new FileOutputStream(filepath));
 		} catch (FileNotFoundException | DocumentException e) {
 			e.printStackTrace();
@@ -115,10 +116,10 @@ try {
 	     */
 	    
 		 //îðãàíèçàöèÿ ïåðåõîäà íà ñëåäóþùóþ ñòðîêó
-		 paragraph.clear();
-		 paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
+		 //paragraph.clear();
+		 //paragraph.add(new Paragraph(string_pdf3, new Font(times,14)));
 		 
-		 try {
+		/* try {
 				document.add(paragraph);
 			} catch (DocumentException e1) {
 				e1.printStackTrace();
@@ -141,15 +142,15 @@ try {
     
     
     
-private void addRows(PdfPTable table) {
+//private void addRows(PdfPTable table) {
 		
 		//çàïîëíåíèå òàáëèöû ââîäèìûìè çíà÷åíèÿ â òåêñòîâûå ïîëÿ íà ãëàâíîé ôîðìå
-		String cell1 = CalcPDF.SrokGet;
-		String cell2 = CalcPDF.Usl1Get;
-		String cell3 = CalcPDF.Usl2Get;
-		String cell4 = CalcPDF.Usl3Get;
-		String cell5 = CalcPDF.Usl4Get;
-		String cell6 = CalcPDF.Usl5Get;
+		//String cell1 = CalcPDF.SrokGet;
+		//String cell2 = CalcPDF.Usl1Get;
+		//String cell3 = CalcPDF.Usl2Get;
+		//String cell4 = CalcPDF.Usl3Get;
+		//String cell5 = CalcPDF.Usl4Get;
+		/*String cell6 = CalcPDF.Usl5Get;
 		String cell7 = CalcPDF.Usl6Get;
 		String cell8 = CalcPDF.Usl7Get;
 		String cell9 = CalcPDF.Usl8Get;
@@ -158,14 +159,14 @@ private void addRows(PdfPTable table) {
 		String cell12 = CalcPDF.Usl11Get;
 		String cell13 = CalcPDF.Usl12Get;
 		String cell14 = CalcPDF.PromoGet;
-
-				
-		table.addCell(cell1);
+		*/
+	/*			
+		//table.addCell(cell1);
 	    table.addCell(cell2);
 	    table.addCell(cell3);
 	    table.addCell(cell4);
 		table.addCell(cell5);
-	    table.addCell(cell6);
+	    /*table.addCell(cell6);
 	    table.addCell(cell7);
 	    table.addCell(cell8);
 		table.addCell(cell9);
@@ -174,18 +175,19 @@ private void addRows(PdfPTable table) {
 	    table.addCell(cell12); 
 	    table.addCell(cell13);
 	    table.addCell(cell14);
-		
+		*/
 	    //âûøå äîëæåí áûòü òåêñò íà ðóññêîì ÿçûêå, êàê åãî âûâåñòè ìîæíî ïîñìîòðåòü â ñïðàâêå.в
-	}
+	//}
 
-private void addHeader(PdfPTable table) {
-	Stream.of("Srok", "Usl1", "Usl2", "Usl3", "Usl4", "Usl5", "Usl6", "Usl7", "Usl8", "Usl9", "Usl10", "Usl11", "Usl12", "Calc")
-      .forEach(columnTitle -> {
-        PdfPCell header = new PdfPCell();
-        header.setBackgroundColor(BaseColor.LIGHT_GRAY);
-        header.setBorderWidth(2);
-        header.setPhrase(new Phrase(columnTitle));
-        table.addCell(header);
-    });
-}
+//private void addHeader(PdfPTable table) {
+	//Stream.of("Srok", "Usl1", "Usl2", "Usl3", "Usl4", "Usl5", "Usl6", "Usl7", "Usl8", "Usl9", "Usl10", "Usl11", "Usl12", "Calc")
+      //.forEach(columnTitle -> {
+       // PdfPCell header = new PdfPCell();
+        //header.setBackgroundColor(BaseColor.LIGHT_GRAY);
+       // header.setBorderWidth(2);
+       // header.setPhrase(new Phrase(columnTitle));
+       // table.addCell(header);
+   // });
+//}
+
 }

@@ -14,12 +14,12 @@ import javax.servlet.http.HttpServletResponse;
 public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 
 
-	public static String SrokGet;
+	//public static String SrokGet;
 	public static String Usl1Get;
 	public static String Usl2Get;
 	public static String Usl3Get;
 	public static String Usl4Get;
-	public static String Usl5Get;
+	/*public static String Usl5Get;
 	public static String Usl6Get;
 	public static String Usl7Get;
 	public static String Usl8Get;
@@ -29,7 +29,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String Usl12Get;
 	public static String PromoGet;
 	public static String SostGet;
-	
+	*/
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
@@ -38,20 +38,20 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 		request.getRequestDispatcher("/Results.jsp").forward(request, response);
 				 
-		CreatePDF PDF = new CreatePDF();
+		TestPDF PDF = new TestPDF();
 		String goals = "Hello";
-		PDF.Create(goals);
+		PDF.Create("HELL");
 		
 	}
 	
 	private static class RequestCalc {
 
-		private final String TextSrok;
+		//private final String TextSrok;
 		private final String TextUsl1;
 		private final String TextUsl2;
 		private final String TextUsl3;
 		private final String TextUsl4;
-		private final String TextUsl5;
+		/*private final String TextUsl5;
 		private final String TextUsl6;
 		private final String TextUsl7;
 		private final String TextUsl8;
@@ -61,16 +61,16 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextUsl12;
 		private final String TextPromo;
 		private final String TextSost;
-
+*/
 						
-		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost) {
+		private RequestCalc (String Usl1, String Usl2, String Usl3, String Usl4) {
 
-			this.TextSrok = Srok;
+			//this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
 			this.TextUsl2 = Usl2;
 			this.TextUsl3 = Usl3;
 			this.TextUsl4 = Usl4;
-			this.TextUsl5 = Usl5;
+			/*this.TextUsl5 = Usl5;
 			this.TextUsl6 = Usl6;
 			this.TextUsl7 = Usl7;
 			this.TextUsl8 = Usl8;
@@ -80,15 +80,15 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextUsl12 = Usl12;
 			this.TextPromo = Promo;
 			this.TextSost = Sost;
-			
+			*/
 
 
-			SrokGet=TextSrok;
+			//SrokGet=TextSrok;
 			Usl1Get=TextUsl1;
 			Usl2Get=TextUsl2;
 			Usl3Get=TextUsl3;
 			Usl4Get=TextUsl4;
-			Usl5Get=TextUsl5;
+			/*Usl5Get=TextUsl5;
 			Usl6Get=TextUsl6;
 			Usl7Get=TextUsl7;
 			Usl8Get=TextUsl8;
@@ -98,19 +98,19 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Usl12Get=TextUsl12;
 			PromoGet=TextPromo;
 			SostGet=TextSost;
-			
+			*/
 			
 			
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("Srok"),
+			//request.getParameter("Srok"),
 			request.getParameter("Usl1"),
 			request.getParameter("Usl2"),
 			request.getParameter("Usl3"),
-			request.getParameter("Usl4"),
-			request.getParameter("Usl5"),
+			request.getParameter("Usl4"));
+			/*request.getParameter("Usl5"),
 			request.getParameter("Usl6"),
 			request.getParameter("Usl7"),
 			request.getParameter("Usl8"),
@@ -120,7 +120,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Usl12"),
 			request.getParameter("Promo"),
 			request.getParameter("Sost"));
-			
+			*/
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
@@ -156,7 +156,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
 			int intradp;
 	        int sostg;
-	        try {intradp=Integer.parseInt(SrokGet);} catch (NumberFormatException e) {intradp=0;}
+	        //try {intradp=Integer.parseInt(SrokGet);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(sosg); } catch (NumberFormatException e) {sostg=0;}
 	        switch (sostg){ 
 		  	case  (1):g=1; break;
@@ -181,12 +181,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  
 			 
 			// срок ремонта
-			  switch (intradp) { 
+			 /* switch (intradp) { 
 			 	case  (0):p=1.21;break;
 			  	case  (1):p=1;break;
 			  default:p=1;break;
 			  }
-			 
+			 */
 			  
 			//  if(haveKap==true) { // наличие услуг как ремонта
 			//	 z=0.02; 
@@ -202,7 +202,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  try {pr2=Double.parseDouble(Usl2Get);} catch (NumberFormatException e) {pr2=0;}
 			  try {pr3=Double.parseDouble(Usl3Get);} catch (NumberFormatException e) {pr3=0;}
 			  try {pr4=Double.parseDouble(Usl4Get);} catch (NumberFormatException e) {pr4=0;}
-			  try {pr5=Double.parseDouble(Usl5Get);} catch (NumberFormatException e) {pr5=0;}
+			  /*try {pr5=Double.parseDouble(Usl5Get);} catch (NumberFormatException e) {pr5=0;}
 			  try {pr6=Double.parseDouble(Usl6Get);} catch (NumberFormatException e) {pr6=0;}
 			  try {pr7=Double.parseDouble(Usl7Get);} catch (NumberFormatException e) {pr7=0;}
 			  try {pr8=Double.parseDouble(Usl8Get);} catch (NumberFormatException e) {pr8=0;}
@@ -210,10 +210,10 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  try {pr10=Double.parseDouble(Usl10Get);} catch (NumberFormatException e) {pr10=0;}
 			  try {pr11=Double.parseDouble(Usl11Get);} catch (NumberFormatException e) {pr11=0;}
 			  try {pr12=Double.parseDouble(Usl12Get);} catch (NumberFormatException e) {pr12=0;}
-		
+		*/
 			
 			  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
-			    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
+			    sum5=i1.xsum2(5,6,7,8,9,10,11,12);
 
 			  
 				double s1=i1.xsum3(sum5, sum4); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
@@ -225,12 +225,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 			 
 			
-			request.setAttribute("Srok", TextSrok);
+			//request.setAttribute("Srok", TextSrok);
 			request.setAttribute("Usl1", TextUsl1);
 			request.setAttribute("Usl2", TextUsl2);
 			request.setAttribute("Usl3", TextUsl3);
 			request.setAttribute("Usl4", TextUsl4);
-			request.setAttribute("Usl5", TextUsl5);
+			/*request.setAttribute("Usl5", TextUsl5);
 			request.setAttribute("Usl6", TextUsl6);
 			request.setAttribute("Usl7", TextUsl7);
 			request.setAttribute("Usl8", TextUsl8);
@@ -239,6 +239,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.setAttribute("Usl11", TextUsl11);
 			request.setAttribute("Usl12", TextUsl12);
 			request.setAttribute("Promo", TextPromo);
+			*/
 		}
 		
 	}
