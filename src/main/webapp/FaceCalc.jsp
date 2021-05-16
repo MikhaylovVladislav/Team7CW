@@ -21,7 +21,7 @@
 fieldset {
 
   background-color: #eeeeee;
-width: 530px; margin:  5px auto;
+width: 535px; margin:  5px auto;
  -moz-background-size: 120%; /* Firefox 3.6+ */
     -webkit-background-size: 120%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 120%; /* Opera 9.6+ */
@@ -32,7 +32,7 @@ fieldset.com {
 font-size: 11pt;
 font-family:'Times New Roman', Times, serif;
   background-color: #D3D3D3;
-width: 515px; margin:  5px auto;
+width: 525px; margin:  5px auto;
 
 }
 
