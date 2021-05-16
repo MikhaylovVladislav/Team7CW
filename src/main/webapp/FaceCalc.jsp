@@ -157,11 +157,11 @@ float: right;
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
 <div>
-    <input type="radio" id="White"
+    <input type="radio" id="Whiteid"
      name="White" value="email">
     <label for="contactChoice3">Светлая </label>
 
-    <input type="radio" id="Black"
+    <input type="radio" id="Blackid"
      name="Black" value="phone">
     <label for="contactChoice4">Темная </label>
   </div>
@@ -172,7 +172,7 @@ float: right;
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="save" value="Сохранить">
     </form-->
-<button type="submit" name="Save" onclick="history.back()">Сохранить</button>
+<button type="submit" name="Save" ">Сохранить</button>
 </fieldset>
 </fieldset>
 
