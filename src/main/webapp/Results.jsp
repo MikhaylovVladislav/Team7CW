@@ -74,25 +74,16 @@ input {
 <p><strong>Promocode:</strong> ${Promo}</p>
 <p><strong>Promocode:</strong> ${Kfpromo}</p>
 
-<a href="/Check1.pdf"> Открыть PDF-файл</a>
-<a href="/Check1.pdf" download> Скачать PDF-файл</a>
 
-
-
+<!-- Кнопка назад, для продолжения покупок -->
 </fieldset>
-
-<!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
-    <input type="submit" name="back" value="Назад">
-    </form-->
 <button type="button" name="Back" onclick="history.back()">Назад</button>
 </fieldset>
 
 
-
-
 <!-- Создание загрузки пдф-файлика и его просмотра -->
 
-<button onclick="generate()">Generate PDF</button>
+<center><button onclick="generate()">Generate PDF</button></center>
 <button onclick="generation2()">Generate PDF2</button>
 
 
