@@ -133,25 +133,8 @@ float: right;
 <label>Введите промокод<input type="text" name="Promo" id="Promo" value="${Promo}" ></label>
 
 </fieldset>
-
-    <input type="submit" name="sign" value="Вычислить">
-
-</form>
-
-<form action="${pageContext.request.contextPath}/Panel.jsp">
-    <input type="submit" name="panel" value="Панель администратора">
-    </form>
-
-<form action="${pageContext.request.contextPath}/Auth.jsp">
-    <input type="submit" name="exit" value="Выйти">
-    </form>
-    
-    
-</fieldset>
-
-<form method="post" action="CalcPDF">
-
-<fieldset  ${hidden}>
+     
+     <fieldset  ${hidden}>
 <fieldset>
  <legend>Панель администратора</legend>
 
@@ -178,9 +161,23 @@ float: right;
 <button type="submit" name="Save" >Сохранить</button>
 </fieldset>
 </fieldset>
-
+     
+     
+    <input type="submit" name="sign" value="Вычислить">
 
 </form>
+
+<form action="${pageContext.request.contextPath}/Panel.jsp">
+    <input type="submit" name="panel" value="Панель администратора">
+    </form>
+
+<form action="${pageContext.request.contextPath}/Auth.jsp">
+    <input type="submit" name="exit" value="Выйти">
+    </form>
+    
+    
+</fieldset>
+
 
 
 
