@@ -30,6 +30,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String PromoGet;
 	public static String SostGet;
 	*/
+	public static String q2;
+	public static String Textcol;
+	
 	public static String KfpromoGet;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -48,9 +51,11 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	    String q2 = request.getParameter("Whiteid");
 	    // compare selected value 
 	    if ("Whiteid".equals(q2)) {
-
-
+        Textcol="#FFFAFA";
 	}
+	    else {
+	    	Textcol="#2F4F4F";
+	    }
 		
 	}
 	
@@ -255,6 +260,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.setAttribute("Promo", TextPromo);
 			*/
 			request.setAttribute("Kfpromo", TextKfpromo);
+			request.setAttribute("col", Textcol);
 		}
 		
 	}
