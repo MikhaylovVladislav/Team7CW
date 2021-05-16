@@ -21,7 +21,7 @@
 fieldset {
 
   background-color: #eeeeee;
-width: 535px; 
+width: 550%; 
 margin:  5px auto;
  -moz-background-size: 120%; /* Firefox 3.6+ */
     -webkit-background-size: 120%; /* Safari 3.1+ и Chrome 4.0+ */
@@ -33,7 +33,7 @@ fieldset.com {
 font-size: 11pt;
 font-family:'Times New Roman', Times, serif;
   background-color: #D3D3D3;
-width: 525px; margin:  5px auto;
+width: 500%; margin:  5px auto;
 
 }
 
@@ -49,13 +49,13 @@ input {
 }
 
 .algblock {
-@media screen and (max-width:468px) {
+
 font-family:'Times New Roman', Times, serif;
 font-size: 11pt;
 float: right;
  padding-right: 20px; 
 }
-}
+
 </style>
 </head>
 <body bgcolor="#008B8B">
