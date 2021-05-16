@@ -31,7 +31,10 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String SostGet;
 	*/
 	public static String q2;
+	public static String q1;
+	public static String ColGet;
 	public static String Textcol;
+
 	
 	public static String KfpromoGet;
 	
@@ -50,14 +53,16 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		 
 	    String q2 = request.getParameter("Whiteid");
 	    // compare selected value 
-	    if ("Whiteid".equals(q2)) {
+	    if ("Whiteid".equals(q1)) {
         Textcol="#FFFAFA";
 	}
-	    else {
-	    	Textcol="#2F4F4F";
+	    if ("Blackid".equals(q2)) {
+	        Textcol="#2F4F4F";
+		}
+
 	    }
 		
-	}
+	
 	
 	private static class RequestCalc {
 
@@ -78,8 +83,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextSost;
 */
 		private final String TextKfpromo;
+		private final String TextCol;
 						
-		private RequestCalc (String Usl1, String Usl2, String Usl3, String Usl4, String Kfpromo) {
+		private RequestCalc (String Usl1, String Usl2, String Usl3, String Usl4, String Kfpromo, String Col) {
 
 			//this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -98,6 +104,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextSost = Sost;
 			*/
 			this.TextKfpromo = Kfpromo;
+			this.TextCol = Col;
 
 
 			//SrokGet=TextSrok;
@@ -117,6 +124,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			SostGet=TextSost;
 			*/
 			KfpromoGet=TextKfpromo;
+			ColGet=TextCol;
 			
 			
 			}
@@ -140,6 +148,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Sost"));
 			*/
 			request.getParameter("Kfpromo"));
+			
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
@@ -265,5 +274,5 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 	}
 
-}
+	}
 
