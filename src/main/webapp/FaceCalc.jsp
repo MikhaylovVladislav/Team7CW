@@ -147,8 +147,8 @@ float: right;
     </form>
     
     
-</fieldset>
-
+</fieldset ${hidden}>
+<fieldset>
 <fieldset>
  <legend>Панель администратора</legend>
 
@@ -166,9 +166,9 @@ float: right;
     <label for="contactChoice4">Темная </label>
   </div>
 
- 
-</fieldset>
 
+</fieldset>
+</fieldset>
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="save" value="Сохранить">
     </form-->
