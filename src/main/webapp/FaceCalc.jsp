@@ -21,8 +21,8 @@
 fieldset {
 
   background-color: #eeeeee;
-width: 535px;
- margin:  5px auto;
+width: 535px; 
+margin:  5px auto;
  -moz-background-size: 120%; /* Firefox 3.6+ */
     -webkit-background-size: 120%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 120%; /* Opera 9.6+ */
@@ -49,13 +49,13 @@ input {
 }
 
 .algblock {
--moz-background-size: 180%; /* Firefox 3.6+ */
+@media screen and (max-width:468px) {
 font-family:'Times New Roman', Times, serif;
 font-size: 11pt;
 float: right;
  padding-right: 20px; 
 }
-
+}
 </style>
 </head>
 <body bgcolor="#008B8B">
