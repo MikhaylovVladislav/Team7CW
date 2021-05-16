@@ -22,21 +22,26 @@ public class Calc extends HttpServlet {
 	private static class RequestCalc {
 		private final String first_calc;
 		private final String second_calc;
-		private String dis;			
-		private RequestCalc (String first, String second) {
+		private final String iskf_calc;
+		private String dis;		
+		private String per;
+		private RequestCalc (String first, String second, String iskf) {
 			this.first_calc = first;
 			this.second_calc = second;
+			this.iskf_calc = iskf;
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
 			request.getParameter("first"),
-			request.getParameter("second"));
+			request.getParameter("second"),
+			request.getParameter("iskf"));
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			request.setAttribute("first_result", first_calc);
 			request.setAttribute("second_result", second_calc);
+			request.setAttribute("kf_result", iskf_calc);
 			int a,b;
 			try {
 				a=Integer.parseInt(first_calc);
@@ -65,7 +70,11 @@ public class Calc extends HttpServlet {
 					request.setAttribute("result", "Vladislav");
 				}
 				dis="/FaceCalc.jsp";
-				} else {
+				} else if(iskf_calc !="") {
+					dis="/FaceCalc.jsp";
+					
+				
+		}else{
 			
 					dis="/Auth.jsp";
 					
@@ -87,7 +96,7 @@ public class Calc extends HttpServlet {
 		Calc.setAsRequestAttributesAndCalculate(request);
 		 
 		request.getRequestDispatcher(Calc.dis).forward(request, response);
-		
+	
 	}
 	
 	
