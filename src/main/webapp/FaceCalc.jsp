@@ -18,7 +18,7 @@ fieldset {
 font-family: 'Times New Roman', Times, serif; 
 font-size: 11pt;
   background-color: #eeeeee;
-width: 510px; margin:  5px auto;
+width: 550px; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
