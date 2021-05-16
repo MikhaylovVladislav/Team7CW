@@ -90,7 +90,7 @@ input {
 
 
 
-<!-- Создание загрузки пдф-файлика -->
+<!-- Создание загрузки пдф-файлика и его просмотра -->
 
 <button onclick="generate()">Generate PDF</button>
 <button onclick="generation2()">Generate PDF2</button>
