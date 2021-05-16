@@ -147,6 +147,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Promo"),
 			request.getParameter("Sost"));
 			*/
+			request.getParameter("TextCol"),
 			request.getParameter("Kfpromo"));
 			
 			}
