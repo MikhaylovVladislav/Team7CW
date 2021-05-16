@@ -30,6 +30,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String PromoGet;
 	public static String SostGet;
 	*/
+	public static String KfpromoGet;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
@@ -62,8 +63,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextPromo;
 		private final String TextSost;
 */
+		private final String TextKfpromo;
 						
-		private RequestCalc (String Usl1, String Usl2, String Usl3, String Usl4) {
+		private RequestCalc (String Usl1, String Usl2, String Usl3, String Usl4, String Kfpromo) {
 
 			//this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -81,6 +83,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextPromo = Promo;
 			this.TextSost = Sost;
 			*/
+			this.TextKfpromo = Kfpromo;
 
 
 			//SrokGet=TextSrok;
@@ -99,6 +102,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			PromoGet=TextPromo;
 			SostGet=TextSost;
 			*/
+			KfpromoGet=TextKfpromo;
 			
 			
 			}
@@ -109,7 +113,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Usl1"),
 			request.getParameter("Usl2"),
 			request.getParameter("Usl3"),
-			request.getParameter("Usl4"));
+			request.getParameter("Usl4"),
 			/*request.getParameter("Usl5"),
 			request.getParameter("Usl6"),
 			request.getParameter("Usl7"),
@@ -121,11 +125,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Promo"),
 			request.getParameter("Sost"));
 			*/
+			request.getParameter("Kfpromo"));
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
 			String sosg = request.getParameter("Sost");
-			double h; // кф класса ремонта
+			double Kfpromo; // кф класса ремонта
 			double p=1;
 			double g=1;
 			double r;
@@ -240,6 +245,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.setAttribute("Usl12", TextUsl12);
 			request.setAttribute("Promo", TextPromo);
 			*/
+			request.setAttribute("Kfpromo", TextKfpromo);
 		}
 		
 	}
