@@ -148,6 +148,9 @@ float: right;
     
     
 </fieldset>
+
+<form method="post" action="CalcPDF">
+
 <fieldset  ${hidden}>
 <fieldset>
  <legend>Панель администратора</legend>
@@ -176,7 +179,6 @@ float: right;
 </fieldset>
 </fieldset>
 
-<form method="post" action="CalcPDF">
 
 </form>
 
