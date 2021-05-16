@@ -155,7 +155,7 @@ private void addRows(PdfPTable table) {
 	}
 
 private void addHeader(PdfPTable table) {
-	Stream.of("Number", "Group", "FIO", "Points")
+	Stream.of("Usl1", "Usl2", "Usl3", "Usl4")
       .forEach(columnTitle -> {
         PdfPCell header = new PdfPCell();
         header.setBackgroundColor(BaseColor.LIGHT_GRAY);
