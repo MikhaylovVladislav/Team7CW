@@ -100,12 +100,7 @@ public class Calc extends HttpServlet {
 		 
 		request.getRequestDispatcher(Calc.dis).forward(request, response);
 	
-	    String q2 = request.getParameter("Whiteid");
-	    // compare selected value 
-	    if ("Whiteid".equals(q2)) {
 
-
-	}
 	
 	
 }

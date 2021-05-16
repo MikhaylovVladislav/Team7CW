@@ -45,6 +45,13 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		request.setAttribute("Usl1", Usl1Get); //add code
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 		 
+	    String q2 = request.getParameter("Whiteid");
+	    // compare selected value 
+	    if ("Whiteid".equals(q2)) {
+
+
+	}
+		
 	}
 	
 	private static class RequestCalc {
