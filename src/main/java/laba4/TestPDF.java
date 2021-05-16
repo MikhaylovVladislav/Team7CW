@@ -43,7 +43,7 @@ public class TestPDF {
 			}
 			filepath=abspath+"Check.pdf";
 			filepath="/tmp/Check.pdf"; */
-			filepath="/Check1.pdf";
+			filepath="/Check.pdf";
 		
 						
 			PdfWriter.getInstance(document, new FileOutputStream(filepath));
