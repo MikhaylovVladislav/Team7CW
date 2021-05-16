@@ -19,7 +19,10 @@ fieldset {
 
   background-color: #eeeeee;
 width: 520px; margin:  5px auto;
-
+ -moz-background-size: 120%; /* Firefox 3.6+ */
+    -webkit-background-size: 120%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 120%; /* Opera 9.6+ */
+    background-size: 120%; /* Современные браузеры */
 }
 
 fieldset.com {
