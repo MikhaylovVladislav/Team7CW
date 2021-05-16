@@ -46,12 +46,13 @@ legend {
 input {
   margin: 10px;
 }
-
+@media screen and (max-width:468px) {
 .algblock {
 font-family:'Times New Roman', Times, serif;
 font-size: 11pt;
 float: right;
  padding-right: 20px; 
+}
 }
 </style>
 </head>
