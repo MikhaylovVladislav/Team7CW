@@ -6,34 +6,22 @@
 <meta charset="UTF-8">
 <title>Калькулятор ремонта</title>
 <style>
-@font-face {
-	font-family: MyUniqueFont;
-	src: url('fonts/times.ttf');
-}
+
     body {
     margin: 100px; 
-     -moz-background-size: 120%; /* Firefox 3.6+ */
-    -webkit-background-size: 120%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 120%; /* Opera 9.6+ */
-    background-size: 120%; /* Современные браузеры */
    }
   
 fieldset {
 
   background-color: #eeeeee;
-width: 95%; 
-margin:  5px auto;
- -moz-background-size: 120%; /* Firefox 3.6+ */
-    -webkit-background-size: 120%; /* Safari 3.1+ и Chrome 4.0+ */
-    -o-background-size: 120%; /* Opera 9.6+ */
-    background-size: 120%; /* Современные браузеры */
+width: 520px; margin:  5px auto;
+
 }
 
 fieldset.com {
-font-size: 11pt;
-font-family:'Times New Roman', Times, serif;
+
   background-color: #D3D3D3;
-width: 35%; margin:  5px auto;
+width: 500px; margin:  5px auto;
 
 }
 
@@ -49,13 +37,9 @@ input {
 }
 
 .algblock {
-
-font-family:'Times New Roman', Times, serif;
-font-size: 11pt;
 float: right;
  padding-right: 20px; 
 }
-
 </style>
 </head>
 <body bgcolor="#008B8B">
@@ -125,7 +109,7 @@ float: right;
 <label>Штукатурка стен, потолков<input type="number" name="Usl6" id="Usl6" value="${Usl6}" ></label>
 </div>
 <div class="algblock">
-<label>Очистка поверхностей<input type="number" name="Usl7" id="Usl7" value="${Usl7}" ></label>
+<label>Очистка поверхностей от старых покрытий<input type="number" name="Usl7" id="Usl7" value="${Usl7}" ></label>
 </div>
 <div class="algblock">
 <label>Шпатлевка стен, потолков<input type="number" name="Usl8" id="Usl8" value="${Usl8}" ></label>
@@ -153,16 +137,14 @@ float: right;
     <input type="submit" name="sign" value="Вычислить">
 
 </form>
+
+<form action="${pageContext.request.contextPath}/Panel.jsp">
+    <input type="submit" name="panel" value="Панель администратора">
+    </form>
+
 <form action="${pageContext.request.contextPath}/Auth.jsp">
     <input type="submit" name="exit" value="Выйти">
     </form>
-    
-     
-    
-<form action="${pageContext.request.contextPath}/upload" method="post" enctype="multipart/form-data">
-<input type="file" name="file" ${dis}/>
-<input type="submit" />
-   </form>
     
 </fieldset>
 
