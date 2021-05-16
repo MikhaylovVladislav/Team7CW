@@ -72,6 +72,7 @@ input {
 <p><strong>Укладка ламината:</strong> ${Usl11}</p>
 <p><strong>Оклейка панелями потолок:</strong> ${Usl12}</p>
 <p><strong>Promocode:</strong> ${Promo}</p>
+<p><strong>Promocode:</strong> ${Kfpromo}</p>
 
 <a href="/Check1.pdf"> Открыть PDF-файл</a>
 <a href="/Check1.pdf" download> Скачать PDF-файл</a>

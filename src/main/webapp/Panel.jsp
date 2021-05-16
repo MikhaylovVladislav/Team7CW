@@ -40,12 +40,12 @@ input {
 </head>
 <body bgcolor="#008B8B">
  <fieldset class="com">
-   <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
+   <form action="${pageContext.request.contextPath}/JavaPDF" method="post">
 <fieldset>
  <legend>Панель администратора</legend>
 
-   <label for="first" style="color:##000000" >Коэффицент промокода:</label>
-        <input type="text" name="first" id="first" value="${first}">
+   <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:</label>
+        <input type="text" name="Kfpromo" id="Kfpromo" value="${Kfpromo}">
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
 <div>
@@ -64,7 +64,7 @@ input {
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="save" value="Сохранить">
     </form-->
-<button type="button" name="Save" onclick="history.back()">Сохранить</button>
+<button type="submit" name="Save" onclick="history.back()">Сохранить</button>
 
 
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
