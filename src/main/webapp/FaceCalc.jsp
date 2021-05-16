@@ -29,6 +29,7 @@ width: 530px; margin:  5px auto;
 }
 
 fieldset.com {
+font-size: 11pt;
 font-family:MyUniqueFont;
   background-color: #D3D3D3;
 width: 515px; margin:  5px auto;
@@ -47,6 +48,7 @@ input {
 }
 
 .algblock {
+font-size: 11pt;
 float: right;
  padding-right: 20px; 
 }
