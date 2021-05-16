@@ -13,16 +13,17 @@
   
 fieldset {
 font-family: 'Times New Roman', Times, serif; 
-
+font-size: 11pt;
   background-color: #eeeeee;
-width: 90%; margin:  5px auto;
+width: 510px; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
 fieldset.com {
-
+font-family: 'Times New Roman', Times, serif; 
+font-size: 11pt;
   background-color: #D3D3D3;
-width: 35%; margin:  5px auto;
+width: 530px; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
@@ -34,12 +35,12 @@ legend {
 }
 
 input {
--moz-box-sizing: border-box;
   margin: 10px;
 }
 
 .algblock {
--moz-box-sizing: border-box;
+font-family: 'Times New Roman', Times, serif; 
+font-size: 11pt;
 float: right;
  padding-right: 20px; 
 }
