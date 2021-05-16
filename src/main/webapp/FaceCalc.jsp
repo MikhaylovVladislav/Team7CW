@@ -125,7 +125,7 @@ float: right;
 <label>Штукатурка стен, потолков<input type="number" name="Usl6" id="Usl6" value="${Usl6}" ></label>
 </div>
 <div class="algblock">
-<label>Очистка поверхностей от старых покрытий<input type="number" name="Usl7" id="Usl7" value="${Usl7}" ></label>
+<label>Очистка поверхностей<input type="number" name="Usl7" id="Usl7" value="${Usl7}" ></label>
 </div>
 <div class="algblock">
 <label>Шпатлевка стен, потолков<input type="number" name="Usl8" id="Usl8" value="${Usl8}" ></label>
