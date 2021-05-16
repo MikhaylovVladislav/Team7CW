@@ -6,7 +6,10 @@
 <meta charset="UTF-8">
 <title>Калькулятор ремонта</title>
 <style>
-
+@font-face {
+	font-family: MyUniqueFont;
+	src: url('fonts/times.ttf');
+}
     body {
     margin: 100px; 
      -moz-background-size: 120%; /* Firefox 3.6+ */
@@ -26,7 +29,7 @@ width: 530px; margin:  5px auto;
 }
 
 fieldset.com {
-
+font-family:MyUniqueFont
   background-color: #D3D3D3;
 width: 515px; margin:  5px auto;
 
