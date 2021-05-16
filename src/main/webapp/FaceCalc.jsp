@@ -156,9 +156,9 @@ float: right;
 
 
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
-    <input type="submit" name="save" onclick="return false" value="Сохранить">
+    <input type="submit" name="save" value="Сохранить">
     </form-->
-<button type="submit" name="Save">Сохранить</button>
+<button type="submit" name="Save"  onclick="return false">Сохранить</button>
 </fieldset>
 </fieldset>
      
