@@ -168,18 +168,13 @@ float: right;
 
 
 </fieldset>
-</fieldset>
+
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="save" value="Сохранить">
     </form-->
 <button type="submit" name="Save" onclick="history.back()">Сохранить</button>
 
-
-<!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
-    <input type="submit" name="back" value="Назад">
-    </form-->
-<button type="button" name="Back" onclick="history.back()">Назад</button>
-
+</fieldset>
 
 
 
