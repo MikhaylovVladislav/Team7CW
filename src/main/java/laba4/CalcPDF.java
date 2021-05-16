@@ -132,7 +132,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
 			String sosg = request.getParameter("Sost");
-			double Kfpromo; // кф класса ремонта
+			double Kfpr; // кф класса ремонта
 			double p=1;
 			double g=1;
 			double r;
