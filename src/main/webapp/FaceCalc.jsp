@@ -26,7 +26,7 @@ fieldset.com {
 font-family: 'Times New Roman', Times, serif; 
 font-size: 11pt;
   background-color: #D3D3D3;
-width: 530px; margin:  5px auto;
+width: 560px; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
