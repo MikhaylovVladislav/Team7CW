@@ -15,14 +15,14 @@ fieldset {
 font-family: 'Times New Roman', Times, serif; 
 
   background-color: #eeeeee;
-width: 520px; margin:  5px auto;
+width: 90%; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
 fieldset.com {
 
   background-color: #D3D3D3;
-width: 500px; margin:  5px auto;
+width: 35%; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
@@ -34,11 +34,12 @@ legend {
 }
 
 input {
+-moz-box-sizing: border-box;
   margin: 10px;
 }
 
 .algblock {
-
+-moz-box-sizing: border-box;
 float: right;
  padding-right: 20px; 
 }
