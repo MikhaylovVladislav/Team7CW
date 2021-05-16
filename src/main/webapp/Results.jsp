@@ -73,8 +73,8 @@ input {
 <p><strong>Оклейка панелями потолок:</strong> ${Usl12}</p>
 <p><strong>Promocode:</strong> ${Promo}</p>
 
-<a href="/Check.pdf"> Открыть PDF-файл</a>
-<a href="/Check.pdf" download> Скачать PDF-файл</a>
+<a href="/Check1.pdf"> Открыть PDF-файл</a>
+<a href="/Check1.pdf" download> Скачать PDF-файл</a>
 
 
 
