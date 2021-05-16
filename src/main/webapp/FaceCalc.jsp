@@ -8,7 +8,10 @@
 <style>
 
     body {
+    -moz-box-sizing: border-box;
     margin: 100px; 
+    font-family: 'Times New Roman', Times, serif; 
+font-size: 11pt;
    }
   
 fieldset {
@@ -35,10 +38,12 @@ legend {
 }
 
 input {
+-moz-box-sizing: border-box;
   margin: 10px;
 }
 
 .algblock {
+-moz-box-sizing: border-box;
 font-family: 'Times New Roman', Times, serif; 
 font-size: 11pt;
 float: right;
