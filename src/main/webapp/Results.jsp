@@ -81,7 +81,7 @@ input {
 </fieldset>
 
 
-<!-- Создание загрузки пдф-файлика и его просмотра -->
+<!-- Создание загрузки пдф-файлика и его просмотра. -->
 
 <center><button onclick="generate()">Generate PDF</button></center>
 
