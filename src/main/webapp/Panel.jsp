@@ -40,7 +40,7 @@ input {
 </head>
 <body bgcolor="#008B8B">
  <fieldset class="com">
-   <form action="${pageContext.request.contextPath}/JavaPDF" method="post">
+   <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>
  <legend>Панель администратора</legend>
 
