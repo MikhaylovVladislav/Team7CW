@@ -41,6 +41,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		TestPDF PDF = new TestPDF();
 		String goals = "Hello";
 		PDF.Create(goals);
+		Usl1Get=PDF.filepath;
 		request.setAttribute("Usl1", Usl1Get); //add code
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 		 
