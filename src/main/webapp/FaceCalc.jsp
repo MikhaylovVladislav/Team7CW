@@ -12,17 +12,18 @@
    }
   
 fieldset {
+font-family: 'Times New Roman', Times, serif; 
 
   background-color: #eeeeee;
 width: 520px; margin:  5px auto;
-
+-moz-box-sizing: border-box;
 }
 
 fieldset.com {
 
   background-color: #D3D3D3;
 width: 500px; margin:  5px auto;
-
+-moz-box-sizing: border-box;
 }
 
 legend {
@@ -37,6 +38,7 @@ input {
 }
 
 .algblock {
+
 float: right;
  padding-right: 20px; 
 }
