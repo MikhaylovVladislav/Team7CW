@@ -18,7 +18,7 @@ fieldset {
 font-family: 'Times New Roman', Times, serif; 
 font-size: 11pt;
   background-color: #eeeeee;
-width: 550px; margin:  5px auto;
+width: 640px; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
@@ -26,7 +26,7 @@ fieldset.com {
 font-family: 'Times New Roman', Times, serif; 
 font-size: 11pt;
   background-color: #D3D3D3;
-width: 560px; margin:  5px auto;
+width: 580px; margin:  5px auto;
 -moz-box-sizing: border-box;
 }
 
@@ -45,7 +45,7 @@ input {
 .algblock {
 -moz-box-sizing: border-box;
 font-family: 'Times New Roman', Times, serif; 
-font-size: 11pt;
+font-size: 12pt;
 float: right;
  padding-right: 20px; 
 }
