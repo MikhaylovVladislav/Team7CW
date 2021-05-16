@@ -104,7 +104,7 @@ input {
       <td>Vladislav</td>
       <td>jhenry1@theatlantic.com</td>
       <td>Russia</td>
-      <td>Цена</td>
+      <td>Ценаа</td>
     <tr>
       <td align="right">3</td>
       <td>Arseniy</td>
