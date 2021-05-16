@@ -8,26 +8,21 @@
 <style>
 
     body {
-    -moz-box-sizing: border-box;
     margin: 100px; 
-    font-family: 'Times New Roman', Times, serif; 
-font-size: 11pt;
    }
   
 fieldset {
-font-family: 'Times New Roman', Times, serif; 
-font-size: 11pt;
+
   background-color: #eeeeee;
-width: 640px; margin:  5px auto;
--moz-box-sizing: border-box;
+width: 520px; margin:  5px auto;
+
 }
 
 fieldset.com {
-font-family: 'Times New Roman', Times, serif; 
-font-size: 11pt;
+
   background-color: #D3D3D3;
-width: 580px; margin:  5px auto;
--moz-box-sizing: border-box;
+width: 500px; margin:  5px auto;
+
 }
 
 legend {
@@ -38,14 +33,10 @@ legend {
 }
 
 input {
--moz-box-sizing: border-box;
   margin: 10px;
 }
 
 .algblock {
--moz-box-sizing: border-box;
-font-family: 'Times New Roman', Times, serif; 
-font-size: 12pt;
 float: right;
  padding-right: 20px; 
 }
@@ -155,7 +146,42 @@ float: right;
     <input type="submit" name="exit" value="Выйти">
     </form>
     
+    
 </fieldset>
+
+<fieldset>
+ <legend>Панель администратора</legend>
+
+   <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:</label>
+        <input type="text" name="Kfpromo" id="Kfpromo" value="${Kfpromo}">
+        <hr>
+        <label for="second" style="color:##000000" >Выберите тему:</label>
+<div>
+    <input type="radio" id="White"
+     name="White" value="email">
+    <label for="contactChoice3">Светлая </label>
+
+    <input type="radio" id="Black"
+     name="Black" value="phone">
+    <label for="contactChoice4">Темная </label>
+  </div>
+
+ 
+</fieldset>
+
+<!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
+    <input type="submit" name="save" value="Сохранить">
+    </form-->
+<button type="submit" name="Save" onclick="history.back()">Сохранить</button>
+
+
+<!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
+    <input type="submit" name="back" value="Назад">
+    </form-->
+<button type="button" name="Back" onclick="history.back()">Назад</button>
+
+
+
 
 </body>
 </html>
