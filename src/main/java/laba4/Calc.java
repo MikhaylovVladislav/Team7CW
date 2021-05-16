@@ -1,6 +1,7 @@
 package laba4;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -90,16 +91,24 @@ public class Calc extends HttpServlet {
 			
 
 }
+		
 	}
+	
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributesAndCalculate(request);
 		 
 		request.getRequestDispatcher(Calc.dis).forward(request, response);
 	
+	    String q2 = request.getParameter("Whiteid");
+	    // compare selected value 
+	    if ("Whiteid".equals(q2)) {
+
+
 	}
 	
 	
+}
 }
 
 
