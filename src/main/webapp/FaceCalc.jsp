@@ -158,11 +158,11 @@ float: right;
         <label for="second" style="color:##000000" >Выберите тему:</label>
 <div>
     <input type="radio" id="Whiteid"
-     name="White" value="email">
+     name="Tema" value="email">
     <label for="contactChoice3">Светлая </label>
 
     <input type="radio" id="Blackid"
-     name="Black" value="phone">
+     name="Tema" value="phone">
     <label for="contactChoice4">Темная </label>
   </div>
 
