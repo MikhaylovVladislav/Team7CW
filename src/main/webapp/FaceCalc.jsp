@@ -48,6 +48,7 @@ input {
 }
 
 .algblock {
+font-family:MyUniqueFont;
 font-size: 11pt;
 float: right;
  padding-right: 20px; 
