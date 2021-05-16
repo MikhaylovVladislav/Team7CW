@@ -35,14 +35,15 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
-		response.setContentType("text/html");
+	//	response.setContentType("text/html");
 		
-		request.getRequestDispatcher("/Results.jsp").forward(request, response);
-				 
+		
 		TestPDF PDF = new TestPDF();
 		String goals = "Hello";
-		PDF.Create("HELL");
-		
+		PDF.Create(goals);
+		request.setAttribute("Usl1", Usl1Get); //add code
+		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
+		 
 	}
 	
 	private static class RequestCalc {
