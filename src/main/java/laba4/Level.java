@@ -16,5 +16,9 @@ public abstract class Level {
 	
 	//Абстрактный метод, которому нужна реализация в другом классе. Данный метод определяет цену за кв.м. работыы
 	public abstract void check();
+	
+	
+	//Метод для переопределения для создания промокода
+	public abstract double promo();
 
 }
