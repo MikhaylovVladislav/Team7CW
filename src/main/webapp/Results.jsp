@@ -77,7 +77,7 @@ input {
 -->
 
 <table id="table">
-  <thead>
+  <p><thead>
     <tr>
       <th>ID</th>
       <th>Name Work</th>
@@ -85,14 +85,17 @@ input {
       <th>gold</th>
     </tr>
   </thead>
+  </p>
   
   <tbody>
-    <tr>
+    
+    <p><tr>
       <td align="right">1</td>
       <td>Arseniy</td>
       <td>${Usl1}</td>
       <td>dsdsd</td>
     </tr>
+    </p>
   
     <tr>
       <td align="right">2</td>
@@ -104,70 +107,70 @@ input {
     <tr>
       <td align="right">3</td>
       <td>app</td>
-      <td>d${Usl3}</td>
+      <td>${Usl3}</td>
       <td>dsad</td>     
     </tr>
     
     <tr>
       <td align="right">4</td>
       <td>ku</td>
-      <td>d${Usl4}</td>
+      <td>${Usl4}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">5</td>
       <td>adq</td>
-      <td>d${Usl5}</td>
+      <td>${Usl5}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">6</td>
       <td>adq</td>
-      <td>d${Usl6}</td>
+      <td>${Usl6}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">7</td>
       <td>adq</td>
-      <td>d${Usl7}</td>
+      <td>${Usl7}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">8</td>
       <td>adq</td>
-      <td>d${Usl8}</td>
+      <td>${Usl8}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">9</td>
       <td>adq</td>
-      <td>d${Usl9}</td>
+      <td>${Usl9}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">10</td>
       <td>sdk</td>
-      <td>d${Usl10}</td>
+      <td>${Usl10}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">11</td>
       <td>s</td>
-      <td>d${Usl11}</td>
+      <td>${Usl11}</td>
       <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">12</td>
       <td>b</td>
-      <td>d${Usl12}</td>
+      <td>${Usl12}</td>
       <td>dsad</td>
     </tr>
     
