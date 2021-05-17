@@ -87,17 +87,16 @@ input {
 
 
 
-<table id="table" 
-       >
+<table id="table">
   <thead>
     <tr>
       <th>ID</th>
       <th>First name</th>
-      <th>Email</th>
       <th>Country</th>
       <th>Image</th>
     </tr>
   </thead>
+  
   <tbody>
   <tr>
       <td align="right">1</td>
