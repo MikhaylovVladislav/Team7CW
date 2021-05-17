@@ -17,4 +17,12 @@ public class Level2 extends Level {
 		
 		
 	}
+
+
+
+	@Override
+	public double promo() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
