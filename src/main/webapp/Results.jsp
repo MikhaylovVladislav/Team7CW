@@ -55,7 +55,7 @@ input {
 </fieldset>
 <fieldset>
 
-<legend> Загрузка данных в PDF </legend>
+<legend>Подробная информация о приобретенных отделочных работах</legend>
 
 <!--  
 <h1 class="headline">Для удобства вы можете скачать PDF-файл</h1>
@@ -77,7 +77,7 @@ input {
 -->
 
 <table id="table">
-  <p><thead>
+  <thead>
     <tr>
       <th>ID</th>
       <th>Name Work</th>
@@ -85,17 +85,15 @@ input {
       <th>gold</th>
     </tr>
   </thead>
-  </p>
-  
   <tbody>
     
-    <p><tr>
+    <tr>
       <td align="right">1</td>
       <td>Arseniy</td>
       <td>${Usl1}</td>
       <td>dsdsd</td>
     </tr>
-    </p>
+    
   
     <tr>
       <td align="right">2</td>
