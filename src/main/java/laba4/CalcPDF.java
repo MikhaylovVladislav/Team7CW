@@ -50,7 +50,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
         Textcol="#FFFAFA";
 	}
 	   if ("b".equals(q2)) {
-	       Textcol="#2F4F4F";
+	       Textcol="black";
 	}
 
 	    }
@@ -246,7 +246,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 			request.setAttribute("Srok", TextSrok);
 			request.setAttribute("Usl1", q2);
-			request.setAttribute("Usl2", TextUsl2);
+			request.setAttribute("Usl2", Textcol);
 			request.setAttribute("Usl3", TextUsl3);
 			request.setAttribute("Usl4", TextUsl4);
 			request.setAttribute("Usl5", TextUsl5);
