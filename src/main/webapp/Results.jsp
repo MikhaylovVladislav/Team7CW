@@ -190,7 +190,7 @@ input {
     </tr>
     
     <tr>
-      <td align="right">All sum</td>
+      <td align="right">All summ</td>
       <td>Gold for work</td>
       <td>jstephens4@go.com</td>
       <td>s${result5}</td>
