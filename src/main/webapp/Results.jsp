@@ -92,7 +92,6 @@ input {
     <tr>
       <th>ID</th>
       <th>Name Work</th>
-      <th>E-mail</th>
       <th>gold</th>
     </tr>
   </thead>
@@ -101,98 +100,84 @@ input {
     <tr>
       <td align="right">1</td>
       <td>Arseniy</td>
-      <td>jhenry1@theatlantic.com</td>
       <td>d${Usl1}</td>
     </tr>
   
     <tr>
       <td align="right">2</td>
       <td>man</td>
-      <td>jhenry1@theatlantic.com</td>
       <td>d${Usl2}</td>
     </tr>
     
     <tr>
       <td align="right">3</td>
       <td>app</td>
-      <td>rwells2@constantcontact.com</td>
       <td>d${Usl3}</td>     
     </tr>
     
     <tr>
       <td align="right">4</td>
       <td>ku</td>
-      <td>jray3@psu.edu</td>
       <td>d${Usl4}</td>
     </tr>
     
     <tr>
       <td align="right">5</td>
       <td>adq</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl5}</td>
     </tr>
     
     <tr>
       <td align="right">6</td>
       <td>adq</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl6}</td>
     </tr>
     
     <tr>
       <td align="right">7</td>
       <td>adq</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl7}</td>
     </tr>
     
     <tr>
       <td align="right">8</td>
       <td>adq</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl8}</td>
     </tr>
     
     <tr>
       <td align="right">9</td>
       <td>adq</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl9}</td>
     </tr>
     
     <tr>
       <td align="right">10</td>
       <td>sdk</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl10}</td>
     </tr>
     
     <tr>
       <td align="right">11</td>
       <td>s</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl11}</td>
     </tr>
     
     <tr>
       <td align="right">12</td>
       <td>b</td>
-      <td>jstephens4@go.com</td>
       <td>d${Usl12}</td>
     </tr>
     
     <tr>
-      <td align="right">Your input promo</td>
+      <td align="right">Your promo</td>
       <td>app</td>
-      <td>rwells2@constantcontact.com</td>
       <td>promo</td>     
     </tr>
     
     <tr>
       <td align="right">All summ</td>
       <td>Gold for work</td>
-      <td>jstephens4@go.com</td>
       <td>s${result5}</td>
     </tr>
     
