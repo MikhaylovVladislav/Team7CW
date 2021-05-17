@@ -92,7 +92,7 @@ input {
     <tr>
       <th>ID</th>
       <th>First name</th>
-      <th>Country</th>
+      <th>Страна</th>
       <th>Image</th>
     </tr>
   </thead>
