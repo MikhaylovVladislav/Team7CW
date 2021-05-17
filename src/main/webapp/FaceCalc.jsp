@@ -134,7 +134,7 @@ float: right;
 
 </fieldset>
      
-     <fieldset  ${hidden}>
+     <fieldset  ${hid}>
 <fieldset ${hid}>
  <legend>Панель администратора</legend>
 
