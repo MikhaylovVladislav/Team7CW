@@ -186,7 +186,7 @@ input {
       <td align="right">9</td>
       <td>Gold for work</td>
       <td>jstephens4@go.com</td>
-      <td>d${result5}</td>
+      <td>s${result5}</td>
     </tr>
     
   </tbody>
