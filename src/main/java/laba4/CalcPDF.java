@@ -81,7 +81,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextPromo;
 		private final String TextSost;
 
-		private final String TextKfpromo;
+		private final String TextKfpromo; // Для настройки кф промокода
 		private final String TextCol;
 						
 		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col) {
