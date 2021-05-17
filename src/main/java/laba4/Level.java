@@ -2,8 +2,6 @@ package laba4;
 public abstract class Level {
 	// Переменная для определения начального кэфа.
 	private double kf = 1.0;
-
-	
 	
 	// Геттер и сеттер для определения коэфицентов состояния строения, класса-ремонта, срока ремонта.
 	public double getKf() {
