@@ -57,6 +57,7 @@ input {
 
 <legend> Загрузка данных в PDF </legend>
 
+<!--  
 <h1 class="headline">Для удобства вы можете скачать PDF-файл</h1>
 <p><strong>Srok:</strong> ${Srok}</p>
 <p><strong>Подготовка стен, потолков под финиш:</strong> ${Usl1}</p>
@@ -73,19 +74,7 @@ input {
 <p><strong>Оклейка панелями потолок:</strong> ${Usl12}</p>
 <p><strong>Promocode:</strong> ${Promo}</p>
 <p><strong>Promocode:</strong> ${Kfpromo}</p>
-
-
-<!-- Кнопка назад, для продолжения покупок -->
-</fieldset>
-<button type="button" name="Back" onclick="history.back()">Назад</button>
-</fieldset>
-
-
-<!-- Создание загрузки пдф-файлика и его просмотра.ю -->
-
-<center><button onclick="generate()">Generate PDF</button></center>
-
-
+-->
 
 <table id="table">
   <thead>
@@ -198,6 +187,24 @@ input {
     
   </tbody>
 </table>
+
+
+
+
+
+<!-- Кнопка назад, для продолжения покупок -->
+</fieldset>
+<button type="button" name="Back" onclick="history.back()">Назад</button>
+</fieldset>
+
+
+<!-- Создание загрузки пдф-файлика и его просмотра.ю -->
+
+<center><button onclick="generate()">Generate PDF</button></center>
+
+
+
+
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
