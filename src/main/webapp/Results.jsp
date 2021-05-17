@@ -91,9 +91,9 @@ input {
   <thead>
     <tr>
       <th>ID</th>
-      <th>First name</th>
-      <th>Страна</th>
-      <th>Image</th>
+      <th>Name Work</th>
+      <th>E-mail</th>
+      <th>gold</th>
     </tr>
   </thead>
   
@@ -102,69 +102,97 @@ input {
       <td align="right">1</td>
       <td>Arseniy</td>
       <td>jhenry1@theatlantic.com</td>
-      <td>Russia</td>
-      <td>mens</td>
+      <td>d${Usl1}</td>
     </tr>
   
     <tr>
       <td align="right">2</td>
       <td>man</td>
       <td>jhenry1@theatlantic.com</td>
-      <td>Russia</td>
-      <td>Ценаа</td>
+      <td>d${Usl2}</td>
     </tr>
     
     <tr>
       <td align="right">3</td>
       <td>app</td>
       <td>rwells2@constantcontact.com</td>
-      <td><b>Russia</b>${result5}</td>     
+      <td>d${Usl3}</td>     
     </tr>
     
     <tr>
       <td align="right">4</td>
       <td>ku</td>
       <td>jray3@psu.edu</td>
-      <td>Russia</td>
+      <td>d${Usl4}</td>
     </tr>
     
     <tr>
       <td align="right">5</td>
       <td>adq</td>
       <td>jstephens4@go.com</td>
-      <td>Russia</td>
+      <td>d${Usl5}</td>
     </tr>
+    
     <tr>
       <td align="right">6</td>
       <td>adq</td>
       <td>jstephens4@go.com</td>
-      <td>Russia</td>
+      <td>d${Usl6}</td>
     </tr>
     
     <tr>
       <td align="right">7</td>
       <td>adq</td>
       <td>jstephens4@go.com</td>
-      <td>Russia</td>
+      <td>d${Usl7}</td>
     </tr>
     
     <tr>
       <td align="right">8</td>
       <td>adq</td>
       <td>jstephens4@go.com</td>
-      <td>Russia</td>
+      <td>d${Usl8}</td>
     </tr>
     
     <tr>
       <td align="right">9</td>
       <td>adq</td>
       <td>jstephens4@go.com</td>
-      <td>Russia</td>
+      <td>d${Usl9}</td>
     </tr>
+    
+    <tr>
+      <td align="right">9</td>
+      <td>Gold for work</td>
+      <td>jstephens4@go.com</td>
+      <td>d${Usl10}</td>
+    </tr>
+    
+    <tr>
+      <td align="right">9</td>
+      <td>Gold for work</td>
+      <td>jstephens4@go.com</td>
+      <td>d${Usl11}</td>
+    </tr>
+    
+    <tr>
+      <td align="right">9</td>
+      <td>Gold for work</td>
+      <td>jstephens4@go.com</td>
+      <td>d${Usl12}</td>
+    </tr>
+    
+    <tr>
+      <td align="right">9</td>
+      <td>Gold for work</td>
+      <td>jstephens4@go.com</td>
+      <td>s${result5}</td>
+    </tr>
+    
   </tbody>
 </table>
 
-<pre>Gold for work</pre>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
 
@@ -180,7 +208,7 @@ input {
       doc.autoTable(data.columns, data.rows, {
         bodyStyles: {rowHeight: 30},
         drawCell: function(cell, opts) {
-          if (opts.column.dataKey === 10) {
+          if (opts.column.dataKey === 14) {
             images.push({
               url: imgElements[i].src,
               x: cell.textPos.x,
