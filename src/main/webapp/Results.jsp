@@ -18,7 +18,7 @@
   
 fieldset {
 
-  background-color: #eeeeee;
+  background-color: ${col1};
 width: 520px; margin:  5px auto;
 
 }
