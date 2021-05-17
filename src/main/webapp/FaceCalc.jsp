@@ -144,12 +144,10 @@ float: right;
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
 <div>
-    <input type="radio" id="Whiteid"
-     name="1" value="White">
+    <input type="radio" name="1"  value="a">
     <label for="contactChoice3">Светлая </label>
 
-    <input type="radio" id="Blackid"
-     name="1" value="Black">
+    <input type="radio" name="1" value="b">
     <label for="contactChoice4">Темная </label>
   </div>
 

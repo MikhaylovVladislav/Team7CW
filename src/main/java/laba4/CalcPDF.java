@@ -46,12 +46,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 	    String q2 = request.getParameter("1");
 	    // compare selected value 
-	    if ("1".equals(q2)) {
+	    if ("a".equals(q2)) {
         Textcol="#FFFAFA";
 	}
-	    //if ("1".equals(q2)) {
-	   //     Textcol="#2F4F4F";
-	//	}
+	   if ("b".equals(q2)) {
+	       Textcol="#2F4F4F";
+	}
 
 	    }
 		
