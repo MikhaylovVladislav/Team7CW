@@ -9,6 +9,7 @@
 
     body {
     margin: 100px; 
+    background:${col};
    }
   
 fieldset {
@@ -42,7 +43,7 @@ float: right;
 }
 </style>
 </head>
-<body bgcolor=$p{col}>
+<body>
 
 
 <fieldset class = "com">
