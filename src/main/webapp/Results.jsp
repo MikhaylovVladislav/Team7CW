@@ -12,6 +12,7 @@
     -o-background-size: 100%; /* Opera 9.6+ */
     background-size: 100%; /* Современные браузеры */
      margin: 100px; 
+        background:${col};
    }
    
   
@@ -44,7 +45,7 @@ input {
 
 
 
-<body bgcolor="#008B8B">
+<body >
 
 <fieldset class = "com">
 
