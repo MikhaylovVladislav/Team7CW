@@ -92,6 +92,7 @@ input {
     <tr>
       <th>ID</th>
       <th>Name Work</th>
+      <th>Count mt</th>
       <th>gold</th>
     </tr>
   </thead>
@@ -100,12 +101,14 @@ input {
     <tr>
       <td align="right">1</td>
       <td>Arseniy</td>
+      <td>Kolvo</td>
       <td>d${Usl1}</td>
     </tr>
   
     <tr>
       <td align="right">2</td>
       <td>man</td>
+      <td>mret</td>
       <td>d${Usl2}</td>
     </tr>
     
