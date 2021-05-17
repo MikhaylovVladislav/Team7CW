@@ -41,7 +41,7 @@ input {
 <body bgcolor="#008B8B">
  <fieldset class="com">
    <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
-<fieldset>
+<fieldset disabled>
  <legend>Панель администратора</legend>
 
    <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:</label>
