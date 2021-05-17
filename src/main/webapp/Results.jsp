@@ -81,8 +81,7 @@ input {
     <tr>
       <th>ID</th>
       <th>Name Work</th>
-      <th>Count mt</th>
-      <th>gold</th>
+      <th>Price</th>
     </tr>
   </thead>
   <tbody>
@@ -90,100 +89,86 @@ input {
     <tr>
       <td align="right">1</td>
       <td>Arseniy</td>
-      <td>${Usl1}</td>
-      <td>dsdsd</td>
+      <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
       <td align="right">2</td>
       <td>man</td>
-      <td>${Usl2}</td>
-      <td>dsad</td>
+      <td>${Usl2}</td>     
     </tr>
     
     <tr>
       <td align="right">3</td>
       <td>app</td>
-      <td>${Usl3}</td>
-      <td>dsad</td>     
+      <td>${Usl3}</td>        
     </tr>
     
     <tr>
       <td align="right">4</td>
       <td>ku</td>
-      <td>${Usl4}</td>
-      <td>dsad</td>
+      <td>${Usl4}</td>    
     </tr>
     
     <tr>
       <td align="right">5</td>
       <td>adq</td>
-      <td>${Usl5}</td>
-      <td>dsad</td>
+      <td>${Usl5}</td>    
     </tr>
     
     <tr>
       <td align="right">6</td>
       <td>adq</td>
-      <td>${Usl6}</td>
-      <td>dsad</td>
+      <td>${Usl6}</td>      
     </tr>
     
     <tr>
       <td align="right">7</td>
       <td>adq</td>
-      <td>${Usl7}</td>
-      <td>dsad</td>
+      <td>${Usl7}</td>      
     </tr>
     
     <tr>
       <td align="right">8</td>
       <td>adq</td>
-      <td>${Usl8}</td>
-      <td>dsad</td>
+      <td>${Usl8}</td>      
     </tr>
     
     <tr>
       <td align="right">9</td>
       <td>adq</td>
-      <td>${Usl9}</td>
-      <td>dsad</td>
+      <td>${Usl9}</td>    
     </tr>
     
     <tr>
       <td align="right">10</td>
       <td>sdk</td>
-      <td>${Usl10}</td>
-      <td>dsad</td>
+      <td>${Usl10}</td>     
     </tr>
     
     <tr>
       <td align="right">11</td>
       <td>s</td>
-      <td>${Usl11}</td>
-      <td>dsaddsad</td>
+      <td>${Usl11}</td>      
     </tr>
     
     <tr>
       <td align="right">12</td>
       <td>b</td>
-      <td>${Usl12}</td>
-      <td>dsad</td>
+      <td>${Usl12}</td>      
     </tr>
     
     <tr>
       <td align="right">Your promo</td>
       <td>app</td>
-      <td>promo</td>   
-      <td>dsad</td>  
+      <td>promo</td>         
     </tr>
     
     <tr>
       <td align="right">All summ</td>
       <td>Gold for work</td>
       <td>s${result5}</td>
-      <td>dsad</td>
     </tr>
     
   </tbody>
