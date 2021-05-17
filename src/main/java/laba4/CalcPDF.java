@@ -58,8 +58,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	}
 	   if ("b".equals(q2)) {
 	       Textcol="White";
-	        Textcol1="DimGrey";
-	        Textcol2="DimGrey";
+	        Textcol1="Ivory";
+	        Textcol2="MistyRose";
 	}
 
 	    }
