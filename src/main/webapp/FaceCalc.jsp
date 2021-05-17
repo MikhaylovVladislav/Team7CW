@@ -135,7 +135,7 @@ float: right;
 </fieldset>
      
      <fieldset  ${hidden}>
-<fieldset>
+<fieldset style="display:none">
  <legend>Панель администратора</legend>
 
    <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:</label>
@@ -168,7 +168,7 @@ float: right;
 </form>
 
 <form action="${pageContext.request.contextPath}/Panel.jsp">
-    <input type="submit" name="panel" value="Панель администратора">
+    <input type="submit" name="panel" value="Панель администратора" style="display:none">
     </form>
 
 <form action="${pageContext.request.contextPath}/Auth.jsp">
