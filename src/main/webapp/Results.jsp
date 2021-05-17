@@ -163,7 +163,7 @@ input {
     <tr>
       <td align="right">Your promo</td>
       <td>app</td>
-      <td>promo</td>         
+      <td>${Promo}</td>         
     </tr>
     
     <tr>
