@@ -87,8 +87,8 @@ public class Calc extends HttpServlet {
 				
 					request.setAttribute("dis", "disabled");;
 					request.setAttribute("dis", "disabled");
-					request.setAttribute("hid", "style=\"visibility: hidden\"");;
-					request.setAttribute("hid", "style=\"visibility: hidden\"");
+					request.setAttribute("hid", "style=\"display:none\"");;
+					request.setAttribute("hid", "style=\"display:none\"");
 				}
 			
 
