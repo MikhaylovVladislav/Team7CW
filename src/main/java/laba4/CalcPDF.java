@@ -36,6 +36,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String Textcol;
 	public static String Col1Get;
 	public static String Textcol1;
+	public static String Col2Get;
+	public static String Textcol2;
 
 	
 	public static String KfpromoGet;
@@ -50,11 +52,14 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	    // compare selected value 
 	    if ("a".equals(q2)) {
         Textcol="Black";
-        Textcol1="DimGrey";
+        Textcol1="Silver";
+        Textcol2="DimGrey";
         
 	}
 	   if ("b".equals(q2)) {
 	       Textcol="White";
+	        Textcol1="DimGrey";
+	        Textcol2="DimGrey";
 	}
 
 	    }
@@ -82,8 +87,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextKfpromo; // Для настройки кф промокода
 		private final String TextCol;
 		private final String TextCol1;
+		private final String TextCol2;
 						
-		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1) {
+		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1, String Col2) {
 
 			this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -103,6 +109,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextKfpromo = Kfpromo;
 			this.TextCol = Col;
 			this.TextCol1 = Col1;
+			this.TextCol2 = Col2;
 
 
 			SrokGet=TextSrok;
@@ -123,6 +130,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			KfpromoGet=TextKfpromo;
 			ColGet=TextCol;
 			Col1Get=TextCol1;
+			Col2Get=TextCol2;
 			
 
 			}
@@ -146,6 +154,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Sost"),
 			request.getParameter("TextCol"),
 			request.getParameter("TextCol1"),
+			request.getParameter("TextCol2"),
 			request.getParameter("Kfpromo"));
 			
 			}
@@ -270,6 +279,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.setAttribute("Kfpromo", TextKfpromo);
 			request.setAttribute("col", Textcol);
 			request.setAttribute("col1", Textcol1);
+			request.setAttribute("col2", Textcol2);
 		}
 		
 	}
