@@ -98,36 +98,38 @@ input {
   </thead>
   
   <tbody>
-  <tr>
+    <tr>
       <td align="right">1</td>
       <td>Arseniy</td>
       <td>jhenry1@theatlantic.com</td>
       <td>Russia</td>
-      <td>Ценаа</td>
-    <tr>
+      <td>mens</td>
+    </tr>
   
     <tr>
       <td align="right">2</td>
-      <td>Подготовка стен, потолков под финиш</td>
+      <td>man</td>
       <td>jhenry1@theatlantic.com</td>
       <td>Russia</td>
       <td>Ценаа</td>
+    </tr>
+    
     <tr>
       <td align="right">3</td>
-      <td>Оклейка обоями</td>
+      <td>app</td>
       <td>rwells2@constantcontact.com</td>
-      <td><b>Russia</b>${result5}</td>
-     
+      <td><b>Russia</b>${result5}</td>     
     </tr>
+    
     <tr>
       <td align="right">4</td>
-      <td>Покраска стен, потолков</td>
+      <td>ku</td>
       <td>jray3@psu.edu</td>
       <td>Russia</td>
     </tr>
     <tr>
       <td align="right">5</td>
-      <td>Шумоизоляция стен</td>
+      <td>adq</td>
       <td>jstephens4@go.com</td>
       <td>Russia</td>
     </tr>
