@@ -13,7 +13,7 @@ public class Level2 extends Level {
 	public void check() {
 	
 		
-	int [] mass = {10,20,30,40,50,60,70,800};
+	int [] masss = {10,20,30,40,50,60,70,800};
 		
 		
 	}
