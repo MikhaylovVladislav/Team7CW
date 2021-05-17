@@ -57,7 +57,7 @@ input {
 
 <legend> Загрузка данных в PDF </legend>
 
-<h1 class="headline">Файл PDF создан. Нажмите на кнопку, чтобы скачать.</h1>
+<h1 class="headline">Для удобства вы можете скачать PDF-файл</h1>
 <p><strong>Srok:</strong> ${Srok}</p>
 <p><strong>Подготовка стен, потолков под финиш:</strong> ${Usl1}</p>
 <p><strong>Оклейка обоями:</strong> ${Usl2}</p>
@@ -101,87 +101,99 @@ input {
     <tr>
       <td align="right">1</td>
       <td>Arseniy</td>
-      <td>Kolvo</td>
-      <td>d${Usl1}</td>
+      <td>${Usl1}</td>
+      <td>dsdsd</td>
     </tr>
   
     <tr>
       <td align="right">2</td>
       <td>man</td>
-      <td>mret</td>
-      <td>d${Usl2}</td>
+      <td>${Usl2}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">3</td>
       <td>app</td>
-      <td>d${Usl3}</td>     
+      <td>d${Usl3}</td>
+      <td>dsad</td>     
     </tr>
     
     <tr>
       <td align="right">4</td>
       <td>ku</td>
       <td>d${Usl4}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">5</td>
       <td>adq</td>
       <td>d${Usl5}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">6</td>
       <td>adq</td>
       <td>d${Usl6}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">7</td>
       <td>adq</td>
       <td>d${Usl7}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">8</td>
       <td>adq</td>
       <td>d${Usl8}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">9</td>
       <td>adq</td>
       <td>d${Usl9}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">10</td>
       <td>sdk</td>
       <td>d${Usl10}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">11</td>
       <td>s</td>
       <td>d${Usl11}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">12</td>
       <td>b</td>
       <td>d${Usl12}</td>
+      <td>dsad</td>
     </tr>
     
     <tr>
       <td align="right">Your promo</td>
       <td>app</td>
-      <td>promo</td>     
+      <td>promo</td>   
+      <td>dsad</td>  
     </tr>
     
     <tr>
       <td align="right">All summ</td>
       <td>Gold for work</td>
       <td>s${result5}</td>
+      <td>dsad</td>
     </tr>
     
   </tbody>
