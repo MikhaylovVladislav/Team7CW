@@ -152,7 +152,7 @@ input {
       doc.autoTable(data.columns, data.rows, {
         bodyStyles: {rowHeight: 30},
         drawCell: function(cell, opts) {
-          if (opts.column.dataKey === 6) {
+          if (opts.column.dataKey === 10) {
             images.push({
               url: imgElements[i].src,
               x: cell.textPos.x,
