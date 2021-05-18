@@ -53,8 +53,6 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 	    String q2 = request.getParameter("1");
-	    String q23 = request.getParameter("Sost");
-	    request.setAttribute("result5", q23);
 	    // compare selected value 
 	    if ("a".equals(q2)) {
 	    	TestTake.dbapp.setTema(true);
@@ -310,9 +308,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		Calc.setAsRequestAttributes(request);
 		request.getRequestDispatcher("/FaceCalc.jsp").forward(request, response);
 	    String q23 = request.getParameter("Sost");
+		if ("1".equals(q23)) {q23="2";} else {q23="1";}
 	    request.setAttribute("result5", q23);
 	    	   request.getRequestDispatcher("/CalcAuth").include(request, response);
-	
 	    }
 	}
 
