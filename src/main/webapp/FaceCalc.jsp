@@ -9,7 +9,7 @@
 
     body {
     margin: 100px; 
-    background:red;
+    background:${col};
    }
   
 fieldset {
