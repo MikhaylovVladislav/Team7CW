@@ -271,7 +271,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 			 
 		
-			request.setAttribute("Srok", TextSrok);
+			request.setAttribute("Srok", TextSost);
 			request.setAttribute("Usl1", q2);
 			request.setAttribute("Usl2", Textcol);
 			request.setAttribute("Usl3", TextUsl3);

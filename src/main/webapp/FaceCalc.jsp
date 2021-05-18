@@ -46,7 +46,7 @@ float: right;
 
 <fieldset>
  <legend> Состояние строения </legend>
- <form action="CalcPDF" method="post" >
+ <form action="${pageContext.request.contextPath}/JavaPDF" method="post" >
 <select id="Sost" name="Sost">
   <option value="1">Исправное состояние</option>
   <option value="2">Работоспособное состояние</option>
@@ -79,7 +79,7 @@ float: right;
   </div>
  
 </fieldset>
- <form action="${pageContext.request.contextPath}/JavaPDF" method="post"> 
+ <form action="JavaPDF" method="post"> 
 <fieldset>
  <legend> Услуги </legend>
 
