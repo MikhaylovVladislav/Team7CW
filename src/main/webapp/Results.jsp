@@ -225,7 +225,7 @@ input {
         }
       });
 
-      doc.save("table.pdf");
+      doc.save("Ваш пдф.pdf");
     }
 </script>
 
