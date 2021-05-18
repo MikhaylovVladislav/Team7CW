@@ -152,7 +152,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
 			return new RequestCalc(
-			request.getParameter("Srok"),
+			request.getParameter("contact"),
 			request.getParameter("Usl1"),
 			request.getParameter("Usl2"),
 			request.getParameter("Usl3"),

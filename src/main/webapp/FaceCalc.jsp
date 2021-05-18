@@ -69,8 +69,7 @@ float: right;
 <fieldset>
  <legend> Срок ремонта </legend>
 <div>
-    <input type="radio" id="contactChoice1"
-     name="contact" value="1">
+    <input type="radio" id="contactChoice1" name="contact" value="1">
     <label for="contactChoice1">Приоритетный </label>
 
     <input type="radio" id="contactChoice2" name="contact" value="2">
