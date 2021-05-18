@@ -32,7 +32,7 @@ width: 500px; margin:  5px auto;
 
 legend {
   background-color: green;
-  color: red;
+  color: #0000FF;
   padding: 5px 10px;
 
 }
@@ -70,26 +70,26 @@ input {
   
   <tbody>  
     <tr>
-      <td align="right">1</td>
+      <td>1</td>
       <td><p align="left">KU</p></td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
-      <td align="right">2</td>
+      <td>2</td>
       <td><p align="left">KUSAD</p></td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
-      <td align="right">3</td>
+      <td>3</td>
       <td><p align="left">KUASD</p></td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
-      <td align="right">4</td>
+      <td>4</td>
       <td><p align="left">KUSAD</p></td>
       <td>${Usl4}</td>    
     </tr>
