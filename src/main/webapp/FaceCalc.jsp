@@ -54,7 +54,7 @@ float: right;
   <option value="4">Недопустимое состояние состояние</option>
    <option value="5" onclick="fun1()">Аварийное состояние</option>
 </select>
-</form>
+
 </fieldset>
 
 <fieldset>
@@ -73,13 +73,12 @@ float: right;
      name="contact" value="email">
     <label for="contactChoice1">Приоритетный </label>
 
-    <input type="radio" id="contactChoice2
-     name="contact" value="phone">
+    <input type="radio" id="contactChoice2" name="contact" value="phone">
     <label for="contactChoice2">Не приоритетный </label>
   </div>
  
 </fieldset>
- <form action="JavaPDF" method="post"> 
+  
 <fieldset>
  <legend> Услуги </legend>
 
