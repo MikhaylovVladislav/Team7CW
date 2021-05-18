@@ -31,8 +31,8 @@ width: 500px; margin:  5px auto;
 }
 
 legend {
-  background-color: gray;
-  color: white;
+  background-color: green;
+  color: red;
   padding: 5px 10px;
 
 }
@@ -59,25 +59,6 @@ input {
 
 <legend>Подробная информация о приобретенных отделочных работах!</legend>
 
-<!--  
-<h1 class="headline">Для удобства вы можете скачать PDF-файл</h1>
-<p><strong>Srok:</strong> ${Srok}</p>
-<p><strong>Подготовка стен, потолков под финиш:</strong> ${Usl1}</p>
-<p><strong>Оклейка обоями:</strong> ${Usl2}</p>
-<p><strong>Покраска стен, потолков:</strong> ${Usl3}</p>
-<p><strong>Шумоизоляция стен:</strong> ${Usl4}</p>
-<p><strong>Эскизный проект перепланировки:</strong> ${Usl5}</p>
-<p><strong>Штукатурка стен, потолков:</strong> ${Usl6}</p>
-<p><strong>Очистка поверхностей от старых покрытий:</strong> ${Usl7}</p>
-<p><strong>Шпатлевка стен, потолков:</strong> ${Usl8}</p>
-<p><strong>Нанесение декоративных покрытий:</strong> ${Usl9}</p>
-<p><strong>Облицовка плиткой стен:</strong> ${Usl10}</p>
-<p><strong>Укладка ламината:</strong> ${Usl11}</p>
-<p><strong>Оклейка панелями потолок:</strong> ${Usl12}</p>
-<p><strong>Promocode:</strong> ${Promo}</p>
-<p><strong>Promocode:</strong> ${Kfpromo}</p>
--->
-
 <table id="table">
   <thead>
     <tr>
@@ -90,26 +71,26 @@ input {
   <tbody>  
     <tr>
       <td align="right">1</td>
-      <td><b>Arseniy</b></td>
+      <td><p align="left">KU</p></td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
       <td align="right">2</td>
-      <td>man</td>
+      <td><p align="left">KUSAD</p></td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
       <td align="right">3</td>
-      <td><b>Arseniy</b></td>
+      <td><p align="left">KUASD</p></td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
       <td align="right">4</td>
-      <td><b>Arseniy</b></td>
+      <td><p align="left">KUSAD</p></td>
       <td>${Usl4}</td>    
     </tr>
     
