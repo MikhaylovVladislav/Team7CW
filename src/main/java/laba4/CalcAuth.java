@@ -6,6 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 
@@ -44,15 +45,10 @@ public class CalcAuth extends HttpServlet {
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-	
-			String[] Tema=request.getParameterValues("tema");
-             String str = "green";
-				if (Tema[0]=="true") {
-					str = "white";
-				}else {
-					str = "black";
-				}
-				request.setAttribute("col", str);
+			HttpSession session = request.getSession();
+			String clr =(String) session.getAttribute("tema");
+            
+				request.setAttribute("col", clr);
 				
 			
 
@@ -63,7 +59,7 @@ public class CalcAuth extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributesAndCalculate(request);
-		 
+	
 		request.getRequestDispatcher("/Auth.jsp").forward(request, response);
 	
 	

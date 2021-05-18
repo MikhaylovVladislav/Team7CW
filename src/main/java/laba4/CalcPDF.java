@@ -7,6 +7,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 
 
@@ -43,6 +44,10 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String KfpromoGet;
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// получаем сессию
+        HttpSession session = request.getSession();
+        // получаем объект name
+    
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
 	//	response.setContentType("text/html");
@@ -65,7 +70,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        Textcol1="Ivory";
 	        Textcol2="MistyRose";
 	}
-	   request.setAttribute("tema", apptema);
+	   session.setAttribute("tema", Textcol);
 	   request.getRequestDispatcher("/CalcAuth").include(request, response);
 	
 	    }
