@@ -210,8 +210,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			 
 			// срок ремонта
 			  switch (intradp) { 
-			 	case  (0):p=1.21;break;
-			  	case  (1):p=1;break;
+			 	case  (1):p=1.21;break;
+			  	case  (2):p=1;break;
 			  default:p=1;break;
 			  }
 			
