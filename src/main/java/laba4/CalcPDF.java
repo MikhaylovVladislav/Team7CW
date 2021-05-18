@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name="CalcPDF", urlPatterns="/JavaPDF") 
 public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	DBapp dbapp = new DBapp(false);
-	public static boolean apptema;
+	public static String apptema;
 	public static String SrokGet;
 	public static String Usl1Get;
 	public static String Usl2Get;
@@ -52,7 +52,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	    // compare selected value 
 	    if ("a".equals(q2)) {
 	    	dbapp.setTema(true);
-	    	apptema=true;
+	    	apptema="true";
         Textcol="Black";
         Textcol1="Silver";
         Textcol2="DimGrey";
@@ -60,11 +60,13 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	}
 	   if ("b".equals(q2)) {
 		   dbapp.setTema(false);
-		   apptema=false;
+		   apptema="false";
 	       Textcol="White";
 	        Textcol1="Ivory";
 	        Textcol2="MistyRose";
 	}
+	   request.setAttribute("tema", apptema);
+	   request.getRequestDispatcher("/CalcAuth").include(request, response);
 	
 	    }
 		
