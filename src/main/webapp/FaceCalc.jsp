@@ -165,7 +165,7 @@ float: right;
     <input type="submit" name="panel" value="Панель администратора" ${hid}>
     </form>
 
-<form action="${pageContext.request.contextPath}/Auth.jsp">
+<form action="CalcAuth" method="post">
     <input type="submit" name="exit" value="Выйти">
     </form>
     
