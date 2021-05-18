@@ -38,7 +38,7 @@ legend {
 }
 
 input {
-  margin: 10px;
+  margin: 30px;
 }
   </style>
   
@@ -95,49 +95,49 @@ input {
     </tr>
     
     <tr>
-      <td align="right">5</td>
+      <td>5</td>
       <td>adq</td>
       <td>${Usl5}</td>    
     </tr>
     
     <tr>
-      <td align="right">6</td>
+      <td>6</td>
       <td>adq</td>
       <td>${Usl6}</td>      
     </tr>
     
     <tr>
-      <td align="right">7</td>
+      <td>7</td>
       <td>adq</td>
       <td>${Usl7}</td>      
     </tr>
     
     <tr>
-      <td align="right">8</td>
+      <td>8</td>
       <td>adq</td>
       <td>${Usl8}</td>      
     </tr>
     
     <tr>
-      <td align="right">9</td>
+      <td>9</td>
       <td>adq</td>
       <td>${Usl9}</td>    
     </tr>
     
     <tr>
-      <td align="right">10</td>
+      <td>10</td>
       <td>sdk</td>
       <td>${Usl10}</td>     
     </tr>
     
     <tr>
-      <td align="right">11</td>
+      <td>11</td>
       <td>s</td>
       <td>${Usl11}</td>      
     </tr>
     
     <tr>
-      <td align="right">12</td>
+      <td>12</td>
       <td>b</td>
       <td>${Usl12}</td>      
     </tr>
