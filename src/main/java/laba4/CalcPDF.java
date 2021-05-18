@@ -176,7 +176,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
-			double p=1;double g=1;double r=1;double z=0.02;double h=1;double sum4;double sum5;
+			double p=1;double g=1;double r=0;double z=0.02;double h=1;double sum4;double sum5;
 
 			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
 			
@@ -217,7 +217,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  }
 			
 			 // промокод
-			  if (prcg==1234) {r=1.3;}
+			  if (prcg==1234) {r=0.3;}
 			 
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
