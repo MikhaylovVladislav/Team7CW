@@ -46,7 +46,7 @@ input {
 
 
 
-<body bgcolor="#008080">
+<body bgcolor="MistyRose">
 
 <fieldset class = "com">
 
@@ -70,86 +70,86 @@ input {
   
   <tbody>  
     <tr>
-      <td>№1</td>
+      <td><font color="#4B0082">№1</font></td>
       <td>name</td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
-      <td>№2</td>
+      <td><font color="#4B0082">№2</font></td>
       <td>name</td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
-      <td>№3</td>
+      <td><font color="#4B0082">№3</font></td>
       <td>name</td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
-      <td>№4</td>
+      <td><font color="#4B0082">№4</font></td>
       <td>name</td>
       <td>${Usl4}</td>    
     </tr>
     
     <tr>
-      <td>№5</td>
+      <td><font color="#4B0082">№5</font></td>
       <td>name</td>
       <td>${Usl5}</td>    
     </tr>
     
     <tr>
-      <td>№6</td>
+      <td><font color="#4B0082">№6</font></td>
       <td>name</td>
       <td>${Usl6}</td>      
     </tr>
     
     <tr>
-      <td>№7</td>
+      <td><font color="#4B0082">№7</font></td>
       <td>name</td>
       <td>${Usl7}</td>      
     </tr>
     
     <tr>
-      <td>№8</td>
+      <td><font color="#4B0082">№8</font></td>
       <td>name</td>
       <td>${Usl8}</td>      
     </tr>
     
     <tr>
-      <td>№9</td>
+      <td><font color="#4B0082">№9</font></td>
       <td>name</td>
       <td>${Usl9}</td>    
     </tr>
     
     <tr>
-      <td>№10</td>
+      <td><font color="#4B0082">№10</font></td>
       <td>name</td>
       <td>${Usl10}</td>     
     </tr>
     
     <tr>
-      <td>№11</td>
+      <td><font color="#4B0082">№11</font></td>
       <td>name</td>
       <td>${Usl11}</td>      
     </tr>
     
     <tr>
-      <td>№12</td>
+      <td><font color="blue">№12</font></td>
       <td>name</td>
       <td>${Usl12}</td>      
     </tr>
     
     <tr>
-      <td>Your promo</td>
+      <td><font color="#DEB887">Your promo</font></td>
       <td>name</td>
       <td>here  ${Promo} here</td>         
     </tr>
     
     <tr>
-      <td><font color="blue">All summ</font></td>
+      <td><font color="#DEB887">All summ</font></td>
       <td>Gold for work</td>
       <td>${result5}</td>
     </tr>
