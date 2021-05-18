@@ -187,7 +187,7 @@ input {
 
 <!-- Создание загрузки пдф-файлика и его просмотра.ю -->
 
-<center><button onclick="generate()">Generate PDF</button></center>
+<center><button onclick="generate()">Скачать PDF</button></center>
 
 
 
