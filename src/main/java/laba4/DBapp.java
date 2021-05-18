@@ -9,7 +9,7 @@ public class DBapp {
        
     }
 
-    public static boolean getTema() {
+    public boolean getTema() {
         return tema;
     }
 

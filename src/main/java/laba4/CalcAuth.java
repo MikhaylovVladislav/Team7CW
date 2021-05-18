@@ -18,8 +18,16 @@ import javax.servlet.http.HttpSession;
 @WebServlet(name="CalcAuth", urlPatterns="/CalcAuth") 
 public class CalcAuth extends HttpServlet {
 
-	String clr;
-	
+	public static String clr;
+	public static String q2;
+	public static String q1;
+	public static String ColGet;
+	public static String Textcol;
+	public static String Col1Get;
+	public static String Textcol1;
+	public static String Col2Get;
+	public static String Textcol2;
+
 	/**
 	 * 
 	 * 
@@ -45,8 +53,7 @@ public class CalcAuth extends HttpServlet {
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
-			HttpSession session = request.getSession();
-			
+						request.setAttribute("col", clr);
             
 			
 				
@@ -59,7 +66,28 @@ public class CalcAuth extends HttpServlet {
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributesAndCalculate(request);
-	
+
+        HttpSession session = request.getSession();
+        // получаем объект name
+        clr = (String) session.getAttribute("tema");
+        String q2 = request.getParameter("1");
+	    // compare selected value 
+	    if ("a".equals(q2)) {
+	    	
+	    	
+        clr="Black";
+        Textcol1="Silver";
+        Textcol2="DimGrey";
+        
+	}
+	   if ("b".equals(q2)) {
+		  
+		  
+	       clr="White";
+	        Textcol1="Ivory";
+	        Textcol2="MistyRose";
+	}
+    	
 		request.getRequestDispatcher("/Auth.jsp").forward(request, response);
 	
 	
@@ -68,13 +96,13 @@ public class CalcAuth extends HttpServlet {
 }
 	public void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-         
-        // получаем сессию
+
+
         HttpSession session = request.getSession();
         // получаем объект name
-        clr = (String) session.getAttribute("tema");
+    //   clr = (String) session.getAttribute("tema");
          
-    	request.setAttribute("col", clr);
+    	//request.setAttribute("col", clr);
     }
 }
 
