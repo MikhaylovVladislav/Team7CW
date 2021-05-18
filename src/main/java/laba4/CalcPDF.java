@@ -46,7 +46,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
 	//	response.setContentType("text/html");
-		request.getRequestDispatcher("/FaceCalc.jsp");
+	
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 	    String q2 = request.getParameter("1");
 	    // compare selected value 
@@ -61,7 +61,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        Textcol1="Ivory";
 	        Textcol2="MistyRose";
 	}
-
+		request.setAttribute("col", Textcol);
 	    }
 		
 	
