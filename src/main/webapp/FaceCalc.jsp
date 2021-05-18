@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/style1.css">
 <title>Калькулятор ремонта</title>
 <style>
 
