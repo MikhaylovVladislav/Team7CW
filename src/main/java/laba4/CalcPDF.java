@@ -53,13 +53,15 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 	    String q2 = request.getParameter("1");
+	    String sq = request.getParameter("Sost");
 	    // compare selected value 
+	    Textcol2 = sq;
 	    if ("a".equals(q2)) {
 	    	TestTake.dbapp.setTema(true);
 	    	apptema="true";
         Textcol="Black";
         Textcol1="Silver";
-        Textcol2="DimGrey";
+      //  Textcol2="DimGrey";
         
 	}
 	   if ("b".equals(q2)) {
@@ -67,7 +69,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		   apptema="false";
 	       Textcol="White";
 	        Textcol1="Ivory";
-	        Textcol2="MistyRose";
+	      // Textcol2="MistyRose";
 	}
 	
 	   request.getRequestDispatcher("/CalcAuth").include(request, response);
@@ -273,7 +275,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 			request.setAttribute("Srok", TextSost);
 			request.setAttribute("Usl1", q2);
-			request.setAttribute("Usl2", Textcol);
+			request.setAttribute("Usl2", Textcol2);
 			request.setAttribute("Usl3", TextUsl3);
 			request.setAttribute("Usl4", TextUsl4);
 			request.setAttribute("Usl5", TextUsl5);
