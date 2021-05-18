@@ -70,10 +70,10 @@ float: right;
  <legend> Срок ремонта </legend>
 <div>
     <input type="radio" id="contactChoice1"
-     name="contact" value="email">
+     name="contact" value="1">
     <label for="contactChoice1">Приоритетный </label>
 
-    <input type="radio" id="contactChoice2" name="contact" value="phone">
+    <input type="radio" id="contactChoice2" name="contact" value="2">
     <label for="contactChoice2">Не приоритетный </label>
   </div>
  
