@@ -143,15 +143,15 @@ input {
     </tr>
     
     <tr>
-      <td align="right">Your promo</td>
+      <td>Your promo</td>
       <td>app</td>
       <td>here  ${Promo} here</td>         
     </tr>
     
     <tr>
-      <td align="right">All summ</td>
+      <td><font color="blue">All summ</font></td>
       <td>Gold for work</td>
-      <td>s${result5}</td>
+      <td>${result5}</td>
     </tr>
     
   </tbody>
