@@ -59,10 +59,10 @@ float: right;
 
 <fieldset>
  <legend> Класс ремонта </legend>
-<select>
-  <option>Эконом класс</option>
-  <option>Комфорт класс</option>
-  <option>Бизнес класс</option>
+<select id="Klass" name="Klass">
+  <option value="1">Эконом класс</option>
+  <option value="2">Комфорт класс</option>
+  <option value="3" onclick="fun1()">Бизнес класс</option>
 </select>
 </fieldset>
 

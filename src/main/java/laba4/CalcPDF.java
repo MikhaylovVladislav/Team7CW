@@ -30,6 +30,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String Usl12Get;
 	public static String PromoGet;
 	public static String SostGet;
+	public static String KlassGet;
 	public static String q2;
 	public static String q1;
 	public static String ColGet;
@@ -95,13 +96,13 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextUsl12;
 		private final String TextPromo;
 		private final String TextSost;
-
+		private final String TextKlass;
 		private final String TextKfpromo; // Для настройки кф промокода
 		private final String TextCol;
 		private final String TextCol1;
 		private final String TextCol2;
 						
-		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1, String Col2) {
+		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1, String Col2, String Klass) {
 
 			this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -118,6 +119,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextUsl12 = Usl12;
 			this.TextPromo = Promo;
 			this.TextSost = Sost;
+			this.TextKlass = Klass;
 			this.TextKfpromo = Kfpromo;
 			this.TextCol = Col;
 			this.TextCol1 = Col1;
@@ -139,6 +141,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Usl12Get=TextUsl12;
 			PromoGet=TextPromo;
 			SostGet=TextSost;
+			KlassGet=TextKlass;
 			KfpromoGet=TextKfpromo;
 			ColGet=TextCol;
 			Col1Get=TextCol1;
@@ -167,23 +170,22 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("TextCol"),
 			request.getParameter("TextCol1"),
 			request.getParameter("TextCol2"),
-			request.getParameter("Kfpromo"));
+			request.getParameter("Kfpromo"),
+			request.getParameter("Klass"));
 			
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
-			String sosg = request.getParameter("Sost");
 			double Kfpr; // кф класса ремонта
-			double p=1;double g=1;double r;double z=0.02;boolean haveKap;double sum1;double sum2;String gen;double sum4;double sum5;
+			double p=1;double g=1;double r;double z=0.02;boolean haveKap;double h;double sum2;String gen;double sum4;double sum5;
 
 			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
 			
-			
-			
-		//	clh=FrameCalc.this.cl.getSelectedIndex();
-		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
+
 			int intradp;
 	        int sostg;
+	        int clh;
+	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
 	        switch (sostg){ 
@@ -198,16 +200,14 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			//promocode = FrameCalc.this.promo.getText();
 			
 			// класс ремонта
-		//	  switch (clh){ 
-		//	  	case  (0):h=1;break;   			         
-		//	  	case  (1): h=1.21; break;
-		//	  	case  (2):h=1.42;break;
-		//	  default:break;
-		//	  }
+			  switch (clh){ 
+			  	case  (1):h=1;break;   			         
+			  	case  (2): h=1.21; break;
+			  	case  (3):h=1.42;break;
+			  default:h=1;break;
+			  }
 			  
-			// состояние строения
-			  
-			 
+
 			// срок ремонта
 			  switch (intradp) { 
 			 	case  (1):p=1.21;break;
@@ -241,7 +241,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				double s1=i1.xsum3(sum5, sum4); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
 				
-				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
+				int s2=(int)(s1*p*g*h); //	int s2=(int)(s1*p*g-s1*r);
 				  gen=Integer.toString(s2);
 				  request.setAttribute("result5", s2);
 		
