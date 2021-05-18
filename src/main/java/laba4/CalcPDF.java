@@ -61,7 +61,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        Textcol1="Ivory";
 	        Textcol2="MistyRose";
 	}
-		request.setAttribute("col", Textcol);
+	
 	    }
 		
 	
