@@ -71,26 +71,26 @@ input {
   <tbody>  
     <tr>
       <td>1</td>
-      <td><p align="left">KU</p></td>
+      <td>fdsffds</td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
       <td>2</td>
-      <td><p align="left">KUSAD</p></td>
+      <td>sdfdsf</td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
       <td>3</td>
-      <td><p align="left">KUASD</p></td>
+      <td>fsdfdsf</td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
       <td>4</td>
-      <td><p align="left">KUSAD</p></td>
+      <td></td>
       <td>${Usl4}</td>    
     </tr>
     
