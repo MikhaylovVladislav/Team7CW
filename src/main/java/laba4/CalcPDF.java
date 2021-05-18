@@ -172,29 +172,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		public void setAsRequestAttributes(HttpServletRequest request) {
 			String sosg = request.getParameter("Sost");
 			double Kfpr; // кф класса ремонта
-			double p=1;
-			double g=1;
-			double r;
-			double z;
-			boolean haveKap;
-			double sum1;
-			double sum2;
-			String gen;
-			double sum4;
-			double sum5;
+			double p=1;double g=1;double r;double z=0.02;boolean haveKap;double sum1;double sum2;String gen;double sum4;double sum5;
 
-			double pr1;
-			double pr2;
-			double pr3;
-			double pr4;
-			double pr5;
-			double pr6;
-			double pr7;
-			double pr8;
-			double pr9;
-			double pr10;
-			double pr11;
-			double pr12;
+			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
 			
 			
 			
@@ -202,8 +182,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		//	radp=FrameCalc.this.group.getSelection().getActionCommand();
 			int intradp;
 	        int sostg;
-	        //try {intradp=Integer.parseInt(SrokGet);} catch (NumberFormatException e) {intradp=0;}
-	        try {sostg=Integer.parseInt(sosg); } catch (NumberFormatException e) {sostg=0;}
+	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
+	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
 	        switch (sostg){ 
 		  	case  (1):g=1; break;
 		  	case  (2):g=1.1; break;
@@ -227,19 +207,13 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  
 			 
 			// срок ремонта
-			 /* switch (intradp) { 
+			  switch (intradp) { 
 			 	case  (0):p=1.21;break;
 			  	case  (1):p=1;break;
 			  default:p=1;break;
 			  }
-			 */
-			  
-			//  if(haveKap==true) { // наличие услуг как ремонта
-			//	 z=0.02; 
-			//  }else {
-			//	  z=0;
-			 // }
 			 
+			  
 			 
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
@@ -259,7 +233,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		
 			
 			  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
-			    sum5=i1.xsum2(5,6,7,8,9,10,11,12);
+			    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
 
 			  
 				double s1=i1.xsum3(sum5, sum4); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
@@ -267,11 +241,11 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				
 				int s2=(int)(s1*p*g); //	int s2=(int)(s1*p*g-s1*r);
 				  gen=Integer.toString(s2);
-				  //request.setAttribute("result5", s2);
+				  request.setAttribute("result5", s2);
 		
 			 
 		
-			request.setAttribute("Srok", TextSost);
+			request.setAttribute("Srok", TextSrok);
 			request.setAttribute("Usl1", q2);
 			request.setAttribute("Usl2", Textcol);
 			request.setAttribute("Usl3", TextUsl3);
@@ -303,14 +277,5 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
          
    
     }
-	protected void doPost1(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
-		Calc.setAsRequestAttributes(request);
-		request.getRequestDispatcher("/FaceCalc.jsp").forward(request, response);
-	    String q23 = request.getParameter("Sost");
-		if ("1".equals(q23)) {q23="2";} else {q23="1";}
-	    request.setAttribute("result5", q23);
-	    	   request.getRequestDispatcher("/CalcAuth").include(request, response);
-	    }
 	}
 
