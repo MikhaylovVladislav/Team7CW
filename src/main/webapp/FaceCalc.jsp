@@ -38,7 +38,7 @@ float: right;
 }
 </style>
 </head>
-<body>
+<body onload="fun1()">
 
 <fieldset class = "com">
 <p style="color:#black"><strong>Пользователь:</strong>${result}</p>
