@@ -12,7 +12,7 @@ public class TakhaevTest implements Inter1{
 
 
    
-double exp = xsum3(0,0);
+double exp = xsum3(0,0,0,0);
 
 	
 	@Test
