@@ -46,7 +46,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
 		Calc.setAsRequestAttributes(request);
 	//	response.setContentType("text/html");
-		
+		request.getRequestDispatcher("/FaceCalc.jsp");
 		request.getRequestDispatcher("/Results.jsp").forward(request, response); //moved
 	    String q2 = request.getParameter("1");
 	    // compare selected value 
@@ -238,7 +238,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  try {pr2=Double.parseDouble(Usl2Get);} catch (NumberFormatException e) {pr2=0;}
 			  try {pr3=Double.parseDouble(Usl3Get);} catch (NumberFormatException e) {pr3=0;}
 			  try {pr4=Double.parseDouble(Usl4Get);} catch (NumberFormatException e) {pr4=0;}
-			  /*try {pr5=Double.parseDouble(Usl5Get);} catch (NumberFormatException e) {pr5=0;}
+			  try {pr5=Double.parseDouble(Usl5Get);} catch (NumberFormatException e) {pr5=0;}
 			  try {pr6=Double.parseDouble(Usl6Get);} catch (NumberFormatException e) {pr6=0;}
 			  try {pr7=Double.parseDouble(Usl7Get);} catch (NumberFormatException e) {pr7=0;}
 			  try {pr8=Double.parseDouble(Usl8Get);} catch (NumberFormatException e) {pr8=0;}
@@ -246,7 +246,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  try {pr10=Double.parseDouble(Usl10Get);} catch (NumberFormatException e) {pr10=0;}
 			  try {pr11=Double.parseDouble(Usl11Get);} catch (NumberFormatException e) {pr11=0;}
 			  try {pr12=Double.parseDouble(Usl12Get);} catch (NumberFormatException e) {pr12=0;}
-		*/
+		
 			
 			  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
 			    sum5=i1.xsum2(5,6,7,8,9,10,11,12);
