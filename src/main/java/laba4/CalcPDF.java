@@ -176,18 +176,21 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
-			double Kfpr; // кф класса ремонта
-			double p=1;double g=1;double r;double z=0.02;boolean haveKap;double h;double sum2;String gen;double sum4;double sum5;
+			double p=1;double g=1;double r=1;double z=0.02;double h;double sum2;double sum4;double sum5;
 
 			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
 			
 
-			int intradp;
-	        int sostg;
-	        int clh;
+			int intradp=0; //срок в инте
+	        int sostg=0; //состояние в инте
+	        int clh=0; //класс в инте
+	        int prcg=0; //промокод в инте
 	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
+	        try {prcg=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
+	        
+	        // состояние ремонта
 	        switch (sostg){ 
 		  	case  (1):g=1; break;
 		  	case  (2):g=1.1; break;
@@ -196,9 +199,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		  	case  (5): g=1.25;break;
 		  default:g=1;break;
 		  }
-			 
-			//promocode = FrameCalc.this.promo.getText();
-			
+	
 			// класс ремонта
 			  switch (clh){ 
 			  	case  (1):h=1;break;   			         
@@ -215,7 +216,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  default:p=1;break;
 			  }
 			
-			  
+			 // промокод
+			  if (prcg==1234) {r=1.3;}
 			 
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
@@ -241,8 +243,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				double s1=i1.xsum3(sum5, sum4); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
 				
-				int s2=(int)(s1*p*g*h); //	int s2=(int)(s1*p*g-s1*r);
-				  gen=Integer.toString(s2);
+				int s2=(int)(s1*p*g*h*r); //	int s2=(int)(s1*p*g-s1*r);
+				 // gen=Integer.toString(s2);
 				  request.setAttribute("result5", s2);
 		
 			 
