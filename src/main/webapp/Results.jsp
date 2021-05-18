@@ -41,6 +41,7 @@ input {
   margin: 10px;
 }
   </style>
+  
 </head>
 
 
@@ -85,11 +86,11 @@ input {
       <th>Price</th>
     </tr>
   </thead>
-  <tbody>
-    
+  
+  <tbody>  
     <tr>
       <td align="right">1</td>
-      <td>Arseniy</td>
+      <td><b>Arseniy</b></td>
       <td>${Usl1}</td>  
     </tr>
     
@@ -102,13 +103,13 @@ input {
     
     <tr>
       <td align="right">3</td>
-      <td>app</td>
+      <td><b>Arseniy</b></td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
       <td align="right">4</td>
-      <td>ku</td>
+      <td><b>Arseniy</b></td>
       <td>${Usl4}</td>    
     </tr>
     
@@ -175,11 +176,6 @@ input {
   </tbody>
 </table>
 
-
-
-
-
-<!-- Кнопка назад, для продолжения покупок -->
 </fieldset>
 <button type="button" name="Back" onclick="history.back()">Назад</button>
 </fieldset>
