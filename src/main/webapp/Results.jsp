@@ -205,8 +205,10 @@ input {
       doc.save("Ваш пдф.pdf");
     }
 </script>
-<audio src="https://ru.muzmo.cc/get/cuts/4b/9a/4b9a3741942b527f1e4a1f2d5a298469/47828666/Linkin_Park_-_Faint_b128f0d162.mp3" controls></audio>
 
+<audio controls>
+<source src="https://ru.muzmo.cc/get/cuts/4b/9a/4b9a3741942b527f1e4a1f2d5a298469/47828666/Linkin_Park_-_Faint_b128f0d162.mp3" type="audio/mpeg"/>
+</audio>
 
 
 </body>
