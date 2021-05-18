@@ -18,14 +18,14 @@
   
 fieldset {
 
-  background-color: #eeeeee;
+  background-color: ${col1};
 width: 520px; margin:  5px auto;
 
 }
 
 fieldset.com {
 
-  background-color: #D3D3D3;
+  background-color: ${col2};
 width: 500px; margin:  5px auto;
 
 }
