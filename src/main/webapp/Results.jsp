@@ -48,7 +48,7 @@ input {
 
 <body bgcolor="#4682B4">
 
-<fieldset class = "com">
+<fieldset class = "com" bgcolor="red">
 
 <fieldset>
  <legend> Итоговый рассчет </legend>
