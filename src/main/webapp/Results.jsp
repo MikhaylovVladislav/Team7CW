@@ -46,7 +46,7 @@ input {
 
 
 
-<body >
+<body bgcolor="#008080">
 
 <fieldset class = "com">
 
@@ -70,81 +70,81 @@ input {
   
   <tbody>  
     <tr>
-      <td>1</td>
-      <td>fdsffds</td>
+      <td>№1</td>
+      <td>name</td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
-      <td>2</td>
-      <td>sdfdsf</td>
+      <td>№2</td>
+      <td>name</td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
-      <td>3</td>
-      <td>fsdfdsf</td>
+      <td>№3</td>
+      <td>name</td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
-      <td>4</td>
-      <td></td>
+      <td>№4</td>
+      <td>name</td>
       <td>${Usl4}</td>    
     </tr>
     
     <tr>
-      <td>5</td>
-      <td>adq</td>
+      <td>№5</td>
+      <td>name</td>
       <td>${Usl5}</td>    
     </tr>
     
     <tr>
-      <td>6</td>
-      <td>adq</td>
+      <td>№6</td>
+      <td>name</td>
       <td>${Usl6}</td>      
     </tr>
     
     <tr>
-      <td>7</td>
-      <td>adq</td>
+      <td>№7</td>
+      <td>name</td>
       <td>${Usl7}</td>      
     </tr>
     
     <tr>
-      <td>8</td>
-      <td>adq</td>
+      <td>№8</td>
+      <td>name</td>
       <td>${Usl8}</td>      
     </tr>
     
     <tr>
-      <td>9</td>
-      <td>adq</td>
+      <td>№9</td>
+      <td>name</td>
       <td>${Usl9}</td>    
     </tr>
     
     <tr>
-      <td>10</td>
-      <td>sdk</td>
+      <td>№10</td>
+      <td>name</td>
       <td>${Usl10}</td>     
     </tr>
     
     <tr>
-      <td>11</td>
-      <td>s</td>
+      <td>№11</td>
+      <td>name</td>
       <td>${Usl11}</td>      
     </tr>
     
     <tr>
-      <td>12</td>
-      <td>b</td>
+      <td>№12</td>
+      <td>name</td>
       <td>${Usl12}</td>      
     </tr>
     
     <tr>
       <td>Your promo</td>
-      <td>app</td>
+      <td>name</td>
       <td>here  ${Promo} here</td>         
     </tr>
     
@@ -202,13 +202,13 @@ input {
         }
       });
 
-      doc.save("Ваш пдф.pdf");
+      doc.save("Ваш пдф-файл.pdf");
     }
 </script>
 
 <p>Музыка, для прослушивания</p>
 
-<audio src="https://ru.muzmo.cc/get/cuts/4b/9a/4b9a3741942b527f1e4a1f2d5a298469/47828666/Linkin_Park_-_Faint_b128f0d162.mp3" controls>qqq</audio>
+<audio src="https://ru.muzmo.cc/get/cuts/4b/9a/4b9a3741942b527f1e4a1f2d5a298469/47828666/Linkin_Park_-_Faint_b128f0d162.mp3" controls></audio>
 
 </body>
 </html>
