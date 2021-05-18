@@ -18,7 +18,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet(name="CalcAuth", urlPatterns="/CalcAuth") 
 public class CalcAuth extends HttpServlet {
 
-
+	String clr;
 	
 	/**
 	 * 
@@ -46,9 +46,9 @@ public class CalcAuth extends HttpServlet {
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
 			HttpSession session = request.getSession();
-			String clr =(String) session.getAttribute("tema");
+			
             
-				request.setAttribute("col", clr);
+			
 				
 			
 
@@ -66,6 +66,16 @@ public class CalcAuth extends HttpServlet {
 	
 	
 }
+	public void doGet(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+         
+        // получаем сессию
+        HttpSession session = request.getSession();
+        // получаем объект name
+        clr = (String) session.getAttribute("tema");
+         
+    	request.setAttribute("col", clr);
+    }
 }
 
 

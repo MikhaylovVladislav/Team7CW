@@ -45,7 +45,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// получаем сессию
-        HttpSession session = request.getSession();
+      
         // получаем объект name
     
 		RequestCalc Calc = RequestCalc.fromRequestParameters(request);
@@ -70,7 +70,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        Textcol1="Ivory";
 	        Textcol2="MistyRose";
 	}
-	   session.setAttribute("tema", Textcol);
+	
 	   request.getRequestDispatcher("/CalcAuth").include(request, response);
 	
 	    }
@@ -294,6 +294,16 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		}
 		
 	}
+	public void doGet(HttpServletRequest request, HttpServletResponse response) 
+            throws ServletException, IOException {
+         
+        // получаем сессию
+        HttpSession session = request.getSession();
+        // получаем объект name
+        session.setAttribute("tema", Textcol);
+         
+   
+    }
 
 	}
 
