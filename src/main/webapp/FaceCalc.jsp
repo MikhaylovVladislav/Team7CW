@@ -13,24 +13,19 @@
    }
   
 fieldset {
-
   background-color: #eeeeee;
 width: 520px; margin:  5px auto;
-
 }
 
 fieldset.com {
-
   background-color: #D3D3D3;
 width: 500px; margin:  5px auto;
-
 }
 
 legend {
   background-color: gray;
   color: white;
   padding: 5px 10px;
-
 }
 
 input {
@@ -44,7 +39,6 @@ float: right;
 </style>
 </head>
 <body>
-
 
 <fieldset class = "com">
 <p style="color:#black"><strong>Пользователь:</strong>${result}</p>
