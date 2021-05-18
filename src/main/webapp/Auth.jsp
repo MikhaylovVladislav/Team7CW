@@ -9,6 +9,7 @@
 
     body {
     margin: 100px; 
+     background-color: ${col};
    }
   
 fieldset {
@@ -37,7 +38,7 @@ input {
 }
 </style>
 </head>
-<body bgcolor="#008B8B">
+<body>
  <fieldset class="com">
    <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>
