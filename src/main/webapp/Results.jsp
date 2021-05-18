@@ -46,7 +46,7 @@ input {
 
 
 
-<body bgcolor="MistyRose">
+<body bgcolor="#4682B4">
 
 <fieldset class = "com">
 
@@ -62,7 +62,7 @@ input {
 <table id="table">
   <thead>
     <tr>
-      <th>ID</th>
+      <th align="left">ID</th>
       <th>Name Work</th>
       <th>Price</th>
     </tr>
@@ -143,7 +143,7 @@ input {
     </tr>
     
     <tr>
-      <td><font color="#DEB887">Your promo</font></td>
+      <td><font color="#FF8C00">Your promo</font></td>
       <td>name</td>
       <td>here  ${Promo} here</td>         
     </tr>
