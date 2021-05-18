@@ -214,7 +214,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  	case  (1):p=1;break;
 			  default:p=1;break;
 			  }
-			 
+			
 			  
 			 
 			Inter1 i1 = new CalcPDF();
