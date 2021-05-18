@@ -43,10 +43,10 @@ float: right;
 
 <fieldset class = "com">
 <p style="color:#black"><strong>Пользователь:</strong>${result}</p>
-
+ <form action="${pageContext.request.contextPath}/JavaPDF" method="post" >
 <fieldset>
  <legend> Состояние строения </legend>
- <form action="${pageContext.request.contextPath}/JavaPDF" method="post" >
+
 <select id="Sost" name="Sost">
   <option value="1">Исправное состояние</option>
   <option value="2">Работоспособное состояние</option>
