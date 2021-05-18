@@ -175,17 +175,17 @@ float: right;
 <script>
 function fun1() {
 	  var rad=document.getElementsByName('1');
-	  for (var i=0;i<rad.length; i++) {
+	
 	    if (rad[0].checked) {
-	    	  document.body.style.background = red;
-	    	  alert('Выбран '+0+' radiobutton');
+	    	  document.body.style.background = "white";
+	    	
 	    }
 	    if (rad[1].checked) {
-	    	  document.body.style.background = green;
-	    	  alert('Выбран '+1+' radiobutton');
+	    	  document.body.style.background = "black";
+	    	  
 	    }
 	  }
-	}
+	
 </script>
 
 </body>
