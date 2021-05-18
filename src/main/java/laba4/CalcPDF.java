@@ -51,6 +51,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	    String q2 = request.getParameter("1");
 	    // compare selected value 
 	    if ("a".equals(q2)) {
+	    	
         Textcol="Black";
         Textcol1="Silver";
         Textcol2="DimGrey";

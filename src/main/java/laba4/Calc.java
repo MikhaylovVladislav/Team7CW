@@ -26,10 +26,13 @@ public class Calc extends HttpServlet {
 		private final String iskf_calc;
 		private String dis;		
 		private String per;
+	
+		
 		private RequestCalc (String first, String second, String iskf) {
 			this.first_calc = first;
 			this.second_calc = second;
 			this.iskf_calc = iskf;
+	
 			}
 		
 		public static RequestCalc fromRequestParameters(HttpServletRequest request) {
@@ -37,12 +40,16 @@ public class Calc extends HttpServlet {
 			request.getParameter("first"),
 			request.getParameter("second"),
 			request.getParameter("iskf"));
+		
 			}
 				
 		public void setAsRequestAttributesAndCalculate(HttpServletRequest request) {
+		
+			
 			request.setAttribute("first_result", first_calc);
 			request.setAttribute("second_result", second_calc);
 			request.setAttribute("kf_result", iskf_calc);
+			
 			int a,b;
 			try {
 				a=Integer.parseInt(first_calc);
@@ -52,6 +59,9 @@ public class Calc extends HttpServlet {
 		    	b=0;
 		    }
 		        	
+			
+			
+			
 			
 			if ((a==1234 && b==4321)||(a==1 && b==1)||(a==2 && b==2)||(a==3 && b==3)) {
 				if(a==1) {
@@ -89,6 +99,7 @@ public class Calc extends HttpServlet {
 					request.setAttribute("dis", "disabled");
 					request.setAttribute("hid", "style=\"display:none\"");;
 					request.setAttribute("hid", "style=\"display:none\"");
+					
 				}
 			
 
@@ -102,7 +113,7 @@ public class Calc extends HttpServlet {
 		 
 		request.getRequestDispatcher(Calc.dis).forward(request, response);
 	
-
+	
 	
 	
 }
