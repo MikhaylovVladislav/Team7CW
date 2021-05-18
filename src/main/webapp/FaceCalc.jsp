@@ -72,7 +72,7 @@ float: right;
      name="contact" value="email">
     <label for="contactChoice1">Приоритетный </label>
 
-    <input type="radio" id="contactChoice2"
+    <input type="radio" id="contactChoice2
      name="contact" value="phone">
     <label for="contactChoice2">Не приоритетный </label>
   </div>
@@ -138,10 +138,10 @@ float: right;
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
 <div>
-    <input type="radio" name="1"  value="a">
+    <input type="radio" name="1"  value="a" onclick="fun1()">
     <label for="contactChoice3">Светлая </label>
 
-    <input type="radio" name="1" value="b">
+    <input type="radio" name="1" value="b" onclick="fun1()">
     <label for="contactChoice4">Темная </label>
   </div>
 
@@ -172,7 +172,19 @@ float: right;
 </fieldset>
 
 
-
+<script>
+function fun1() {
+	  var rad=document.getElementsByName('1');
+	  for (var i=0;i<rad.length; i++) {
+	    if (rad[0].checked) {
+	    	  document.body.style.background = red;
+	    }
+	    if (rad[1].checked) {
+	    	  document.body.style.background = green;
+	    }
+	  }
+	}
+</script>
 
 </body>
 </html>
