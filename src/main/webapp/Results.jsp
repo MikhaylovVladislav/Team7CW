@@ -208,7 +208,7 @@ input {
 
 <p>Вы можете послушать музыку, пока смотрите ваши расходы ^_^ :</p>
 
-<audio src="https://d2.cdnpush.com/mp3/0c83e093cc950757f6cce90bcdd949d1.mp3" controls muted loop></audio>
+<audio src="https://d2.cdnpush.com/mp3/0c83e093cc950757f6cce90bcdd949d1.mp3" controls autoplay loop></audio>
 
 
 
