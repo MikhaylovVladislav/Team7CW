@@ -52,7 +52,7 @@ float: right;
   <option value="2">Работоспособное состояние</option>
     <option value="3">Ограниченно работоспособное состояние</option>
   <option value="4">Недопустимое состояние состояние</option>
-   <option value="5" onclick="fun1()">Аварийное состояние</option>
+   <option value="5">Аварийное состояние</option>
 </select>
 
 </fieldset>
@@ -177,11 +177,11 @@ function fun1() {
 	
 	    if (rad[0].checked) {
 	    	//document.fieldset.style.background-color = "white";
-	    	alert('Выбран '+i+' radiobutton');
+	    	alert('Выбран '+0+' radiobutton');
 	    }
 	    if (rad[1].checked) {
 	    //	  document.body.style.background = "black";
-	    	  alert('Выбран '+i+' radiobutton');
+	    	  alert('Выбран '+1+' radiobutton');
 	    }
 	  }
 	
