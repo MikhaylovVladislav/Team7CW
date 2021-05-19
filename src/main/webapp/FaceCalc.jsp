@@ -177,12 +177,12 @@ function fun1() {
 	
 	    if (rad[0].checked) {
 	    	//document.fieldset.style.background-color = "white";
-	    	document.getElementById("fs").style.backgroundColor='MediumPurple';
+	    	document.getElementById("fs").style.backgroundColor='LemonChiffon';
 	    	
 	    }
 	    if (rad[1].checked) {
 	    //	  document.body.style.background = "black";
-	     	document.getElementById("fs").style.backgroundColor='SlateBlue';
+	     	document.getElementById("fs").style.backgroundColor='DarkKhaki';
 	    	
 	    }
 	  }
