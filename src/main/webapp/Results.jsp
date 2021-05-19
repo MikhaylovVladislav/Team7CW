@@ -206,9 +206,11 @@ input {
     }
 </script>
 
-<p>Музыка, для прослушивания</p>
+<p>Вы можете послушать музыку, пока смотрите ваши расходы ^_^ :</p>
 
-<audio src="https://ru.muzmo.cc/get/cuts/4b/9a/4b9a3741942b527f1e4a1f2d5a298469/47828666/Linkin_Park_-_Faint_b128f0d162.mp3" controls></audio>
+<audio src="https://d2.cdnpush.com/mp3/0c83e093cc950757f6cce90bcdd949d1.mp3" controls muted loop></audio>
+
+
 
 </body>
 </html>
