@@ -176,12 +176,12 @@ function fun1() {
 	  var rad=document.getElementsByName('1');
 	
 	    if (rad[0].checked) {
-	    	document.fieldset.style.background-color = "white";
-	
+	    	document.fieldset.stylalert('Выбран '+i+' radiobutton');e.background-color = "white";
+	    	alert('Выбран '+0+' radiobutton');
 	    }
 	    if (rad[1].checked) {
 	    	  document.body.style.background = "black";
-	    	  
+	    	  alert('Выбран '+1+' radiobutton'); 
 	    }
 	  }
 	
