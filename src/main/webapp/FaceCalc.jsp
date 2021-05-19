@@ -182,7 +182,7 @@ function fun1() {
 	    }
 	    if (rad[1].checked) {
 	    //	  document.body.style.background = "black";
-	     	document.getElementById("fs").style.backgroundColor='Khaki';
+	     	document.getElementById("fs").style.backgroundColor='BurlyWood';
 	    	
 	    }
 	  }
