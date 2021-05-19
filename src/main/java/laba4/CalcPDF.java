@@ -15,6 +15,7 @@ import javax.servlet.http.HttpSession;
 public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 
 	public static String apptema;
+	public static String apptema1;
 	public static String SrokGet;
 	public static String Usl1Get;
 	public static String Usl2Get;
@@ -60,6 +61,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	    if ("a".equals(q2)) {
 	    	TestTake.dbapp.setTema(true);
 	    	apptema="true";
+	    	apptema1="true";
         Textcol="Black";
         Textcol1="Silver";
       //  Textcol2="DimGrey";
