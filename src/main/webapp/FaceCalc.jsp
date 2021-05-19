@@ -14,7 +14,7 @@
    }
   
 fieldset {
-  background-color: #eeeeee;
+  background-color: ${col1};
 width: 520px; margin:  5px auto;
 }
 
@@ -176,7 +176,7 @@ function fun1() {
 	  var rad=document.getElementsByName('1');
 	
 	    if (rad[0].checked) {
-	    	  document.body.style.background = "white";
+	    	  document.fieldset.style.background-color = "white";
 	    	
 	    }
 	    if (rad[1].checked) {
