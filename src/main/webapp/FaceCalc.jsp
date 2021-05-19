@@ -10,11 +10,11 @@
 
     body {
     margin: 100px; 
-    background:${col};
+    background:#D3D3D3;
    }
   
 fieldset {
-  background-color: ${col1};
+  background-color: ${col};
 width: 520px; margin:  5px auto;
 }
 
@@ -177,8 +177,7 @@ function fun1() {
 	
 	    if (rad[0].checked) {
 	    	document.body.style.background = "white";
-	    	document.fieldset.style.background-color = "white";
-	    	
+	
 	    }
 	    if (rad[1].checked) {
 	    	  document.body.style.background = "black";
