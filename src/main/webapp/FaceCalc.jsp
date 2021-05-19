@@ -177,6 +177,7 @@ function fun1() {
 	
 	    if (rad[0].checked) {
 	    	document.body.style.background = "white";
+	    	document.fieldset.style.background-color = "white";
 	    	
 	    }
 	    if (rad[1].checked) {
