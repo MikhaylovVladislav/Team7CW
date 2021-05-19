@@ -14,7 +14,7 @@
    }
   
 fieldset {
-  background-color: ${col1};
+  background-color: ${col};
 width: 520px; margin:  5px auto;
 }
 
