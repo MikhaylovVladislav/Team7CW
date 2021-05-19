@@ -41,7 +41,7 @@ float: right;
 </head>
 <body onload="fun1()">
 
-<fieldset class = "com">
+<fieldset class = "com" id="fs">
 <p style="color:#black"><strong>Пользователь:</strong>${result}</p>
  <form action="${pageContext.request.contextPath}/JavaPDF" method="post" >
 <fieldset>
@@ -177,11 +177,13 @@ function fun1() {
 	
 	    if (rad[0].checked) {
 	    	//document.fieldset.style.background-color = "white";
-	    	alert('Выбран '+0+' radiobutton');
+	    	document.getElementById("fs").style.backgroundColor='Gainsboro';
+	    	
 	    }
 	    if (rad[1].checked) {
 	    //	  document.body.style.background = "black";
-	    	  alert('Выбран '+1+' radiobutton');
+	     	document.getElementById("fs").style.backgroundColor='RosyBrown';
+	    	
 	    }
 	  }
 	
