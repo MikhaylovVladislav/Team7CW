@@ -10,7 +10,7 @@
 
     body {
     margin: 100px; 
-    background:#D3D3D3;
+    background:${col};
    }
   
 fieldset {
