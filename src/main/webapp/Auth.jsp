@@ -42,7 +42,7 @@ input {
 <body>
 
 <div class="video-bg">
-   <video src="https://r210105.kujo-jotaro.com/naruto/1/1.480.1f89a08c65b0c303.mp4?hash1=c39e36ed3ef222a1e8fceaca738872fd&hash2=46a0306a84a211731e83dc1736c29505" autoplay muted loop></video>
+   <video src="https://vod-progressive.akamaized.net/exp=1621538100~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2775%2F21%2F538877060%2F2554448076.mp4~hmac=3322fb3f63c208699c583a054cb6188d99b833c6f110d3bf422fab2393b8da0b/vimeo-prod-skyfire-std-us/01/2775/21/538877060/2554448076.mp4?filename=Waves+-+70796.mp4" autoplay muted loop></video>
          
    <div class="effects"></div>
    
