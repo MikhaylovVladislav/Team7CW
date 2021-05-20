@@ -40,6 +40,28 @@ input {
 </style>
 </head>
 <body>
+
+<div class="video-bg">
+   <video src="https://r210105.kujo-jotaro.com/naruto/1/1.480.1f89a08c65b0c303.mp4?hash1=c39e36ed3ef222a1e8fceaca738872fd&hash2=46a0306a84a211731e83dc1736c29505" type="video/mp4" autoplay muted loop>d</video>
+         
+   <div class="effects"></div>
+   
+   <div class="video-bg__content">  
+       <p>Калькулятор отделочных работ!</p>
+   </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
  <fieldset class="com">
    <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>
