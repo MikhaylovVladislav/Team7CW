@@ -87,38 +87,38 @@ float: right;
 <label>Подготовка стен, потолков под финиш<input type="number" name="Usl1" id="Usl1" value="${Usl1}"></label>
 </div>
 <div class="algblock">
-<label>Оклейка обоями<input type="number" name="Usl2" id="Usl2" value="${Usl2}" ></label>
+<label>Оклейка обоями<input type="number" min="0" name="Usl2" id="Usl2" value="${Usl2}" ></label>
 </div>
 <div class="algblock">
-<label>Покраска стен, потолков<input type="number" name="Usl3" id="Usl3" value="${Usl3}" ></label>
+<label>Покраска стен, потолков<input type="number" min="0" name="Usl3" id="Usl3" value="${Usl3}" ></label>
 </div>
 <div class="algblock">
-<label>Шумоизоляция стен<input type="number" name="Usl4" id="Usl4" value="${Usl4}"></label>
+<label>Шумоизоляция стен<input type="number" min="0" name="Usl4" id="Usl4" value="${Usl4}"></label>
 </div>
 
 <div class="algblock">
-<label>Эскизный проект перепланировки<input type="number" name="Usl5" id="Usl5" value="${Usl5}" ></label>
+<label>Эскизный проект перепланировки<input type="number" min="0" name="Usl5" id="Usl5" value="${Usl5}" ></label>
 </div>
 <div class="algblock">
-<label>Штукатурка стен, потолков<input type="number" name="Usl6" id="Usl6" value="${Usl6}" ></label>
+<label>Штукатурка стен, потолков<input type="number" min="0" name="Usl6" id="Usl6" value="${Usl6}" ></label>
 </div>
 <div class="algblock">
-<label>Очистка поверхностей от старых покрытий<input type="number" name="Usl7" id="Usl7" value="${Usl7}" ></label>
+<label>Очистка поверхностей от старых покрытий<input type="number" min="0" name="Usl7" id="Usl7" value="${Usl7}" ></label>
 </div>
 <div class="algblock">
-<label>Шпатлевка стен, потолков<input type="number" name="Usl8" id="Usl8" value="${Usl8}" ></label>
+<label>Шпатлевка стен, потолков<input type="number" min="0" name="Usl8" id="Usl8" value="${Usl8}" ></label>
 </div>
 <div class="algblock">
-<label>Нанесение декоративных покрытий<input type="number" name="Usl9" id="Usl9" value="${Usl9}" ></label>
+<label>Нанесение декоративных покрытий<input type="number" min="0" name="Usl9" id="Usl9" value="${Usl9}" ></label>
 </div>
 <div class="algblock">
-<label>Облицовка плиткой стен<input type="number" name="Usl10" id="Usl10" value="${Usl10}" ></label>
+<label>Облицовка плиткой стен<input type="number" min="0" name="Usl10" id="Usl10" value="${Usl10}" ></label>
 </div>
 <div class="algblock">
-<label>Укладка ламината<input type="number" name="Usl11" id="Usl11" value="${Usl11}" ></label>
+<label>Укладка ламината<input type="number" min="0" name="Usl11" id="Usl11" value="${Usl11}" ></label>
 </div>
 <div class="algblock">
-<label>Оклейка панелями потолок<input type="number" name="Usl12" id="Usl12" value="${Usl12}"  ></label>
+<label>Оклейка панелями потолок<input type="number" min="0" name="Usl12" id="Usl12" value="${Usl12}"  ></label>
 </div>
 </fieldset>
 
