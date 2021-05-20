@@ -69,5 +69,20 @@ input {
  <input type="submit" name="sign" value="Авторизоваться">
 </form>
 </fieldset>
+
+<fieldset><b>Команда разработчиков данного калькулятора:</b>
+     <p style="color:#8B0000">1) Михайлов Владислав, ПИ-221</p>
+     <p style="color:#C71585">2) Тахаев Арсений, ПИ-221</p>
+     <p style="color:#191970">3) Боголюбов Максим, ПИ-221</p>
+     <p style="color:#006400">4) Белоусов Артем, ПИ-221</p>  
+         
+     </fieldset>
+
+
+
+
+
+
+
 </body>
 </html>
