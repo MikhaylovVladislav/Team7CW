@@ -60,16 +60,16 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	    if ("a".equals(q2)) {
 	    	TestTake.dbapp.setTema(true);
 	    	apptema="true";
-        Textcol="Black";
-        Textcol1="Silver";
+       // Textcol="Black";
+      //  Textcol1="Silver";
       //  Textcol2="DimGrey";
         
 	}
 	   if ("b".equals(q2)) {
 		   TestTake.dbapp.setTema(false);
 		   apptema="false";
-	       Textcol="White";
-	        Textcol1="Ivory";
+	     //  Textcol="White";
+	      //  Textcol1="Ivory";
 	      // Textcol2="MistyRose";
 	}
 	

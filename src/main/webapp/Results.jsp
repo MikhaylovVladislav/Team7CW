@@ -19,20 +19,20 @@
   
 fieldset {
 
-  background-color: ${col1};
+  background-color: LemonChiffon;
 width: 820px; margin:  5px auto;
 
 }
 
 fieldset.com {
 
-  background-color: ${col2};
+  background-color: LemonChiffon;
 width: 800px; margin:  5px auto;
 
 }
 
 legend {
-  background-color: green;
+  background-color: LemonChiffon;
   color: #0000FF;
   padding: 5px 10px;
 
