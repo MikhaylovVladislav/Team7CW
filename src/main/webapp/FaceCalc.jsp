@@ -72,7 +72,7 @@ float: right;
     <input type="radio" id="contactChoice1" name="contact" value="1">
     <label for="contactChoice1">Приоритетный </label>
 
-    <input type="radio" id="contactChoice2" name="contact" value="2">
+    <input type="radio" id="contactChoice2" name="contact" value="2" checked>
     <label for="contactChoice2">Не приоритетный </label>
   </div>
  
@@ -140,7 +140,7 @@ float: right;
     <input type="radio" name="1"  value="a" onclick="fun1()">
     <label for="contactChoice3">Светлая </label>
 
-    <input type="radio" name="1" value="b" onclick="fun1()">
+    <input type="radio" name="1" value="b" onclick="fun1()" checked>
     <label for="contactChoice4">Темная </label>
   </div>
 
@@ -150,7 +150,7 @@ float: right;
 <!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
     <input type="submit" name="save" value="Сохранить">
     </form-->
-<button type="submit" name="Save"  onclick="return false">Сохранить</button>
+
 </fieldset>
 </fieldset>
      
