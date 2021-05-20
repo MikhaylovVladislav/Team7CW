@@ -84,7 +84,7 @@ float: right;
  <div class="algblock">
  
 
-<label>Подготовка стен, потолков под финиш<input type="number" name="Usl1" id="Usl1" value="${Usl1}"></label>
+<label>Подготовка стен, потолков под финиш<input type="number" min="0" name="Usl1" id="Usl1" value="${Usl1}"></label>
 </div>
 <div class="algblock">
 <label>Оклейка обоями<input type="number" min="0" name="Usl2" id="Usl2" value="${Usl2}" ></label>
