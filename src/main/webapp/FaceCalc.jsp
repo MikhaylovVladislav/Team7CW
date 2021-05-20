@@ -10,11 +10,11 @@
 
     body {
     margin: 100px; 
-    background:${col};
+    background:${LemonChiffon};
    }
   
 fieldset {
-  background-color: ${col};
+  background-color: ${LemonChiffon};
 width: 520px; margin:  5px auto;
 }
 
@@ -24,8 +24,8 @@ width: 500px; margin:  5px auto;
 }
 
 legend {
-  background-color: gray;
-  color: white;
+  background-color: LemonChiffon;
+  color: #0000FF;
   padding: 5px 10px;
 }
 
