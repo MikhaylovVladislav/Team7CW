@@ -13,7 +13,7 @@ public class Level2 extends Level {
 	public void check() {
 	
 		
-	int [] masss = {10,20,30,40,50,60,70,800};
+	int [] mass = {10,20,30,40,50,60,70,800};
 		
 		
 	}
@@ -22,7 +22,12 @@ public class Level2 extends Level {
 
 	@Override
 	public double promo() {
-		// TODO Auto-generated method stub
-		return 0;
+		double x =1.0;
+		String x1 = null;
+		String[] mass = {"USATU", "PI-221"};
+		if ((x1 == mass[0]) | (x1 == mass[1])) {
+		x=0.5;	
+		}
+		return x;
 	}
 }
