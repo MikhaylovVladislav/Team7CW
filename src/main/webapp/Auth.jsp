@@ -52,16 +52,6 @@ input {
    </div>
 
 
-
-
-
-
-
-
-
-
-
-
  <fieldset class="com">
    <form action="${pageContext.request.contextPath}/JavaCalc" method="post">
 <fieldset>

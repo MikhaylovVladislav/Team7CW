@@ -4,6 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/style1.css">
 <title>Результат</title>
 <style>
    body {
@@ -48,7 +49,7 @@ input {
 
 <body bgcolor="#4682B4">
 
-<fieldset class = "com" bgcolor="red">
+<fieldset class = "com">
 
 <fieldset>
  <legend> Итоговый рассчет </legend>
