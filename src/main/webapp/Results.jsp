@@ -32,8 +32,8 @@ width: 800px; margin:  5px auto;
 }
 
 legend {
-  background-color: LemonChiffon;
-  color: #0000FF;
+  background-color: gray;
+  color: white;
   padding: 5px 10px;
 
 }
