@@ -44,7 +44,7 @@ input {
 <body>
 
 <div class="video-bg">
-   <video src="https://vod-progressive.akamaized.net/exp=1621538100~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2775%2F21%2F538877060%2F2554448076.mp4~hmac=3322fb3f63c208699c583a054cb6188d99b833c6f110d3bf422fab2393b8da0b/vimeo-prod-skyfire-std-us/01/2775/21/538877060/2554448076.mp4?filename=Waves+-+70796.mp4" type='video/mp4' autoplay muted loop></video>
+   <video src="https://vod-progressive.akamaized.net/exp=1621538100~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2775%2F21%2F538877060%2F2554448076.mp4~hmac=3322fb3f63c208699c583a054cb6188d99b833c6f110d3bf422fab2393b8da0b/vimeo-prod-skyfire-std-us/01/2775/21/538877060/2554448076.mp4?filename=Waves+-+70796.mp4" autoplay muted loop></video>
          
    <div class="effects"></div>
    
@@ -73,10 +73,10 @@ input {
 </fieldset>
 
 <fieldset><b>Команда разработчиков данного калькулятора:</b>
-     <p style="color:#8B0000">1) Михайлов Владислав, ПИ-221</p>
-     <p style="color:#C71585">2) Тахаев Арсений, ПИ-221</p>
-     <p style="color:#191970">3) Боголюбов Максим, ПИ-221</p>
-     <p style="color:#006400">4) Белоусов Артем, ПИ-221</p>  
+     <p style="color:#8B0000"><u>1) Михайлов Владислав, ПИ-221</u></p>
+     <p style="color:#C71585"><u>2) Тахаев Арсений, ПИ-221</u></p>
+     <p style="color:#191970"><u>3) Боголюбов Максим, ПИ-221</u></p>
+     <p style="color:#006400"><u>4) Белоусов Артем, ПИ-221</u></p>  
          
      </fieldset>
 

@@ -6,7 +6,7 @@ body {
 }
 .video-bg {
     height: 30vh;
-    width: 100%;
+    width: 120%;
     overflow: hidden;
     display: flex;
     justify-content: center;
