@@ -20,7 +20,7 @@
 fieldset {
 
   background-color: LemonChiffon;
-width: 1100px; margin:  5px auto;
+width: 1100px; height: 1000px; margin:  5px auto;
 
 }
 
