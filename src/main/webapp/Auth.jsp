@@ -41,7 +41,7 @@ input {
 }
 </style>
 </head>
-<body bgcolor="#006400">
+<body>
 
 <div class="video-bg">
    <video src="https://vod-progressive.akamaized.net/exp=1621592522~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4327%2F20%2F521635037%2F2436722604.mp4~hmac=b50393384bb49eb02bd98223a3741dfb15b2e3f1b671c52b3b07a80e92aecf24/vimeo-prod-skyfire-std-us/01/4327/20/521635037/2436722604.mp4?filename=Lake+-+67201.mp4" autoplay muted loop></video>
@@ -49,7 +49,7 @@ input {
    <div class="effects"></div>
    
    <div class="video-bg__content">  
-       <p align="center">Калькулятор отделочных работ!!!</p>
+       <p>Калькулятор отделочных работ!!!</p>
    </div>
    
    </div>
