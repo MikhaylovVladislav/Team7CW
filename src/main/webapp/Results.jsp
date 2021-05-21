@@ -63,96 +63,96 @@ input {
 <table id="table">
   <thead>
     <tr>
-      <th align="left">ID</th>
-      <th>Name Work</th>
-      <th>Price</th>
+      <th align="left">Номер услуги</th>
+      <th>Услуга</th>
+      <th>Стоимость за услугу</th>
     </tr>
   </thead>
   
   <tbody>  
     <tr>
       <td><font color="#4B0082">№1</font></td>
-      <td>name</td>
+      <td>Подготовка стен, потолков под финиш</td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
       <td><font color="#4B0082">№2</font></td>
-      <td>name</td>
+      <td>Оклейка обоями</td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
       <td><font color="#4B0082">№3</font></td>
-      <td>name</td>
+      <td>Покраска стен, потолков</td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
       <td><font color="#4B0082">№4</font></td>
-      <td>name</td>
+      <td>Шумоизоляция стен</td>
       <td>${Usl4}</td>    
     </tr>
     
     <tr>
       <td><font color="#4B0082">№5</font></td>
-      <td>name</td>
+      <td>Эскизный проект перепланировки</td>
       <td>${Usl5}</td>    
     </tr>
     
     <tr>
       <td><font color="#4B0082">№6</font></td>
-      <td>name</td>
+      <td>Штукатурка стен, потолков</td>
       <td>${Usl6}</td>      
     </tr>
     
     <tr>
       <td><font color="#4B0082">№7</font></td>
-      <td>name</td>
+      <td>Очистка поверхностей от старых покрытий</td>
       <td>${Usl7}</td>      
     </tr>
     
     <tr>
       <td><font color="#4B0082">№8</font></td>
-      <td>name</td>
+      <td>Шпатлевка стен, потолков</td>
       <td>${Usl8}</td>      
     </tr>
     
     <tr>
       <td><font color="#4B0082">№9</font></td>
-      <td>name</td>
+      <td>Нанесение декоративных покрытий</td>
       <td>${Usl9}</td>    
     </tr>
     
     <tr>
       <td><font color="#4B0082">№10</font></td>
-      <td>name</td>
+      <td>Облицовка плиткой стен</td>
       <td>${Usl10}</td>     
     </tr>
     
     <tr>
       <td><font color="#4B0082">№11</font></td>
-      <td>name</td>
+      <td>Укладка ламината</td>
       <td>${Usl11}</td>      
     </tr>
     
     <tr>
       <td><font color="blue">№12</font></td>
-      <td>name</td>
+      <td>Оклейка панелями потолок</td>
       <td>${Usl12}</td>      
     </tr>
     
     <tr>
       <td><font color="#FF8C00">Your promo</font></td>
-      <td>name</td>
-      <td>here  ${Promo} here</td>         
+      <td> </td>
+      <td>somethink ${Promo}</td>         
     </tr>
     
     <tr>
-      <td><font color="#DEB887">All summ</font></td>
-      <td>Gold for work</td>
-      <td>${result5}</td>
+      <td><font color="#DEB887"></font></td>
+      <td></td>
+      <td></td>
     </tr>
     
   </tbody>
