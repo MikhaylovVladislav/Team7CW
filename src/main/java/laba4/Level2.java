@@ -20,14 +20,16 @@ public class Level2 extends Level {
 
 
 
+
 	@Override
-	public double promo() {
+	public double promo(String promo) {
 		double x =1.0;
 		String x1 = null;
 		String[] mass = {"USATU", "PI-221"};
-		if ((x1 == mass[0]) | (x1 == mass[1])) {
+		if ((promo == mass[0]) | (promo == mass[1])) {
 		x=0.5;	
 		}
+
 		return x;
 	}
 }

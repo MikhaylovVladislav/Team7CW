@@ -179,7 +179,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			double p=1;double g=1;double r=0;double z=0.02;double h=1;double sum4;double sum5;
 
 			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
-			
+	
 
 			int intradp=0; //срок в инте
 	        int sostg=0; //состояние в инте
@@ -216,9 +216,11 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  default:p=1;break;
 			  }
 			
-			 // промокод
+			Level2 kf=new Level2(0);
+			  // промокод
 			  if (prcg==1234) {r=0.3;}
-			 
+			  double promo1;
+			  promo1=kf.promo(TextPromo);
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
 		//	Арифметика
@@ -269,7 +271,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.setAttribute("col1", Textcol1);
 			request.setAttribute("col2", Textcol2);
 		}
-		
+
 	}
 	public void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
