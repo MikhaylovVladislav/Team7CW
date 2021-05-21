@@ -23,7 +23,7 @@ public class Level2 extends Level {
 
 	@Override
 	public double promo(String promo) {
-		double x =1.0;
+		double x =2.0;
 		String x1 = null;
 		String[] mass = {"USATU", "123"};
 		if ((promo == mass[0]) | (promo == mass[1])) {
