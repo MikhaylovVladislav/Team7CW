@@ -250,8 +250,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 		
 			request.setAttribute("Srok", TextSrok);
-			request.setAttribute("Usl1", q2);
-			request.setAttribute("Usl2", Textcol2);
+			request.setAttribute("Usl1", TextUsl1);
+			request.setAttribute("Usl2", TextUsl2);
 			request.setAttribute("Usl3", TextUsl3);
 			request.setAttribute("Usl4", TextUsl4);
 			request.setAttribute("Usl5", TextUsl5);
@@ -274,12 +274,6 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public void doGet(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
          
-        // получаем сессию
-        HttpSession session = request.getSession();
-        // получаем объект name
-        session.setAttribute("tema", Textcol);
-         
-   
     }
 	}
 
