@@ -72,13 +72,31 @@ input {
 </form>
 </fieldset>
 
-<fieldset>
- <legend>Команда разработчиков данного калькулятора</legend>
-     <u><p style="color:#8B0000">1) Михайлов Владислав, ПИ-221</p></u>
-     <p style="color:#C71585"><u>2) Тахаев Арсений, ПИ-221</u></p>
-     <p style="color:#191970"><u>3) Боголюбов Максим, ПИ-221</u></p>
-     <p style="color:#006400"><u>4) Белоусов Артем, ПИ-221</u></p>          
-     </fieldset>
+ <div class="container">
+    <div class="pulse">
+        <p><font color="#FF4500">Михайлов В.?, ПИ-221</font></p>
+    </div>
+</div>
+ 
+     
+     <div class="cont">
+    <div class="pul">
+        <p><font color="#4B0082">Тахаев А.Г., ПИ-221</font></p>
+    </div>
+</div>
+     
+     <div class="conta">
+    <div class="puls">
+        <p><font color="#A52A2A">Боголюбов М.?., ПИ-221</font></p>
+    </div>
+</div>
+     
+     
+     <div class="contai">
+    <div class="pu">
+        <p><font color="#DAA520">Белоусов А.?., ПИ-221</font></p>
+    </div>
+</div>
 
 
 
