@@ -29,7 +29,6 @@ public class Level2 extends Level {
 		if ((promo == mass[0]) | (promo == mass[1])) {
 		x=0.5;	
 		}
-
 		return x;
 	}
 }
