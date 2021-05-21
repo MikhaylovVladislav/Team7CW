@@ -20,7 +20,7 @@
 fieldset {
 
   background-color: LemonChiffon;
-width: 1500px; margin:  5px auto;
+width: 1100px; margin:  5px auto;
 
 }
 
@@ -39,7 +39,7 @@ legend {
 }
 
 input {
-  margin: 30px;
+  margin: 130px;
 }
   </style>
   
