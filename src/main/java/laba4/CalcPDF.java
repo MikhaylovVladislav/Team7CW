@@ -223,6 +223,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  r=kf.promo(TextPromo);
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
+			
 		//	Арифметика
 			  try {pr1=Double.parseDouble(Usl1Get);} catch (NumberFormatException e) {pr1=0;}
 			  try {pr2=Double.parseDouble(Usl2Get);} catch (NumberFormatException e) {pr2=0;}
