@@ -16,14 +16,14 @@
   
 fieldset {
 
-  background-color: #eeeeee;
+  background-color: LemonChiffon;
 width: 500px; margin:  5px auto;
 
 }
 
 fieldset.com {
 
-  background-color: #D3D3D3;
+  background-color: LemonChiffon;
 width: 500px; margin:  5px auto;
 
 }
@@ -32,6 +32,7 @@ legend {
   background-color: gray;
   color: white;
   padding: 5px 10px;
+
 
 }
 
