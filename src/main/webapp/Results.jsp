@@ -178,7 +178,7 @@ input {
 <script>
  function generate() {
       var doc = new jsPDF('p', 'pt');
-
+      doc.setFont('Arial');
       var elem = document.getElementById('table');
       var imgElements = document.querySelectorAll('#table tbody img');
       var data = doc.autoTableHtmlToJson(elem);
