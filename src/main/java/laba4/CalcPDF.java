@@ -102,7 +102,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextCol1;
 		private final String TextCol2;
 						
-		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1, String Col2, String Klass) {
+		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1, String Col2, String contact) {
 
 			this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -119,7 +119,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextUsl12 = Usl12;
 			this.TextPromo = Promo;
 			this.TextSost = Sost;
-			this.TextKlass = Klass;
+			this.TextKlass = contact;
 			this.TextKfpromo = Kfpromo;
 			this.TextCol = Col;
 			this.TextCol1 = Col1;
@@ -188,7 +188,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
-	        try {prcg=Integer.parseInt(PromoGet);} catch (NumberFormatException e) {clh=0;}
+	        try {prcg=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        
 	        // состояние ремонта
 	        switch (sostg){ 
