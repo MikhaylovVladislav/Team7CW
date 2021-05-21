@@ -1,10 +1,11 @@
 fieldset {
     display: block;
-    margin-left: 0px;
-    margin-right: 1300px;
+    margin-left: 1400px;
+    margin-right: 700px;
+    margin-bottom: 0px;
     padding-top: 0.15em;
-    padding-bottom: 0.55em;
-    padding-left: 0.45em;
-    padding-right: 0.25em;
+    padding-bottom: 1.55em;
+    padding-left: 3.85em;
+    padding-right: 3.85em;
     border: 2px groove (internal value);
 }
