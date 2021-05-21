@@ -216,7 +216,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			  default:p=1;break;
 			  }
 			
-			Level2 kf=new Level2(0);
+			Level2 kf=new Level2(1);
 			 
 			// промокод
 			  if (prcg==1234) {r=0.3;}
