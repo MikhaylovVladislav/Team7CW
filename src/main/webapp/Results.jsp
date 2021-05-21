@@ -20,7 +20,7 @@
 fieldset {
 
   background-color: LemonChiffon;
-width: 820px; margin:  5px auto;
+width: 1500px; margin:  5px auto;
 
 }
 
@@ -65,7 +65,7 @@ input {
     <tr>
       <th align="left">Номер услуги</th>
       <th>Услуга</th>
-      <th>Стоимость за услугу</th>
+      <th>Количество метров</th>
     </tr>
   </thead>
   
@@ -165,12 +165,7 @@ input {
 
 <!-- Создание загрузки пдф-файлика и его просмотра.ю -->
 
-<center><button onclick="generate()">Скачать PDF.</button></center>
-
-
-
-
-
+<center><button onclick="generate()">Скачать PDF</button></center>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/2.3.5/jspdf.plugin.autotable.js"></script>
@@ -203,13 +198,13 @@ input {
         }
       });
 
-      doc.save("Ваш пдф-файл.pdf");
+      doc.save("Расчеты.pdf");
     }
 </script>
 
 <p>Вы можете послушать музыку, пока смотрите ваши расходы ^_^ :</p>
 
-<audio src="https://d2.cdnpush.com/mp3/0c83e093cc950757f6cce90bcdd949d1.mp3" controls autoplay loop></audio>
+<audio src="https://d2.cdnpush.com/mp3/0c83e093cc950757f6cce90bcdd949d1.mp3" controls loop></audio>
 
 
 
