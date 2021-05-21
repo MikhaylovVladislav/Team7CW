@@ -27,7 +27,7 @@ public class Level2 extends Level {
 		String x1 = null;
 		String[] mass = {"USATU", "123"};
 		if ((promo == mass[0]) | (promo == mass[1])) {
-		x=0.3;	
+		x=1.3;	
 		}
 		return x;
 	}
