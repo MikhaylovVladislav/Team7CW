@@ -49,7 +49,7 @@ input {
    <div class="effects"></div>
    
    <div class="video-bg__content">  
-       <p>Калькулятор отделочных работ!!!</p>
+       <p align="center">Калькулятор отделочных работ!!!</p>
    </div>
    
    </div>
