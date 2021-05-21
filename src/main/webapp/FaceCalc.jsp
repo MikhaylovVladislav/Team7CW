@@ -160,7 +160,7 @@ float: right;
 </form>
 
 
-<form action="CalcAuth" method="post">
+<form action="${pageContext.request.contextPath}/Auth.jsp">
     <input type="submit" name="exit" value="Выйти">
     </form>
     
