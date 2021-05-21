@@ -85,7 +85,7 @@ public class Calc extends HttpServlet {
 				}
 				dis="/FaceCalc.jsp";
 				} else if(iskf_calc !="") {
-					dis="/FaceCalc.jsp";
+					dis="/Auth.jsp";
 					
 				
 		}else{
