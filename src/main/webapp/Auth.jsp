@@ -45,7 +45,7 @@ input {
 <body bgcolor="#FFDAB9">
 
 <div class="video-bg">
-   <video src="https://vod-progressive.akamaized.net/exp=1621683227~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1337%2F7%2F181688494%2F595455967.mp4~hmac=6fbd4c5354d0239684a6c99b17af12a13fd1ec6d73926e9499d703f6b2020ce7/vimeo-prod-skyfire-std-us/01/1337/7/181688494/595455967.mp4?filename=Jigsaw+-+4973.mp4" type="video/mp4" autoplay muted loop></video>
+   <video src="https://vod-progressive.akamaized.net/exp=1621697828~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1337%2F7%2F181688500%2F595455973.mp4~hmac=8ae7c1ba4936042da25a8b498549691a78a32dd72a4b315b6df045d8ebc346c3/vimeo-prod-skyfire-std-us/01/1337/7/181688500/595455973.mp4?filename=Drill+-+4974.mp4" autoplay muted loop></video>
          
    <div class="effects"></div>
    
@@ -76,7 +76,7 @@ input {
 
 <h1 align="right"><span id="doc_time" title="Текущее время"></span></h1>
 
-<p align="left"><font color="#008000">Команда разработчиков (team7):</font></p>
+<p align="left"><font color="#008000">Команда разработчиков(team7):</font></p>
  <div class="container">
     <div class="pulse">
         <p><font color="#FF4500">Михайлов В.А., ПИ-221</font></p>
