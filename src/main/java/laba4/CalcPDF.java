@@ -219,10 +219,10 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 			Level2 kf=new Level2(1);
 			String test = TextPromo; 
-			String test1 = TextKfpromo; 
+		//	String test1 = TextKfpromo; 
 			// промокод
 			  if (prcg==1234) {r=0.3;}	
-		    r=kf.promo(test, test1);
+		    r=kf.promo(test, test);
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
 		//	Арифметика
@@ -270,7 +270,7 @@ if (sum5==0) {z=0;}else {z=0.02;}
 			request.setAttribute("col", Textcol);
 			request.setAttribute("col1", Textcol1);
 			request.setAttribute("col2", Textcol2);
-			request.setAttribute("Kfpromo", TextKfpromo);
+		//	request.setAttribute("Kfpromo", TextKfpromo);
 		}
 
 	}
