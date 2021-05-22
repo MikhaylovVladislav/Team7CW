@@ -34,7 +34,7 @@ public class Level2 extends Level {
 
 		if (b == a ) {
 				x=0.9;
-			if (c != 1) {
+			if (c != 123) {
 			x=c;
 			}	
 				
