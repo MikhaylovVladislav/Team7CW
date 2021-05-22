@@ -16,7 +16,7 @@ public abstract class Level {
 	public abstract void check();
 	
 	
-	//ћетод дл€ переопределени€ дл€ создани€ промокода
+	//ћетод дл€ переопределени€ дл€ создани€ промокода.
 	public abstract double promo(String promo, double Kfpromo);
 
 	
