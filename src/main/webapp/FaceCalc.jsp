@@ -15,13 +15,13 @@
   
 fieldset {
   background-color: ${col};
-width: 520px; margin:  5px auto;
+width: 620px; margin:  5px auto;
 }
 
 fieldset.com {
 -moz-box-sizing;
   background-color: #D3D3D3;
-width: 500px; margin:  5px auto;
+width: 600px; margin:  5px auto;
 }
 
 legend {
