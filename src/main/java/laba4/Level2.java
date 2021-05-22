@@ -27,7 +27,9 @@ public class Level2 extends Level {
 		String x1 = null;
 	//	String[] mass = {"USATU", "123"};
 		int a = 123;
-		int b = Integer.parseInt(promo);
+		int b;
+		try {b = Integer.parseInt(promo);} catch (NumberFormatException e) {b=0;}
+		 
 		//if ((promo == mass[0]) | (promo == mass[1])) {
 		if (b == a) {
 		x=0.7;	
