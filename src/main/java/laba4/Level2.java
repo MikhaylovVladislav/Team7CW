@@ -19,8 +19,6 @@ public class Level2 extends Level {
 	}
 
 
-
-
 	@Override
 	public double promo(String promo, String Kfpromo) {
 		double x =1.0;
@@ -37,9 +35,9 @@ public class Level2 extends Level {
 
 			if (b == a) {
 				x=c;
-				if (c != 1) {
-					x=0.9;
-					}	
+				//if (c != 1) {
+					//x=0.9;
+					//}	
 				
 			}
 
