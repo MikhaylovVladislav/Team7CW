@@ -221,7 +221,8 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			String test = TextPromo; 
 			String test1 = TextKfpromo; 
 			// промокод
-			  if (prcg==1234) {r=0.3;}	
+			
+			if (prcg==1234) {r=0.3;}	
 		    r=kf.promo(test, test);
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
