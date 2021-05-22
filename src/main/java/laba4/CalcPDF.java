@@ -244,7 +244,7 @@ if (sum5==0) {z=0;}else {z=0.02;}
 			  
 				double s1=i1.xsum3(sum5, sum4, z, h); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
-				
+			
 				double s2=((s1*p*g*r));//-(s1*r)); //	int s2=(int)(s1*p*g-s1*r); 	int s2=(int)((s1*p*g*r))
 				 // gen=Integer.toString(s2);
 				  request.setAttribute("result5", s2);
