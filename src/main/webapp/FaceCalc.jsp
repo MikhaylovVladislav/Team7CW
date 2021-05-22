@@ -9,6 +9,7 @@
 <style>
 
     body {
+    -moz-box-sizing: border-box;
     margin: 100px; 
     background:${col};
    }
@@ -19,7 +20,7 @@ width: 620px; margin:  5px auto;
 }
 
 fieldset.com {
--moz-box-sizing;
+-moz-box-sizing: border-box;
   background-color: #D3D3D3;
 width: 600px; margin:  5px auto;
 }
@@ -35,7 +36,7 @@ input {
 }
 
 .algblock {
--moz-box-sizing;
+-moz-box-sizing: border-box;
 float: right;
  padding-right: 20px; 
 }
