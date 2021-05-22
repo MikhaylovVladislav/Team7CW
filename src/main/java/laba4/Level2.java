@@ -26,9 +26,10 @@ public class Level2 extends Level {
 		double x =1.0;
 		String x1 = null;
 	//	String[] mass = {"USATU", "123"};
-		String a = "123";
+		int a = 123;
+		int b = Integer.parseInt(promo);
 		//if ((promo == mass[0]) | (promo == mass[1])) {
-		if (promo == a) {
+		if (b == a) {
 		x=0.7;	
 		}
 		return x;
