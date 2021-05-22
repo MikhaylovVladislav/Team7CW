@@ -129,7 +129,6 @@ float: right;
 <label>Введите промокод<input type="text" name="Promo" id="Promo" value="${Promo}" ></label>
  <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:<input type="text" name="Kfpromo" id="Kfpromo" value="${Kfpromo}"></label>
 
-
 </fieldset>
     
      <fieldset  ${hid}>
