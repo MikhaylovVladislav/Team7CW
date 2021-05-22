@@ -25,6 +25,7 @@ public class Level2 extends Level {
 	//	String[] mass = {"USATU", "123"};
 		int a = 123;
 		double b;
+	
 		
 		try {b = Double.parseDouble(promo);} catch (NumberFormatException e) {b=0;}
 	//	try {c = Integer.parseInt(Kfpromo);} catch (NumberFormatException e) {c = 1;}
