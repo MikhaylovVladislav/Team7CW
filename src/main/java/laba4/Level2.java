@@ -32,7 +32,7 @@ public class Level2 extends Level {
 		//if ((promo == mass[0]) | (promo == mass[1])) {
 
 		if (b == a ) {
-				x=0.9;
+				x=b;
 			if (Kfpromo != 1) {
 			x=Kfpromo;
 			}	
