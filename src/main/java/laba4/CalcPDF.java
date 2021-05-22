@@ -235,11 +235,15 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			if (pr != 4) {
 			x=pr;
 		    r=kf.promo(test, pr);
+		    
 			}	
-				
+			else {
+				r=kf.promo(test, 1);
+			}
+	
 		}
 			
-		    r=kf.promo(test, 1);
+		    
 		    
 		    
 		    	    
