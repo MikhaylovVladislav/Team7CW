@@ -95,7 +95,7 @@ input {
     
     <tr>
       <td><font color="#4B0082">6</font></td>
-      <td>Plaster of walls, ceilingsв</td>
+      <td>Plaster of walls, ceilings</td>
       <td>${Usl6}</td>      
     </tr>
     

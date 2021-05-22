@@ -72,6 +72,9 @@ input {
 </form>
 </fieldset>
 
+
+<p align="right">1hell<span id="doc_time" title="Текущее время"></span>
+
 <p align="left"><font color="#008000">Команда разработчиков (team7):</font></p>
  <div class="container">
     <div class="pulse">
@@ -100,7 +103,7 @@ input {
 </div>
 
 
-<p align="right">1hell<span id="doc_time" title="Текущее время"></span>
+
     
  
         
