@@ -39,7 +39,7 @@ input {
 
 
 
-<legend>Подробная информация о приобретенных отделочных работах!</legend>
+
 <body bgcolor="#4682B4">
 
 <fieldset class = "com">
@@ -50,7 +50,7 @@ input {
 <p style="color:#black"><strong>Repair cost:</strong> ${result5}</p>
 </fieldset>
 <fieldset>
-
+<legend>Подробная информация о приобретенных отделочных работах!</legend>
 
 <table id="table">
   <thead>
