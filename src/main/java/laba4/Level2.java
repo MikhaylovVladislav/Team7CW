@@ -37,10 +37,11 @@ public class Level2 extends Level {
 
 			if (b == a) {
 				x=c;
-				}
-			if (c != 1) {
-				x=0.9;
-				}
+				if (c != 1) {
+					x=0.9;
+					}	
+			}
+
 
 		return x;
 	}
