@@ -176,7 +176,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			}
 	
 		public void setAsRequestAttributes(HttpServletRequest request) {
-			double p=1;double g=1;double r=0;double z=0.02;double h=1;double sum4;double sum5;
+			double p=1;double g=1;double r=0;double z=0;double h=1;double sum4;double sum5;
 
 			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
 	
@@ -240,7 +240,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 			  sum4=i2.xsum1(pr1,pr2,pr3,pr4);
 			    sum5=i1.xsum2(pr5,pr6,pr7,pr8,pr9,pr10,pr11,pr12);
-
+if (sum5==0) {z=0;}else {z=0.02;}
 			  
 				double s1=i1.xsum3(sum5, sum4, z, h); //int s1=(int)((((sum5)+(sum4)-((sum4)*z)))*h);
 			
