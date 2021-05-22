@@ -188,7 +188,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
-	     //   try {prcg=Integer.parseInt(TextPromo);} catch (NumberFormatException e) {r=0;}
+	        try {prcg=Integer.parseInt(TextPromo);} catch (NumberFormatException e) {prcg=0;}
 	        
 	        // состояние ремонта
 	        switch (sostg){ 
