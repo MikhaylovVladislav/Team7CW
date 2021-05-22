@@ -184,12 +184,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			int intradp=0; //срок в инте
 	        int sostg=0; //состояние в инте
 	        int clh=0; //класс в инте
-	        int prcg=0; //промокод в инте
+
 	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
-	        try {prcg=Integer.parseInt(TextPromo);} catch (NumberFormatException e) {prcg=0;}
-	        try {prcg=Integer.parseInt(TextKfpromo);} catch (NumberFormatException e) {prcg=0;}
+
+
 	        
 	        // состояние ремонта
 	        switch (sostg){ 
@@ -219,11 +219,13 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 			Level2 kf=new Level2(1);
 			String test = TextPromo; 
-			String test1 = TextKfpromo; 
+			String pr = TextKfpromo; 
 			// промокод
 			
-			if (prcg==1234) {r=0.3;}	
-		    r=kf.promo(test, test);
+	
+		    r=kf.promo(test, pr);
+		    
+		    	    
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
 		//	Арифметика
@@ -267,7 +269,7 @@ if (sum5==0) {z=0;}else {z=0.02;}
 			request.setAttribute("Usl11", TextUsl11);
 			request.setAttribute("Usl12", TextUsl12);
 			request.setAttribute("Promo", TextPromo);
-	//		request.setAttribute("Kfpromo", TextKfpromo);
+			request.setAttribute("Kfpromo", TextKfpromo);
 			request.setAttribute("col", Textcol);
 			request.setAttribute("col1", Textcol1);
 			request.setAttribute("col2", Textcol2);
