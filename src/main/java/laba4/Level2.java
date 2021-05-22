@@ -25,10 +25,10 @@ public class Level2 extends Level {
 	//	String[] mass = {"USATU", "123"};
 		int a = 123;
 		int b;
-		double c;
+		int c;
 		
 		try {b = Integer.parseInt(promo);} catch (NumberFormatException e) {b=0;}
-		try {c = Double.parseDouble(Kfpromo);} catch (NumberFormatException e) {c = 1;}
+		try {c = Integer.parseInt(Kfpromo);} catch (NumberFormatException e) {c = 1;}
 		 
 		//if ((promo == mass[0]) | (promo == mass[1])) {
 
