@@ -227,7 +227,6 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		    
 			String promo = null;
 			String Kfpromo = null;
-				double x =1.0;
 				String x1 = null;
 			//	String[] mass = {"USATU", "123"};
 				int a = 123;
@@ -240,9 +239,9 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 				//if ((promo == mass[0]) | (promo == mass[1])) {
 
 				if (b == a ) {
-						x=0.9;
+						r=0.9;
 						if (c != 1) {
-							x=c;
+							r=c;
 							}	
 						
 					}
