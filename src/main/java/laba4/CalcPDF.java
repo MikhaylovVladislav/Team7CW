@@ -269,7 +269,7 @@ if (sum5==0) {z=0;}else {z=0.02;}
 			request.setAttribute("Usl10", TextUsl10);
 			request.setAttribute("Usl11", TextUsl11);
 			request.setAttribute("Usl12", TextUsl12);
-			request.setAttribute("Promo", TextKfpromo);
+			request.setAttribute("Promo", TextPromo);
 			request.setAttribute("Kfpromo", TextKfpromo);
 			request.setAttribute("col", Textcol);
 			request.setAttribute("col1", Textcol1);
