@@ -224,7 +224,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			double c; 
 			try {pr=Integer.parseInt(TextKfpromo);} catch (NumberFormatException e) {pr=1;}
 	
-		    r=kf.promo(test, 0.8);
+		    r=kf.promo(test, pr);
 		    
 		    	    
 			Inter1 i1 = new CalcPDF();
