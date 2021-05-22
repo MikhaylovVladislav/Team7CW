@@ -18,28 +18,20 @@
    
   
 fieldset {
-
   background-color: LemonChiffon;
-width: 1100px; height: 1000px; margin:  5px auto;
-
+width: 820px; margin:  5px auto;
 }
-
 fieldset.com {
-
   background-color: LemonChiffon;
 width: 800px; margin:  5px auto;
-
 }
-
 legend {
   background-color: gray;
   color: white;
   padding: 5px 10px;
-
 }
-
 input {
-  margin: 130px;
+  margin: 30px;
 }
   </style>
   
