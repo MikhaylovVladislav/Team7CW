@@ -128,7 +128,7 @@ float: right;
 <fieldset>
  <legend> Промокод </legend>
 <label>Введите промокод<input type="text" name="Promo" id="Promo" value="${Promo}" ></label>
-<label>вотда<input type="text" name="Promo1" id="Promo1" value="${Promo1}" ></label>
+
 
 
 </fieldset>
@@ -137,7 +137,7 @@ float: right;
 <fieldset ${hid}>
  <legend>Панель администратора</legend>
 
-   <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:<input type="text" name="Kfpromo" id="Kfpromo" value="${Kfpromo}"></label>
+  <label>Коэффицент промокода:<input type="text" name="Promo1" id="Promo1" value="${Promo1}" ></label>
         
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
