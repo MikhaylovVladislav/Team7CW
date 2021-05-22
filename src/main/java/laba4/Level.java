@@ -17,6 +17,17 @@ public abstract class Level {
 	
 	
 	//ћетод дл€ переопределени€ дл€ создани€ промокода
-	public abstract double promo(String promo);
+	public abstract double promo(String promo, String Kfpromo);
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
