@@ -44,7 +44,7 @@ input {
 <body bgcolor="#FFDAB9">
 
 <div class="video-bg">
-   <video src="https://vod-progressive.akamaized.net/exp=1621683227~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1337%2F7%2F181688494%2F595455967.mp4~hmac=6fbd4c5354d0239684a6c99b17af12a13fd1ec6d73926e9499d703f6b2020ce7/vimeo-prod-skyfire-std-us/01/1337/7/181688494/595455967.mp4?filename=Jigsaw+-+4973.mp4" autoplay muted loop></video>
+   <video src="https://vod-progressive.akamaized.net/exp=1621683227~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F1337%2F7%2F181688494%2F595455967.mp4~hmac=6fbd4c5354d0239684a6c99b17af12a13fd1ec6d73926e9499d703f6b2020ce7/vimeo-prod-skyfire-std-us/01/1337/7/181688494/595455967.mp4?filename=Jigsaw+-+4973.mp4" type="video/mp4" autoplay muted loop></video>
          
    <div class="effects"></div>
    
@@ -73,7 +73,7 @@ input {
 </fieldset>
 
 
-<h1 align="right" color="#C71585"><span id="doc_time" title="Текущее время"></span></h1>
+<h1 align="right"><span id="doc_time" title="Текущее время"></span></h1>
 
 <p align="left"><font color="#008000">Команда разработчиков (team7):</font></p>
  <div class="container">
