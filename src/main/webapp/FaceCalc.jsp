@@ -19,6 +19,7 @@ width: 520px; margin:  5px auto;
 }
 
 fieldset.com {
+-moz-box-sizing;
   background-color: #D3D3D3;
 width: 500px; margin:  5px auto;
 }
@@ -34,6 +35,7 @@ input {
 }
 
 .algblock {
+-moz-box-sizing;
 float: right;
  padding-right: 20px; 
 }
