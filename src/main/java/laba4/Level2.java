@@ -18,7 +18,6 @@ public class Level2 extends Level {
 		
 	}
 
-
 	@Override
 	public double promo(String promo, String Kfpromo) {
 		double x =1.0;
