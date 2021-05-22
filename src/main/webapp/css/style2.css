@@ -74,7 +74,7 @@ p {
 .pul::before {
   content: '';
   position: absolute;
-  border: 5px solid #808000;
+  border: 5px solid #FF4500;
   left: -20px;
   opacity: 0;
   right: -20px;
@@ -127,7 +127,7 @@ p {
 .puls::before {
   content: '';
   position: absolute;
-  border: 5px solid #808000;
+  border: 5px solid #006400;
   left: -20px;
   opacity: 0;
   right: -20px;
@@ -179,7 +179,7 @@ pu {
 .pu::before {
   content: '';
   position: absolute;
-  border: 5px solid #808000;
+  border: 5px solid #4B0082;
   left: -20px;
   opacity: 0;
   right: -20px;
