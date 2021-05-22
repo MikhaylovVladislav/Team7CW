@@ -31,17 +31,14 @@ public class Level2 extends Level {
 		double c;
 		
 		try {b = Integer.parseInt(promo);} catch (NumberFormatException e) {b=0;}
-		try {c = Double.parseDouble(Kfpromo);} catch (NumberFormatException e) {c = 0;}
+		try {c = Double.parseDouble(Kfpromo);} catch (NumberFormatException e) {c = 1;}
 		 
 		//if ((promo == mass[0]) | (promo == mass[1])) {
-	    if (c == 2.0  ) {
-	   	x = c;
-	    }
-	    else {
+
 			if (b == a) {
-				x=0.7;	
+				x=c;
 				}
-	    }
+
 		return x;
 	}
 }
