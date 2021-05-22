@@ -39,6 +39,7 @@ input {
 
 
 
+<legend>Подробная информация о приобретенных отделочных работах!</legend>
 <body bgcolor="#4682B4">
 
 <fieldset class = "com">
@@ -46,99 +47,98 @@ input {
 <fieldset>
  <legend> Итоговый рассчет </legend>
 
-<p style="color:#black"><strong>Стоимость ремонта:</strong> ${result5}</p>
+<p style="color:#black"><strong>Repair cost:</strong> ${result5}</p>
 </fieldset>
 <fieldset>
 
-<legend>Подробная информация о приобретенных отделочных работах!</legend>
 
 <table id="table">
   <thead>
     <tr>
-      <th align="left">Номер услуги</th>
-      <th>Услуга</th>
-      <th>Количество метров</th>
+      <th align="left">Service number</th>
+      <th>Service</th>
+      <th>Number of meters/pieces</th>
     </tr>
   </thead>
   
   <tbody>  
     <tr>
-      <td><font color="#4B0082">№1</font></td>
-      <td>Подготовка стен, потолков под финиш</td>
+      <td><font color="#4B0082">1</font></td>
+      <td>Preparation of walls, ceilings for the finish</td>
       <td>${Usl1}</td>  
     </tr>
     
   
     <tr>
-      <td><font color="#4B0082">№2</font></td>
-      <td>Оклейка обоями</td>
+      <td><font color="#4B0082">2</font></td>
+      <td>Wallpapering</td>
       <td>${Usl2}</td>     
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№3</font></td>
-      <td>Покраска стен, потолков</td>
+      <td><font color="#4B0082">3</font></td>
+      <td>Painting of walls and ceilings</td>
       <td>${Usl3}</td>        
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№4</font></td>
-      <td>Шумоизоляция стен</td>
+      <td><font color="#4B0082">4</font></td>
+      <td>Sound insulation of walls</td>
       <td>${Usl4}</td>    
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№5</font></td>
-      <td>Эскизный проект перепланировки</td>
+      <td><font color="#4B0082">5</font></td>
+      <td>Preliminary design of the redevelopment</td>
       <td>${Usl5}</td>    
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№6</font></td>
-      <td>Штукатурка стен, потолков</td>
+      <td><font color="#4B0082">6</font></td>
+      <td>Plaster of walls, ceilingsв</td>
       <td>${Usl6}</td>      
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№7</font></td>
-      <td>Очистка поверхностей от старых покрытий</td>
+      <td><font color="#4B0082">7</font></td>
+      <td>Cleaning of surfaces from old coatings</td>
       <td>${Usl7}</td>      
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№8</font></td>
-      <td>Шпатлевка стен, потолков</td>
+      <td><font color="#4B0082">8</font></td>
+      <td>Putty of walls, ceilings</td>
       <td>${Usl8}</td>      
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№9</font></td>
-      <td>Нанесение декоративных покрытий</td>
+      <td><font color="#4B0082">9</font></td>
+      <td>Application of decorative coatings</td>
       <td>${Usl9}</td>    
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№10</font></td>
-      <td>Облицовка плиткой стен</td>
+      <td><font color="#4B0082">10</font></td>
+      <td>Wall tiling</td>
       <td>${Usl10}</td>     
     </tr>
     
     <tr>
-      <td><font color="#4B0082">№11</font></td>
-      <td>Укладка ламината</td>
+      <td><font color="#4B0082">11</font></td>
+      <td>Laying laminate flooring</td>
       <td>${Usl11}</td>      
     </tr>
     
     <tr>
-      <td><font color="blue">№12</font></td>
-      <td>Оклейка панелями потолок</td>
+      <td><font color="blue">12</font></td>
+      <td>Wallpapering ceiling panels</td>
       <td>${Usl12}</td>      
     </tr>
     
     <tr>
       <td><font color="#FF8C00">Your promo</font></td>
       <td> </td>
-      <td>somethink ${Promo}</td>         
+      <td>${Promo}</td>         
     </tr>
     
     <tr>
