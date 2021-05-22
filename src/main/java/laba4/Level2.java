@@ -40,6 +40,7 @@ public class Level2 extends Level {
 				if (c != 1) {
 					x=0.9;
 					}	
+				
 			}
 
 
