@@ -74,7 +74,7 @@ input {
 
  <div class="container">
     <div class="pulse">
-        <p><font color="#FF4500">Михайлов В.?, ПИ-221</font></p>
+        <p><font color="#FF4500">Михайлов В.А., ПИ-221</font></p>
     </div>
 </div>
  
@@ -87,14 +87,14 @@ input {
      
      <div class="conta">
     <div class="puls">
-        <p><font color="#A52A2A">Боголюбов М.?., ПИ-221</font></p>
+        <p><font color="#A52A2A">Боголюбов М.В., ПИ-221</font></p>
     </div>
 </div>
      
      
      <div class="contai">
     <div class="pu">
-        <p><font color="#DAA520">Белоусов А.?., ПИ-221</font></p>
+        <p><font color="#DAA520">Белоусов А.Н., ПИ-221</font></p>
     </div>
 </div>
 
