@@ -76,7 +76,7 @@ input {
 
 <h1 align="right"><span id="doc_time" title="Текущее время"></span></h1>
 
-<p align="left"><font color="#008000">Команда разработчиков (team7):</font></p>
+<p align="left"><font color="#008000">Команда разработчиков(team7):</font></p>
  <div class="container">
     <div class="pulse">
         <p><font color="#FF4500">Михайлов В.А., ПИ-221</font></p>
