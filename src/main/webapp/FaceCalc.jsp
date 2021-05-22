@@ -136,7 +136,7 @@ float: right;
 <fieldset ${hid}>
  <legend>Панель администратора</legend>
 
-   <label>Коэффицент промокода:<input type="text" name="Promo" id="Promo" value="${Promo}"></label>
+   <label for="Kfpromo" style="color:##000000" >Коэффицент промокода:<input type="text" name="Kfpromo" id="Kfpromo" value="${Kfpromo}"></label>
         
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
