@@ -128,6 +128,7 @@ float: right;
 <fieldset>
  <legend> Промокод </legend>
 <label>Введите промокод<input type="text" name="Promo" id="Promo" value="${Promo}" ></label>
+<label>вотда<input type="text" name="Promo1" id="Promo1" value="${Promo1}" ></label>
 
 
 </fieldset>

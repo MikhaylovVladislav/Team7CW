@@ -29,6 +29,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	public static String Usl11Get;
 	public static String Usl12Get;
 	public static String PromoGet;
+	public static String PromoGet1;
 	public static String SostGet;
 	public static String KlassGet;
 	public static String q2;
@@ -95,6 +96,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextUsl11;
 		private final String TextUsl12;
 		private final String TextPromo;
+		private final String TextPromo1;
 		private final String TextSost;
 		private final String TextKlass;
 		private final String TextKfpromo; // Для настройки кф промокода
@@ -102,7 +104,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextCol1;
 		private final String TextCol2;
 						
-		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Sost, String Kfpromo, String Col, String Col1, String Col2, String contact) {
+		private RequestCalc (String Srok, String Usl1, String Usl2, String Usl3, String Usl4, String Usl5, String Usl6, String Usl7, String Usl8, String Usl9, String Usl10, String Usl11, String Usl12, String Promo, String Promo1, String Sost, String Kfpromo, String Col, String Col1, String Col2, String contact) {
 
 			this.TextSrok = Srok;
 			this.TextUsl1 = Usl1;
@@ -118,6 +120,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			this.TextUsl11= Usl11;
 			this.TextUsl12 = Usl12;
 			this.TextPromo = Promo;
+			this.TextPromo1 = Promo1;
 			this.TextSost = Sost;
 			this.TextKlass = contact;
 			this.TextKfpromo = Kfpromo;
@@ -140,6 +143,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Usl11Get=TextUsl11;
 			Usl12Get=TextUsl12;
 			PromoGet=TextPromo;
+			PromoGet1=TextPromo1;
 			SostGet=TextSost;
 			KlassGet=TextKlass;
 			KfpromoGet=TextKfpromo;
@@ -166,6 +170,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			request.getParameter("Usl11"),
 			request.getParameter("Usl12"),
 			request.getParameter("Promo"),
+			request.getParameter("Promo1"),
 			request.getParameter("Sost"),
 			request.getParameter("TextCol"),
 			request.getParameter("TextCol1"),
@@ -222,26 +227,11 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			int pr; 
 			// промокод
 			double c; 
-			try {pr=Integer.parseInt(TextKfpromo);} catch (NumberFormatException e) {pr=4;}
+			try {pr=Integer.parseInt(TextPromo1);} catch (NumberFormatException e) {pr=1;}
 			
-			
-			int a = 123;
-			int b;
-			double x =1.0;
-			
-			try {b = Integer.parseInt(TextPromo);} catch (NumberFormatException e) {b=0;}
-			if (b == a ) {
-				x=0.9;
-			if (pr != 4) {
-			x=pr;
-		    r=kf.promo(test, pr);
-		    
-			}	
-			else {
-				r=kf.promo(test, 1);
-			}
-	
-		}
+
+				r=kf.promo(test, pr);
+
 			
 		    
 		    
