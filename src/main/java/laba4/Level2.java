@@ -19,23 +19,22 @@ public class Level2 extends Level {
 	}
 
 	@Override
-	public double promo(String promo, String Kfpromo) {
+	public double promo(String promo, double Kfpromo) {
 		double x =1.0;
 		String x1 = null;
 	//	String[] mass = {"USATU", "123"};
 		int a = 123;
 		int b;
-		int c;
 		
 		try {b = Integer.parseInt(promo);} catch (NumberFormatException e) {b=0;}
-		try {c = Integer.parseInt(Kfpromo);} catch (NumberFormatException e) {c = 1;}
+	//	try {c = Integer.parseInt(Kfpromo);} catch (NumberFormatException e) {c = 1;}
 		 
 		//if ((promo == mass[0]) | (promo == mass[1])) {
 
 		if (b == a ) {
 				x=0.9;
-			if (c != 1) {
-			x=c;
+			if (Kfpromo != 1) {
+			x=Kfpromo;
 			}	
 				
 		}

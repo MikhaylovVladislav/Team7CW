@@ -219,11 +219,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			
 			Level2 kf=new Level2(1);
 			String test = TextPromo; 
-			String pr = TextKfpromo; 
+			double pr; 
 			// промокод
-			
+			double c; 
+			try {pr=Double.parseDouble(TextKfpromo);} catch (NumberFormatException e) {pr=0;}
 	
-		    r=kf.promo(test, pr);
+		    r=kf.promo(test, 1);
 		    
 		    	    
 			Inter1 i1 = new CalcPDF();
