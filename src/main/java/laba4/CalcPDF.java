@@ -185,11 +185,12 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 	        int sostg=0; //состояние в инте
 	        int clh=0; //класс в инте
 	        int prcg=0; //промокод в инте
+	        int prcg1=0; //кэф
 	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
 	        try {prcg=Integer.parseInt(TextPromo);} catch (NumberFormatException e) {prcg=0;}
-	        try {prcg=Integer.parseInt(TextKfpromo);} catch (NumberFormatException e) {prcg=0;}
+
 	        
 	        // состояние ремонта
 	        switch (sostg){ 
@@ -223,7 +224,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			// промокод
 			
 			if (prcg==1234) {r=0.3;}	
-		    r=kf.promo(test, test);
+		    r=kf.promo(test, test1);
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
 		//	Арифметика
