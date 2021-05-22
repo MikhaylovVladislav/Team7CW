@@ -72,6 +72,7 @@ input {
 </form>
 </fieldset>
 
+<p align="left">Команда разработчиков(team7):</p>
  <div class="container">
     <div class="pulse">
         <p><font color="#FF4500">Михайлов В.А., ПИ-221</font></p>
