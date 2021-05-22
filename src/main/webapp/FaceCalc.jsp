@@ -9,19 +9,20 @@
 <style>
 
     body {
+    -moz-box-sizing: border-box;
     margin: 100px; 
     background:${col};
    }
   
 fieldset {
   background-color: ${col};
-width: 520px; margin:  5px auto;
+width: 620px; margin:  5px auto;
 }
 
 fieldset.com {
--moz-box-sizing;
+-moz-box-sizing: border-box;
   background-color: #D3D3D3;
-width: 500px; margin:  5px auto;
+width: 600px; margin:  5px auto;
 }
 
 legend {
@@ -35,7 +36,7 @@ input {
 }
 
 .algblock {
--moz-box-sizing;
+-moz-box-sizing: border-box;
 float: right;
  padding-right: 20px; 
 }
