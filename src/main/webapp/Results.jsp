@@ -7,38 +7,33 @@
 <link rel="stylesheet" href="css/style1.css">
 <title>Результат</title>
 <style>
-   body {
+body {
     -moz-background-size: 150%; /* Firefox 3.6+ */
     -webkit-background-size: 150%; /* Safari 3.1+ и Chrome 4.0+ */
     -o-background-size: 150%; /* Opera 9.6+ */
     background-size: 150%; /* Современные браузеры */
-     margin: 180px; 
-        background:${col};
+    margin: 180px; 
+    background:${col};
    }
    
-  
 fieldset {
-  background-color: LemonChiffon;
-width: 820px; margin:  5px auto;
+    background-color: LemonChiffon;
+    width: 820px; margin:  5px auto;
 }
 fieldset.com {
-  background-color: LemonChiffon;
-width: 800px; margin:  5px auto;
+    background-color: LemonChiffon;
+    width: 800px; margin:  5px auto;
 }
 legend {
-  background-color: gray;
-  color: white;
-  padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
 }
 input {
-  margin: 30px;
+    margin: 30px;
 }
-  </style>
-  
+  </style> 
 </head>
-
-
-
 
 <body bgcolor="#4682B4">
 
@@ -46,7 +41,6 @@ input {
 
 <fieldset>
  <legend> Итоговый рассчет </legend>
-
 <p style="color:#black"><strong>Repair cost:</strong> ${result5}</p>
 </fieldset>
 <fieldset>
@@ -68,7 +62,6 @@ input {
       <td>${Usl1}</td>  
     </tr>
     
-  
     <tr>
       <td><font color="#4B0082">2</font></td>
       <td>Wallpapering</td>
@@ -153,10 +146,7 @@ input {
 </fieldset>
 <button type="button" name="Back" onclick="history.back()">Назад</button>
 </fieldset>
-
-
 <!-- Создание загрузки пдф-файлика и его просмотра.ю -->
-
 <center><button onclick="generate()">Скачать PDF</button></center>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
@@ -197,8 +187,6 @@ input {
 <p>Вы можете послушать музыку, пока смотрите ваши расходы ^_^ :</p>
 
 <audio src="https://d2.cdnpush.com/mp3/0c83e093cc950757f6cce90bcdd949d1.mp3" controls loop></audio>
-
-
 
 </body>
 </html>

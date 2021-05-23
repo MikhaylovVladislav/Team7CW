@@ -8,37 +8,37 @@
 <title>Калькулятор ремонта</title>
 <style>
 
-    body {
+body {
     -moz-box-sizing: border-box;
     margin: 100px; 
     background:${col};
    }
   
 fieldset {
-  background-color: ${col};
+    background-color: ${col};
 width: 620px; margin:  5px auto;
 }
 
 fieldset.com {
--moz-box-sizing: border-box;
-  background-color: #D3D3D3;
-width: 600px; margin:  5px auto;
+    -moz-box-sizing: border-box;
+    background-color: #D3D3D3;
+    width: 600px; margin:  5px auto;
 }
 
 legend {
-  background-color: gray;
-  color: white;
-  padding: 5px 10px;
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
 }
 
 input {
-  margin: 10px;
+    margin: 10px;
 }
 
 .algblock {
--moz-box-sizing: border-box;
-float: right;
- padding-right: 20px; 
+    -moz-box-sizing: border-box;
+    float: right;
+    padding-right: 20px; 
 }
 </style>
 </head>
@@ -57,7 +57,6 @@ float: right;
   <option value="4">Недопустимое состояние состояние</option>
    <option value="5">Аварийное состояние</option>
 </select>
-
 </fieldset>
 
 <fieldset>
@@ -74,19 +73,14 @@ float: right;
 <div>
     <input type="radio" id="contactChoice1" name="contact" value="1">
     <label for="contactChoice1">Приоритетный </label>
-
     <input type="radio" id="contactChoice2" name="contact" value="2" checked>
     <label for="contactChoice2">Не приоритетный </label>
   </div>
- 
 </fieldset>
   
 <fieldset>
  <legend> Услуги </legend>
-
  <div class="algblock">
- 
-
 <label>Подготовка стен, потолков под финиш<input type="number" min="0" name="Usl1" id="Usl1" value="${Usl1}"></label>
 </div>
 <div class="algblock">
@@ -98,7 +92,6 @@ float: right;
 <div class="algblock">
 <label>Шумоизоляция стен<input type="number" min="0" name="Usl4" id="Usl4" value="${Usl4}"></label>
 </div>
-
 <div class="algblock">
 <label>Эскизный проект перепланировки<input type="number" min="0" name="Usl5" id="Usl5" value="${Usl5}" ></label>
 </div>
@@ -128,17 +121,12 @@ float: right;
 <fieldset>
  <legend> Промокод </legend>
 <label>Введите промокод<input type="text" name="Promo" id="Promo" value="${Promo}" ></label>
-
-
-
 </fieldset>
     
      <fieldset  ${hid}>
 <fieldset ${hid}>
  <legend>Панель администратора</legend>
-
-  <label>Коэффицент промокода:<input type="text" name="Promo1" id="Promo1" value="${Promo1}" ></label>
-        
+  <label>Коэффицент промокода:<input type="text" name="Promo1" id="Promo1" value="${Promo1}" ></label>   
         <hr>
         <label for="second" style="color:##000000" >Выберите тему:</label>
 <div>
@@ -148,30 +136,14 @@ float: right;
     <input type="radio" name="1" value="b" onclick="fun1()" checked>
     <label for="contactChoice4">Темная </label>
   </div>
-
-
-
-
-<!--form action="${pageContext.request.contextPath}/FaceCalc.jsp">
-    <input type="submit" name="save" value="Сохранить">
-    </form-->
-
 </fieldset>
 </fieldset>
-     
-     
     <input type="submit" name="sign" value="Вычислить">
-
 </form>
-
-
 <form action="${pageContext.request.contextPath}/Auth.jsp">
     <input type="submit" name="exit" value="Выйти">
     </form>
-    
-    
 </fieldset>
-
 
 <script>
 function fun1() {
@@ -180,16 +152,12 @@ function fun1() {
 	    if (rad[0].checked) {
 	    	//document.fieldset.style.background-color = "white";
 	    	document.getElementById("fs").style.backgroundColor='LemonChiffon';
-	    	
 	    }
 	    if (rad[1].checked) {
 	    //	  document.body.style.background = "black";
 	     	document.getElementById("fs").style.backgroundColor='BurlyWood';
-	    	
 	    }
 	  }
-	
 </script>
-
 </body>
 </html>
