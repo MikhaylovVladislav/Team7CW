@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/authbg.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/style2.css">
-<title>Author</title>
+<title>Author: Mikhaylov</title>
 <style>
 
 body {
