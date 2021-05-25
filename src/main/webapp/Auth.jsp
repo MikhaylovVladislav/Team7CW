@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="css/authbg.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/style2.css">
-<title>Authorization</title>
+<title>Author</title>
 <style>
 
 body {

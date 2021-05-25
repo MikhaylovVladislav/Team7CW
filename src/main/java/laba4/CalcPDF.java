@@ -1,12 +1,12 @@
 package laba4;
 
 import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 @WebServlet(name="CalcPDF", urlPatterns="/JavaPDF") 
 public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
@@ -78,7 +78,7 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		private final String TextPromo1;
 		private final String TextSost;
 		private final String TextKlass;
-		private final String TextKfpromo; // Для настройки кф промокода
+		private final String TextKfpromo; // пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 		private final String TextCol;
 		private final String TextCol1;
 		private final String TextCol2;
@@ -158,15 +158,15 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			double p=1;double g=1;double r=0;double z=0;double h=1;double sum4;double sum5;
 			double pr1; double pr2; double pr3; double pr4;double pr5;double pr6;double pr7;double pr8;double pr9;double pr10;double pr11;double pr12;
 
-			int intradp=0; //срок в инте
-	        int sostg=0; //состояние в инте
-	        int clh=0; //класс в инте
+			int intradp=0; //пїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+	        int sostg=0; //пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
+	        int clh=0; //пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅ
 	        
 	        try {clh=Integer.parseInt(TextKlass);} catch (NumberFormatException e) {clh=0;}
 	        try {intradp=Integer.parseInt(TextSrok);} catch (NumberFormatException e) {intradp=0;}
 	        try {sostg=Integer.parseInt(TextSost); } catch (NumberFormatException e) {sostg=0;}
 
-	        // состояние ремонта
+	        // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 	        switch (sostg){ 
 		  	case  (1):g=1; break;
 		  	case  (2):g=1.1; break;
@@ -175,14 +175,14 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 		  	case  (5): g=1.25;break;
 		  default:g=1;break;
 		  }
-			// класс ремонта
+			// пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			  switch (clh){ 
 			  	case  (1):h=1;break;   			         
 			  	case  (2): h=1.21; break;
 			  	case  (3):h=1.42;break;
 			  default:h=1;break;
 			  }
-			// срок ремонта
+			// пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			  switch (intradp) { 
 			 	case  (1):p=1.21;break;
 			  	case  (2):p=1;break;
@@ -192,14 +192,14 @@ public class CalcPDF extends HttpServlet implements Inter1,Inter2 {
 			Level2 kf=new Level2(1);
 			String test = TextPromo; 
 			double pr; 
-			// промокод
+			// пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			double c; 
 			try {pr=Double.parseDouble(TextPromo1);} catch (NumberFormatException e) {pr=1;}
 				r=kf.promo(test, pr);
     
 			Inter1 i1 = new CalcPDF();
 			Inter2 i2 = new CalcPDF();
-		//	Арифметика
+		//	пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 			  try {pr1=Double.parseDouble(Usl1Get);} catch (NumberFormatException e) {pr1=0;}
 			  try {pr2=Double.parseDouble(Usl2Get);} catch (NumberFormatException e) {pr2=0;}
 			  try {pr3=Double.parseDouble(Usl3Get);} catch (NumberFormatException e) {pr3=0;}

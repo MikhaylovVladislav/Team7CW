@@ -1,5 +1,6 @@
 html,body{
     height: 100%;    
+    
 }
 
 body{
@@ -8,6 +9,8 @@ body{
     background: linear-gradient(130deg, #a2ab58, #3c1053, #dd1818, #38ef7d, #108dc7);
     background-size: 300% 300%;
     animation: gradient 10s ease infinite;
+    moz-box-sizing: border-box;
+    
 }
     @keyframes gradient {
         0% {
@@ -22,3 +25,4 @@ body{
         }
             
     }
+    

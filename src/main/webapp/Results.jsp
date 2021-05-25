@@ -154,28 +154,16 @@ input {
 
 <script>
  function generate() {
-      var doc = new jsPDF('p', 'pt');
+	 var doc = new jsPDF('p', 'pt');
       doc.setFont('Courier');
       var elem = document.getElementById('table');
-      var imgElements = document.querySelectorAll('#table tbody img');
       var data = doc.autoTableHtmlToJson(elem);
-      var images = [];
       var i = 0;
       doc.autoTable(data.columns, data.rows, {
         bodyStyles: {rowHeight: 30},
         drawCell: function(cell, opts) {
-          if (opts.column.dataKey === 14) {
-            images.push({
-              url: imgElements[i].src,
-              x: cell.textPos.x,
-              y: cell.textPos.y
-            });
+          if (opts.column.dataKey == 5) {          
             i++;
-          }
-        },
-        addPageContent: function() {
-          for (var i = 0; i < images.length; i++) {
-            doc.addImage(images[i].url, images[i].x, images[i].y, 20, 20);
           }
         }
       });
